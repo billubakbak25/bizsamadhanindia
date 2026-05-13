@@ -1,0 +1,275 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "BI SaaS Legal Ops BizSamadhan India" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: BI
+        - generic [ref=e7]:
+          - generic [ref=e8]: SaaS Legal Ops
+          - generic [ref=e9]: BizSamadhan India
+      - navigation "Primary navigation" [ref=e10]:
+        - link "Services" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Consultation" [ref=e12] [cursor=pointer]:
+          - /url: /consultation
+        - link "Partner" [ref=e13] [cursor=pointer]:
+          - /url: /partner
+        - link "Tools" [ref=e14] [cursor=pointer]:
+          - /url: /tools
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e16]:
+        - link "Client Portal" [ref=e17] [cursor=pointer]:
+          - /url: /client-portal
+        - link "Book Consultation" [ref=e18] [cursor=pointer]:
+          - /url: /consultation
+  - main [ref=e19]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: Production-ready legal and compliance SaaS
+        - generic [ref=e24]:
+          - heading "Launch, protect, and operate your business with a modern compliance stack." [level=1] [ref=e25]
+          - paragraph [ref=e26]: BizSamadhan India combines service-led execution, client visibility, and admin-grade operational tooling in one high-performance Next.js experience.
+        - generic [ref=e27]:
+          - link "Start with a consultation" [ref=e28] [cursor=pointer]:
+            - /url: /consultation
+          - link "Explore service catalog" [ref=e29] [cursor=pointer]:
+            - /url: /services
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: 1,200+
+            - paragraph [ref=e33]: Founder launches supported
+          - generic [ref=e34]:
+            - generic [ref=e35]: 30 min
+            - paragraph [ref=e36]: Average onboarding response
+          - generic [ref=e37]:
+            - generic [ref=e38]: 24/7
+            - paragraph [ref=e39]: Compliance workflows active
+      - generic [ref=e42]:
+        - img "BizSamadhan India dashboard preview" [ref=e44]
+        - generic [ref=e45]:
+          - generic [ref=e46]: Production-grade client portal and admin controls
+          - generic [ref=e47]: Railway-backed API integrations wired through environment variables
+          - generic [ref=e48]: Fast-moving founder support across legal, tax, and compliance
+          - generic [ref=e49]: Designed for Vercel deployment and future SaaS expansion
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - paragraph [ref=e53]: Service catalog
+        - heading "Signature legal, tax, and compliance journeys built as productized services." [level=2] [ref=e54]
+        - paragraph [ref=e55]: "The catalog is structured for scale: service pages convert, consultation captures intent, and operational dashboards keep delivery visible."
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]: Tax Setup
+              - generic [ref=e61]: Starting at Rs 1,499
+            - generic [ref=e62]:
+              - heading "GST Registration" [level=3] [ref=e63]
+              - paragraph [ref=e64]: GST readiness, registration filing, and post-registration guidance for founders and growing teams.
+            - list [ref=e65]:
+              - listitem [ref=e66]:
+                - generic [ref=e68]: PAN and entity check
+              - listitem [ref=e69]:
+                - generic [ref=e71]: Registration filing
+              - listitem [ref=e72]:
+                - generic [ref=e74]: Next-step compliance plan
+          - link "View service page" [ref=e75] [cursor=pointer]:
+            - /url: /gst-registration
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - generic [ref=e79]: Personal Tax
+              - generic [ref=e80]: Starting at Rs 999
+            - generic [ref=e81]:
+              - heading "ITR Filing" [level=3] [ref=e82]
+              - paragraph [ref=e83]: Fast, guided income-tax filing with clean documentation, deductions review, and submission support.
+            - list [ref=e84]:
+              - listitem [ref=e85]:
+                - generic [ref=e87]: Income review
+              - listitem [ref=e88]:
+                - generic [ref=e90]: Deduction mapping
+              - listitem [ref=e91]:
+                - generic [ref=e93]: Accurate filing workflow
+          - link "View service page" [ref=e94] [cursor=pointer]:
+            - /url: /itr-filing
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - generic [ref=e98]: Brand Protection
+              - generic [ref=e99]: Starting at Rs 4,999
+            - generic [ref=e100]:
+              - heading "Trademark Registration" [level=3] [ref=e101]
+              - paragraph [ref=e102]: Search, filing, and objection-ready support for founders who want durable brand ownership.
+            - list [ref=e103]:
+              - listitem [ref=e104]:
+                - generic [ref=e106]: Brand availability scan
+              - listitem [ref=e107]:
+                - generic [ref=e109]: Application filing
+              - listitem [ref=e110]:
+                - generic [ref=e112]: Protection roadmap
+          - link "View service page" [ref=e113] [cursor=pointer]:
+            - /url: /trademark-registration
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: Business Formation
+              - generic [ref=e118]: Starting at Rs 7,499
+            - generic [ref=e119]:
+              - heading "Company Registration" [level=3] [ref=e120]
+              - paragraph [ref=e121]: Private limited company setup with practical guidance around structure, GST, and founder paperwork.
+            - list [ref=e122]:
+              - listitem [ref=e123]:
+                - generic [ref=e125]: Entity structuring
+              - listitem [ref=e126]:
+                - generic [ref=e128]: DIN and DSC support
+              - listitem [ref=e129]:
+                - generic [ref=e131]: Launch checklist
+          - link "View service page" [ref=e132] [cursor=pointer]:
+            - /url: /company-registration
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: Recurring Compliance
+              - generic [ref=e137]: Starting at Rs 3,999
+            - generic [ref=e138]:
+              - heading "Annual Compliance Filing" [level=3] [ref=e139]
+              - paragraph [ref=e140]: Board, ROC, and annual filing support for teams that want fewer missed deadlines and less chaos.
+            - list [ref=e141]:
+              - listitem [ref=e142]:
+                - generic [ref=e144]: Deadline planning
+              - listitem [ref=e145]:
+                - generic [ref=e147]: Filing preparation
+              - listitem [ref=e148]:
+                - generic [ref=e150]: Status visibility
+          - link "View service page" [ref=e151] [cursor=pointer]:
+            - /url: /annual-compliance-filing
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - generic [ref=e155]: Finance Ops
+              - generic [ref=e156]: Starting at Rs 2,999
+            - generic [ref=e157]:
+              - heading "Accounting and Bookkeeping" [level=3] [ref=e158]
+              - paragraph [ref=e159]: Month-end bookkeeping, reconciliations, and finance hygiene for operators who need reliable numbers.
+            - list [ref=e160]:
+              - listitem [ref=e161]:
+                - generic [ref=e163]: Clean books
+              - listitem [ref=e164]:
+                - generic [ref=e166]: Monthly reviews
+              - listitem [ref=e167]:
+                - generic [ref=e169]: Founder-ready reporting
+          - link "View service page" [ref=e170] [cursor=pointer]:
+            - /url: /accounting-bookkeeping
+    - generic [ref=e172]:
+      - generic [ref=e173]:
+        - paragraph [ref=e174]: Diagnose
+        - paragraph [ref=e175]: We map entity type, tax posture, urgency, and document readiness before prescribing any package.
+      - generic [ref=e176]:
+        - paragraph [ref=e177]: Launch
+        - paragraph [ref=e178]: Every engagement moves through a clear operating plan with owners, deadlines, and submission checkpoints.
+      - generic [ref=e179]:
+        - paragraph [ref=e180]: Operate
+        - paragraph [ref=e181]: The platform stays useful after onboarding with client visibility, consultation booking, and admin ops tooling.
+    - generic [ref=e183]:
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - paragraph [ref=e187]: Live platform signal
+            - heading "Production-ready frontend, Railway-connected backend." [level=2] [ref=e188]
+          - 'button "Railway API: Checking backend" [ref=e189]':
+            - generic [ref=e191]: "Railway API: Checking backend"
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - paragraph [ref=e194]: "\"We moved from scattered WhatsApp follow-ups to a real operating workflow that clients can actually trust.\""
+            - paragraph [ref=e195]: Growth Advisor, Delhi NCR
+          - generic [ref=e196]:
+            - paragraph [ref=e197]: "\"The consultation and compliance funnel feels like a product now, not just a brochure site with forms.\""
+            - paragraph [ref=e198]: Startup Founder, Bengaluru
+          - generic [ref=e199]:
+            - paragraph [ref=e200]: "\"The admin side is finally readable for operators and the frontend feels enterprise-ready on mobile.\""
+            - paragraph [ref=e201]: Finance Lead, Kanpur
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - heading "Discuss your setup" [level=2] [ref=e204]
+          - paragraph [ref=e205]: Use the live lead API to tell us what you are building, fixing, or scaling.
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - text: Name
+              - textbox "Name" [ref=e209]
+            - generic [ref=e210]:
+              - text: Phone
+              - textbox "Phone" [ref=e211]
+          - generic [ref=e212]:
+            - text: Email
+            - textbox "Email" [ref=e213]
+          - generic [ref=e214]:
+            - text: Service
+            - combobox "Service" [ref=e215]:
+              - option "GST Registration" [selected]
+              - option "ITR Filing"
+              - option "Trademark Registration"
+              - option "Company Registration"
+              - option "Annual Compliance Filing"
+              - option "Accounting and Bookkeeping"
+          - generic [ref=e216]:
+            - text: Message
+            - textbox "Message" [ref=e217]
+          - generic [ref=e218]:
+            - paragraph [ref=e219]: Share your details and we will call you back.
+            - button "Submit enquiry" [ref=e220]
+    - generic [ref=e223]:
+      - paragraph [ref=e224]: FAQ
+      - generic [ref=e225]:
+        - generic [ref=e226]:
+          - heading "Can I launch the site on Vercel while keeping the backend on Railway?" [level=2] [ref=e227]
+          - paragraph [ref=e228]: Yes. The frontend is designed to call the Railway API using NEXT_PUBLIC_API_BASE_URL, so the deployment split remains clean and scalable.
+        - generic [ref=e229]:
+          - heading "Will client portal and admin login still work cross-domain?" [level=2] [ref=e230]
+          - paragraph [ref=e231]: Yes, as long as Railway keeps the current CORS and cookie settings and Vercel points to the correct API base URL.
+        - generic [ref=e232]:
+          - heading "Can more services be added later without another rewrite?" [level=2] [ref=e233]
+          - paragraph [ref=e234]: Yes. The app uses reusable service content and dynamic routes so you can extend the catalog without returning to static HTML.
+  - contentinfo [ref=e235]:
+    - generic [ref=e236]:
+      - generic [ref=e237]:
+        - paragraph [ref=e238]: BizSamadhan India
+        - heading "A future-ready legal and compliance platform for Indian growth teams." [level=2] [ref=e239]
+        - paragraph [ref=e240]: A modern legal, tax, and compliance growth platform for Indian founders, operators, and finance teams.
+      - generic [ref=e241]:
+        - heading "Popular Services" [level=3] [ref=e242]
+        - list [ref=e243]:
+          - listitem [ref=e244]:
+            - link "GST Registration" [ref=e245] [cursor=pointer]:
+              - /url: /gst-registration
+          - listitem [ref=e246]:
+            - link "ITR Filing" [ref=e247] [cursor=pointer]:
+              - /url: /itr-filing
+          - listitem [ref=e248]:
+            - link "Trademark Registration" [ref=e249] [cursor=pointer]:
+              - /url: /trademark-registration
+          - listitem [ref=e250]:
+            - link "Company Registration" [ref=e251] [cursor=pointer]:
+              - /url: /company-registration
+          - listitem [ref=e252]:
+            - link "Annual Compliance Filing" [ref=e253] [cursor=pointer]:
+              - /url: /annual-compliance-filing
+          - listitem [ref=e254]:
+            - link "Accounting and Bookkeeping" [ref=e255] [cursor=pointer]:
+              - /url: /accounting-bookkeeping
+      - generic [ref=e256]:
+        - heading "Company" [level=3] [ref=e257]
+        - list [ref=e258]:
+          - listitem [ref=e259]: Kanpur, Uttar Pradesh
+          - listitem [ref=e260]: hello@bizsamadhanindia.com
+          - listitem [ref=e261]:
+            - link "Privacy Policy" [ref=e262] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=e263]:
+            - link "Terms and Conditions" [ref=e264] [cursor=pointer]:
+              - /url: /terms-and-conditions
+  - button "Open AI assistant" [ref=e266]:
+    - generic [ref=e267]: AI
+    - generic [ref=e268]:
+      - paragraph [ref=e269]: AI assistant
+      - paragraph [ref=e270]: Find the right legal service

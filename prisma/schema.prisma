@@ -1,0 +1,840 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  // Keep DATABASE_URL on the Supabase pooler connection for Railway/hosted Prisma usage.
+  url      = env("DATABASE_URL")
+}
+
+model Lead {
+  id              Int        @id @default(autoincrement())
+  name            String
+  phone           String
+  email           String?
+  service         String
+  message         String?
+  status          String     @default("new")
+  notes           String?
+  leadScore       Int        @default(0) @map("lead_score")
+  leadTemperature String     @default("cold") @map("lead_temperature")
+  source          String?
+  submittedAt     String     @map("timestamp")
+  createdAt       String     @map("created_at")
+  updatedAt       String     @map("updated_at")
+  followUps       FollowUp[]
+
+  @@index([status])
+  @@index([service])
+  @@index([phone])
+  @@map("leads")
+}
+
+model ConsultationRequest {
+  id               Int     @id @default(autoincrement())
+  requestCode      String  @unique @map("request_code")
+  name             String
+  phone            String
+  email            String?
+  consultationType String  @map("consultation_type")
+  service          String?
+  preferredDate    String? @map("preferred_date")
+  preferredSlot    String? @map("preferred_slot")
+  mode             String  @default("call")
+  notes            String?
+  status           String  @default("new")
+  source           String?
+  createdAt        String  @map("created_at")
+  updatedAt        String  @map("updated_at")
+
+  @@index([status])
+  @@index([phone])
+  @@map("consultation_requests")
+}
+
+model SupportTicket {
+  id         Int     @id @default(autoincrement())
+  clientId   Int     @map("client_id")
+  subject    String
+  category   String?
+  priority   String  @default("normal")
+  message    String
+  status     String  @default("open")
+  resolvedAt String? @map("resolved_at")
+  createdAt  String  @map("created_at")
+  updatedAt  String  @map("updated_at")
+  client     Client  @relation(fields: [clientId], references: [id])
+
+  @@index([clientId])
+  @@index([status])
+  @@map("support_tickets")
+}
+
+model PartnerApplication {
+  id              Int     @id @default(autoincrement())
+  applicationCode String  @unique @map("application_code")
+  name            String
+  email           String
+  phone           String
+  companyName     String? @map("company_name")
+  focusArea       String? @map("focus_area")
+  experienceLevel String? @map("experience_level")
+  notes           String?
+  referralCode    String? @map("referral_code")
+  source          String  @default("website")
+  status          String  @default("new")
+  createdAt       String  @map("created_at")
+  updatedAt       String  @map("updated_at")
+
+  @@index([status])
+  @@index([email])
+  @@map("partner_applications")
+}
+
+model Payment {
+  id                Int     @id @default(autoincrement())
+  orderId           String  @unique @map("order_id")
+  paymentId         String? @map("payment_id")
+  service           String
+  amount            Int
+  currency          String
+  status            String
+  createdAt         String  @map("created_at")
+  updatedAt         String  @map("updated_at")
+  customerName      String? @map("customer_name")
+  customerPhone     String? @map("customer_phone")
+  customerMessage   String? @map("customer_message")
+  invoiceNumber     String? @map("invoice_number")
+  invoiceHtml       String? @map("invoice_html")
+  invoiceUrl        String? @map("invoice_url")
+  invoicePath       String? @map("invoice_path")
+  whatsappStatus    String? @default("pending") @map("whatsapp_status")
+  whatsappError     String? @map("whatsapp_error")
+  razorpaySignature String? @map("razorpay_signature")
+  clientId          Int?    @map("client_id")
+  client            Client? @relation(fields: [clientId], references: [id])
+  // Phase 2: relation to Order
+  serviceOrders     Order[]
+
+  @@index([clientId])
+  @@index([status])
+  @@map("payments")
+}
+
+model Client {
+  id                      Int                       @id @default(autoincrement())
+  phone                   String?                   @unique
+  name                    String
+  email                   String?                   @unique
+  role                    String                    @default("client")
+  referralCode            String?                   @map("referral_code")
+  createdAt               String                    @map("created_at")
+  updatedAt               String                    @map("updated_at")
+  supportTickets          SupportTicket[]
+  payments                Payment[]
+  services                Service[]
+  documents               Document[]
+  tasks                   Task[]
+  subscriptions           Subscription[]
+  addonSuggestions        AddonSuggestion[]
+  referralCodes           ReferralCode[]
+  referralsSent           Referral[]                @relation("ReferralsSent")
+  referralsReceived       Referral[]                @relation("ReferralsReceived")
+  // Phase 2 relations
+  profile                 UserProfile?
+  expertReviews           ExpertReview[]
+  orders                  Order[]
+  notifications           Notification[]
+  notificationPreferences NotificationPreference[]
+  bookedSlots             ExpertAvailabilitySlot[]
+
+  @@map("clients")
+}
+
+model Service {
+  id        Int     @id @default(autoincrement())
+  clientId  Int     @map("client_id")
+  orderId   String? @map("order_id")
+  paymentId String? @map("payment_id")
+  name      String
+  status    String  @default("pending")
+  metadata  String?
+  createdAt String  @map("created_at")
+  updatedAt String  @map("updated_at")
+  client    Client  @relation(fields: [clientId], references: [id])
+
+  @@index([clientId])
+  @@index([status])
+  @@map("services")
+}
+
+model Document {
+  id               Int     @id @default(autoincrement())
+  clientId         Int     @map("client_id")
+  folderName       String  @default("general") @map("folder_name")
+  documentType     String? @map("document_type")
+  fileName         String  @map("file_name")
+  originalName     String? @map("original_name")
+  filePath         String  @map("file_path")
+  fileUrl          String? @map("file_url")
+  mimeType         String? @map("mime_type")
+  size             Int?
+  uploadedByUserId Int?    @map("uploaded_by_user_id")
+  uploadedByRole   String? @map("uploaded_by_role")
+  uploadedAt       String  @map("uploaded_at")
+  reviewStatus     String  @default("pending_review") @map("review_status")
+  reviewedAt       String? @map("reviewed_at")
+  reviewedByUserId Int?    @map("reviewed_by_user_id")
+  reviewedByRole   String? @map("reviewed_by_role")
+  createdAt        String  @map("created_at")
+  updatedAt        String  @map("updated_at")
+  client           Client  @relation(fields: [clientId], references: [id])
+
+  @@index([clientId])
+  @@index([folderName])
+  @@index([reviewStatus])
+  @@map("documents")
+}
+
+model Otp {
+  id        String   @id @default(cuid())
+  email     String
+  otpHash   String   @map("otp_hash")
+  expiresAt DateTime @map("expires_at")
+  attempts  Int      @default(0)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@index([email])
+  @@map("otps")
+}
+
+model Log {
+  id         Int     @id @default(autoincrement())
+  level      String
+  event      String
+  message    String
+  entityType String? @map("entity_type")
+  entityId   String? @map("entity_id")
+  metadata   String?
+  createdAt  String  @map("created_at")
+
+  @@index([event])
+  @@index([entityType, entityId])
+  @@map("logs")
+}
+
+model TaskMapping {
+  id          Int    @id @default(autoincrement())
+  serviceCode String @unique @map("service_code")
+  serviceName String @map("service_name")
+  staffId     String @map("staff_id")
+  staffName   String @map("staff_name")
+  isActive    Int    @default(1) @map("is_active")
+  createdAt   String @map("created_at")
+  updatedAt   String @map("updated_at")
+
+  @@index([isActive])
+  @@map("task_mappings")
+}
+
+model Task {
+  id                Int     @id @default(autoincrement())
+  clientId          Int?    @map("client_id")
+  serviceCode       String? @map("service_code")
+  serviceName       String? @map("service_name")
+  assignedStaffId   String? @map("assigned_staff_id")
+  assignedStaffName String? @map("assigned_staff_name")
+  title             String
+  description       String?
+  status            String  @default("assigned")
+  priority          String  @default("normal")
+  slaDueAt          String? @map("sla_due_at")
+  completedAt       String? @map("completed_at")
+  createdAt         String  @map("created_at")
+  updatedAt         String  @map("updated_at")
+  client            Client? @relation(fields: [clientId], references: [id])
+
+  @@index([clientId])
+  @@index([status])
+  @@index([serviceCode])
+  @@map("tasks")
+}
+
+model WorkflowDefinition {
+  id          Int    @id @default(autoincrement())
+  serviceCode String @unique @map("service_code")
+  serviceName String @map("service_name")
+  stepsJson   String @map("steps_json")
+  createdAt   String @map("created_at")
+  updatedAt   String @map("updated_at")
+
+  @@map("workflow_definitions")
+}
+
+model WorkflowInstance {
+  id               Int     @id @default(autoincrement())
+  serviceRequestId String  @unique @map("service_request_id")
+  serviceCode      String  @map("service_code")
+  serviceName      String  @map("service_name")
+  status           String
+  currentStepCode  String? @map("current_step_code")
+  contextJson      String? @map("context_json")
+  stepsJson        String  @map("steps_json")
+  createdAt        String  @map("created_at")
+  updatedAt        String  @map("updated_at")
+
+  @@index([serviceCode])
+  @@index([status])
+  @@map("workflow_instances")
+}
+
+model AddonCatalog {
+  id              Int     @id @default(autoincrement())
+  serviceCode     String  @map("service_code")
+  addonCode       String  @unique @map("addon_code")
+  addonName       String  @map("addon_name")
+  description     String?
+  basePrice       Int     @map("base_price")
+  pricingType     String  @default("fixed") @map("pricing_type")
+  pricingMetadata String? @map("pricing_metadata")
+  isActive        Int     @default(1) @map("is_active")
+  createdAt       String  @map("created_at")
+  updatedAt       String  @map("updated_at")
+
+  @@index([serviceCode])
+  @@index([isActive])
+  @@map("addon_catalog")
+}
+
+model AddonSuggestion {
+  id             Int     @id @default(autoincrement())
+  paymentId      String  @map("payment_id")
+  clientId       Int     @map("client_id")
+  serviceCode    String  @map("service_code")
+  addonCode      String  @map("addon_code")
+  addonName      String  @map("addon_name")
+  suggestedPrice Int     @map("suggested_price")
+  pricingReason  String? @map("pricing_reason")
+  status         String  @default("suggested")
+  acceptedAt     String? @map("accepted_at")
+  rejectedAt     String? @map("rejected_at")
+  createdAt      String  @map("created_at")
+  updatedAt      String  @map("updated_at")
+  client         Client  @relation(fields: [clientId], references: [id])
+
+  @@index([paymentId])
+  @@index([clientId])
+  @@map("addon_suggestions")
+}
+
+model ReferralCode {
+  id           Int    @id @default(autoincrement())
+  userId       Int    @map("user_id")
+  referralCode String @unique @map("referral_code")
+  isActive     Int    @default(1) @map("is_active")
+  createdAt    String @map("created_at")
+  updatedAt    String @map("updated_at")
+  client       Client @relation(fields: [userId], references: [id])
+
+  @@unique([userId])
+  @@index([isActive])
+  @@map("referral_codes")
+}
+
+model Referral {
+  id             Int     @id @default(autoincrement())
+  referrerUserId Int     @map("referrer_user_id")
+  referredUserId Int     @unique @map("referred_user_id")
+  referralCode   String  @map("referral_code")
+  status         String  @default("pending")
+  rewardAmount   Int     @default(0) @map("reward_amount")
+  rewardStatus   String  @default("pending") @map("reward_status")
+  rewardedAt     String? @map("rewarded_at")
+  createdAt      String  @map("created_at")
+  updatedAt      String  @map("updated_at")
+  referrer       Client  @relation("ReferralsSent", fields: [referrerUserId], references: [id])
+  referred       Client  @relation("ReferralsReceived", fields: [referredUserId], references: [id])
+
+  @@index([referrerUserId])
+  @@index([status])
+  @@map("referrals")
+}
+
+model BillingPlan {
+  id                 Int            @id @default(autoincrement())
+  planCode           String         @unique @map("plan_code")
+  planName           String         @map("plan_name")
+  intervalUnit       String         @map("interval_unit")
+  intervalCount      Int            @default(1) @map("interval_count")
+  amount             Int
+  currency           String         @default("INR")
+  reminderDaysBefore Int            @default(3) @map("reminder_days_before")
+  isActive           Int            @default(1) @map("is_active")
+  createdAt          String         @map("created_at")
+  updatedAt          String         @map("updated_at")
+  subscriptions      Subscription[]
+
+  @@index([isActive])
+  @@map("billing_plans")
+}
+
+model Subscription {
+  id                 Int               @id @default(autoincrement())
+  clientId           Int               @map("client_id")
+  planCode           String            @map("plan_code")
+  status             String            @default("active")
+  currentPeriodStart String            @map("current_period_start")
+  currentPeriodEnd   String            @map("current_period_end")
+  lastRenewedAt      String?           @map("last_renewed_at")
+  nextRenewalAt      String            @map("next_renewal_at")
+  createdAt          String            @map("created_at")
+  updatedAt          String            @map("updated_at")
+  client             Client            @relation(fields: [clientId], references: [id])
+  plan               BillingPlan       @relation(fields: [planCode], references: [planCode])
+  renewals           BillingRenewal[]
+  reminders          BillingReminder[]
+
+  @@index([clientId])
+  @@index([status])
+  @@map("subscriptions")
+}
+
+model BillingRenewal {
+  id             Int               @id @default(autoincrement())
+  subscriptionId Int               @map("subscription_id")
+  renewalDueAt   String            @map("renewal_due_at")
+  renewedAt      String?           @map("renewed_at")
+  status         String            @default("pending")
+  amount         Int
+  currency       String            @default("INR")
+  createdAt      String            @map("created_at")
+  updatedAt      String            @map("updated_at")
+  subscription   Subscription      @relation(fields: [subscriptionId], references: [id])
+  reminders      BillingReminder[]
+
+  @@index([subscriptionId])
+  @@index([status])
+  @@map("billing_renewals")
+}
+
+model BillingReminder {
+  id             Int            @id @default(autoincrement())
+  subscriptionId Int            @map("subscription_id")
+  renewalId      Int            @map("renewal_id")
+  remindAt       String         @map("remind_at")
+  sentAt         String?        @map("sent_at")
+  status         String         @default("scheduled")
+  channel        String         @default("whatsapp")
+  createdAt      String         @map("created_at")
+  updatedAt      String         @map("updated_at")
+  subscription   Subscription   @relation(fields: [subscriptionId], references: [id])
+  renewal        BillingRenewal @relation(fields: [renewalId], references: [id])
+
+  @@index([subscriptionId])
+  @@index([renewalId])
+  @@index([status])
+  @@map("billing_reminders")
+}
+
+model FollowUp {
+  id              Int     @id @default(autoincrement())
+  leadId          Int     @map("lead_id")
+  stepKey         String  @map("step_key")
+  scheduledFor    String  @map("scheduled_for")
+  status          String  @default("scheduled")
+  channel         String  @default("whatsapp")
+  message         String?
+  sentAt          String? @map("sent_at")
+  cancelledReason String? @map("cancelled_reason")
+  createdAt       String  @map("created_at")
+  updatedAt       String  @map("updated_at")
+  lead            Lead    @relation(fields: [leadId], references: [id])
+
+  @@index([leadId])
+  @@index([status])
+  @@index([scheduledFor])
+  @@map("follow_ups")
+}
+
+model ServiceCatalog {
+  id           String        @id @default(cuid())
+  code         String        @unique
+  name         String
+  basePrice    Int           @default(0) @map("base_price")
+  isActive     Boolean       @default(true) @map("is_active")
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+  pricingRules PricingRule[]
+
+  @@index([isActive])
+  @@map("service_catalog")
+}
+
+model PricingRule {
+  id          String         @id @default(cuid())
+  serviceCode String         @map("service_code")
+  type        String
+  value       Int
+  condition   String?
+  isActive    Boolean        @default(true) @map("is_active")
+  createdAt   DateTime       @default(now()) @map("created_at")
+  updatedAt   DateTime       @updatedAt @map("updated_at")
+  service     ServiceCatalog @relation(fields: [serviceCode], references: [code])
+
+  @@index([serviceCode, isActive])
+  @@map("pricing_rules")
+}
+
+// =====================================================
+// PHASE 2: EXTENDED MODELS
+// =====================================================
+
+model UserProfile {
+  id                       Int       @id @default(autoincrement())
+  clientId                 Int       @unique @map("client_id")
+  avatarUrl                String?   @map("avatar_url")
+  dateOfBirth              DateTime? @map("date_of_birth") @db.Date
+  gender                   String?   @db.VarChar(20)
+  panNumber                String?   @map("pan_number") @db.VarChar(20)
+  aadharNumber             String?   @map("aadhar_number") @db.VarChar(20)
+  companyName              String?   @map("company_name") @db.VarChar(255)
+  companyType              String?   @map("company_type") @db.VarChar(50)
+  gstNumber                String?   @map("gst_number") @db.VarChar(20)
+  cinNumber                String?   @map("cin_number") @db.VarChar(30)
+  industry                 String?   @db.VarChar(100)
+  annualTurnover           String?   @map("annual_turnover") @db.VarChar(50)
+  employeeCount            String?   @map("employee_count") @db.VarChar(50)
+  addressLine1             String?   @map("address_line1") @db.VarChar(255)
+  addressLine2             String?   @map("address_line2") @db.VarChar(255)
+  city                     String?   @db.VarChar(100)
+  state                    String?   @db.VarChar(100)
+  pincode                  String?   @db.VarChar(10)
+  country                  String?   @default("India") @db.VarChar(100)
+  preferredLanguage        String?   @default("en") @map("preferred_language") @db.VarChar(20)
+  communicationPreferences Json?     @default("{\"email\": true, \"sms\": true, \"whatsapp\": true, \"push\": true}") @map("communication_preferences")
+  timezone                 String?   @default("Asia/Kolkata") @db.VarChar(50)
+  kycStatus                String?   @default("pending") @map("kyc_status") @db.VarChar(20)
+  kycSubmittedAt           DateTime? @map("kyc_submitted_at")
+  kycVerifiedAt            DateTime? @map("kyc_verified_at")
+  kycDocuments             Json?     @default("[]") @map("kyc_documents")
+  onboardingCompleted      Boolean   @default(false) @map("onboarding_completed")
+  onboardingStep           Int       @default(0) @map("onboarding_step")
+  lastLoginAt              DateTime? @map("last_login_at")
+  loginCount               Int       @default(0) @map("login_count")
+  createdAt                DateTime  @default(now()) @map("created_at")
+  updatedAt                DateTime  @updatedAt @map("updated_at")
+  client                   Client    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@index([clientId])
+  @@index([kycStatus])
+  @@index([city])
+  @@map("user_profiles")
+}
+
+model Expert {
+  id                  Int                      @id @default(autoincrement())
+  expertCode          String                   @unique @map("expert_code") @db.VarChar(20)
+  name                String                   @db.VarChar(255)
+  email               String                   @unique @db.VarChar(255)
+  phone               String?                  @db.VarChar(20)
+  avatarUrl           String?                  @map("avatar_url")
+  designation         String?                  @db.VarChar(100)
+  expertType          String                   @map("expert_type") @db.VarChar(50)
+  specializations     Json?                    @default("[]")
+  qualifications      Json?                    @default("[]")
+  experienceYears     Int                      @default(0) @map("experience_years")
+  bio                 String?
+  rating              Decimal                  @default(0.00) @db.Decimal(3, 2)
+  totalReviews        Int                      @default(0) @map("total_reviews")
+  totalCasesHandled   Int                      @default(0) @map("total_cases_handled")
+  successRate         Decimal                  @default(0.00) @map("success_rate") @db.Decimal(5, 2)
+  isActive            Boolean                  @default(true) @map("is_active")
+  isAvailable         Boolean                  @default(true) @map("is_available")
+  maxConcurrentCases  Int                      @default(10) @map("max_concurrent_cases")
+  currentCaseCount    Int                      @default(0) @map("current_case_count")
+  hourlyRate          Int                      @default(0) @map("hourly_rate")
+  consultationFee     Int                      @default(0) @map("consultation_fee")
+  languages           Json?                    @default("[\"en\", \"hi\"]")
+  workingHours        Json?                    @map("working_hours")
+  createdAt           DateTime                 @default(now()) @map("created_at")
+  updatedAt           DateTime                 @updatedAt @map("updated_at")
+  availabilitySlots   ExpertAvailabilitySlot[]
+  reviews             ExpertReview[]
+  orders              Order[]
+  orderStages         OrderStage[]
+  notifications       Notification[]
+
+  @@index([expertType])
+  @@index([isActive])
+  @@index([isAvailable])
+  @@index([rating(sort: Desc)])
+  @@map("experts")
+}
+
+model ExpertAvailabilitySlot {
+  id               Int       @id @default(autoincrement())
+  expertId         Int       @map("expert_id")
+  slotDate         DateTime  @map("slot_date") @db.Date
+  startTime        DateTime  @map("start_time") @db.Time()
+  endTime          DateTime  @map("end_time") @db.Time()
+  slotType         String    @default("consultation") @map("slot_type") @db.VarChar(20)
+  isBooked         Boolean   @default(false) @map("is_booked")
+  bookedByClientId Int?      @map("booked_by_client_id")
+  bookingReference String?   @map("booking_reference") @db.VarChar(50)
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+  expert           Expert    @relation(fields: [expertId], references: [id], onDelete: Cascade)
+  bookedByClient   Client?   @relation(fields: [bookedByClientId], references: [id])
+
+  @@unique([expertId, slotDate, startTime])
+  @@index([expertId, slotDate])
+  @@index([isBooked])
+  @@map("expert_availability_slots")
+}
+
+model ExpertReview {
+  id          Int      @id @default(autoincrement())
+  expertId    Int      @map("expert_id")
+  clientId    Int      @map("client_id")
+  orderId     Int?     @map("order_id")
+  rating      Int
+  reviewText  String?  @map("review_text")
+  isVerified  Boolean  @default(false) @map("is_verified")
+  isPublished Boolean  @default(true) @map("is_published")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  expert      Expert   @relation(fields: [expertId], references: [id], onDelete: Cascade)
+  client      Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@unique([expertId, clientId, orderId])
+  @@index([expertId])
+  @@index([isPublished])
+  @@map("expert_reviews")
+}
+
+model Order {
+  id                     Int             @id @default(autoincrement())
+  orderNumber            String          @unique @map("order_number") @db.VarChar(30)
+  clientId               Int             @map("client_id")
+  paymentId              Int?            @map("payment_id")
+  serviceCode            String          @map("service_code") @db.VarChar(50)
+  serviceName            String          @map("service_name") @db.VarChar(255)
+  packageType            String          @default("standard") @map("package_type") @db.VarChar(50)
+  basePrice              Int             @default(0) @map("base_price")
+  discountAmount         Int             @default(0) @map("discount_amount")
+  taxAmount              Int             @default(0) @map("tax_amount")
+  totalAmount            Int             @default(0) @map("total_amount")
+  currency               String          @default("INR") @db.VarChar(10)
+  assignedExpertId       Int?            @map("assigned_expert_id")
+  assignedAt             DateTime?       @map("assigned_at")
+  status                 String          @default("pending") @db.VarChar(30)
+  currentStage           String?         @map("current_stage") @db.VarChar(50)
+  progressPercentage     Int             @default(0) @map("progress_percentage")
+  expectedCompletionDate DateTime?       @map("expected_completion_date") @db.Date
+  actualCompletionDate   DateTime?       @map("actual_completion_date") @db.Date
+  slaStatus              String          @default("on_track") @map("sla_status") @db.VarChar(20)
+  metadata               Json?           @default("{}")
+  notes                  String?
+  internalNotes          String?         @map("internal_notes")
+  confirmedAt            DateTime?       @map("confirmed_at")
+  startedAt              DateTime?       @map("started_at")
+  completedAt            DateTime?       @map("completed_at")
+  cancelledAt            DateTime?       @map("cancelled_at")
+  cancellationReason     String?         @map("cancellation_reason")
+  createdAt              DateTime        @default(now()) @map("created_at")
+  updatedAt              DateTime        @updatedAt @map("updated_at")
+  client                 Client          @relation(fields: [clientId], references: [id])
+  payment                Payment?        @relation(fields: [paymentId], references: [id])
+  assignedExpert         Expert?         @relation(fields: [assignedExpertId], references: [id])
+  stages                 OrderStage[]
+  activities             OrderActivity[]
+  documents              OrderDocument[]
+  notifications          Notification[]
+
+  @@index([clientId])
+  @@index([status])
+  @@index([serviceCode])
+  @@index([assignedExpertId])
+  @@index([createdAt(sort: Desc)])
+  @@map("orders")
+}
+
+model OrderStage {
+  id                    Int             @id @default(autoincrement())
+  orderId               Int             @map("order_id")
+  stageCode             String          @map("stage_code") @db.VarChar(50)
+  stageName             String          @map("stage_name") @db.VarChar(255)
+  stageOrder            Int             @map("stage_order")
+  status                String          @default("pending") @db.VarChar(20)
+  assignedToExpertId    Int?            @map("assigned_to_expert_id")
+  startedAt             DateTime?       @map("started_at")
+  completedAt           DateTime?       @map("completed_at")
+  expectedCompletionAt  DateTime?       @map("expected_completion_at")
+  checklist             Json?           @default("[]")
+  notes                 String?
+  clientVisibleNotes    String?         @map("client_visible_notes")
+  createdAt             DateTime        @default(now()) @map("created_at")
+  updatedAt             DateTime        @updatedAt @map("updated_at")
+  order                 Order           @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  assignedToExpert      Expert?         @relation(fields: [assignedToExpertId], references: [id])
+  documents             OrderDocument[]
+
+  @@index([orderId])
+  @@index([status])
+  @@map("order_stages")
+}
+
+model OrderActivity {
+  id                  Int      @id @default(autoincrement())
+  orderId             Int      @map("order_id")
+  activityType        String   @map("activity_type") @db.VarChar(50)
+  activityDescription String   @map("activity_description")
+  performedByType     String?  @map("performed_by_type") @db.VarChar(20)
+  performedById       Int?     @map("performed_by_id")
+  performedByName     String?  @map("performed_by_name") @db.VarChar(255)
+  metadata            Json?    @default("{}")
+  isClientVisible     Boolean  @default(true) @map("is_client_visible")
+  createdAt           DateTime @default(now()) @map("created_at")
+  order               Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+  @@index([activityType])
+  @@index([createdAt(sort: Desc)])
+  @@map("order_activities")
+}
+
+model OrderDocument {
+  id             Int         @id @default(autoincrement())
+  orderId        Int         @map("order_id")
+  stageId        Int?        @map("stage_id")
+  documentType   String      @map("document_type") @db.VarChar(50)
+  documentName   String      @map("document_name") @db.VarChar(255)
+  filePath       String      @map("file_path")
+  fileUrl        String?     @map("file_url")
+  mimeType       String?     @map("mime_type") @db.VarChar(100)
+  fileSize       Int?        @map("file_size")
+  uploadedByType String?     @map("uploaded_by_type") @db.VarChar(20)
+  uploadedById   Int?        @map("uploaded_by_id")
+  reviewStatus   String      @default("pending") @map("review_status") @db.VarChar(20)
+  reviewedById   Int?        @map("reviewed_by_id")
+  reviewedAt     DateTime?   @map("reviewed_at")
+  reviewNotes    String?     @map("review_notes")
+  isClientVisible Boolean    @default(true) @map("is_client_visible")
+  createdAt      DateTime    @default(now()) @map("created_at")
+  updatedAt      DateTime    @updatedAt @map("updated_at")
+  order          Order       @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  stage          OrderStage? @relation(fields: [stageId], references: [id])
+
+  @@index([orderId])
+  @@index([stageId])
+  @@index([documentType])
+  @@map("order_documents")
+}
+
+model NotificationTemplate {
+  id                   Int            @id @default(autoincrement())
+  templateCode         String         @unique @map("template_code") @db.VarChar(50)
+  templateName         String         @map("template_name") @db.VarChar(255)
+  eventType            String         @map("event_type") @db.VarChar(50)
+  emailEnabled         Boolean        @default(true) @map("email_enabled")
+  emailSubject         String?        @map("email_subject") @db.VarChar(255)
+  emailBody            String?        @map("email_body")
+  smsEnabled           Boolean        @default(true) @map("sms_enabled")
+  smsBody              String?        @map("sms_body") @db.VarChar(500)
+  whatsappEnabled      Boolean        @default(true) @map("whatsapp_enabled")
+  whatsappTemplateName String?        @map("whatsapp_template_name") @db.VarChar(100)
+  whatsappBody         String?        @map("whatsapp_body")
+  pushEnabled          Boolean        @default(false) @map("push_enabled")
+  pushTitle            String?        @map("push_title") @db.VarChar(100)
+  pushBody             String?        @map("push_body") @db.VarChar(255)
+  availableVariables   Json?          @default("[]") @map("available_variables")
+  isActive             Boolean        @default(true) @map("is_active")
+  createdAt            DateTime       @default(now()) @map("created_at")
+  updatedAt            DateTime       @updatedAt @map("updated_at")
+  notifications        Notification[]
+
+  @@index([eventType])
+  @@index([isActive])
+  @@map("notification_templates")
+}
+
+model Notification {
+  id                Int                   @id @default(autoincrement())
+  clientId          Int?                  @map("client_id")
+  expertId          Int?                  @map("expert_id")
+  recipientType     String                @map("recipient_type") @db.VarChar(20)
+  recipientEmail    String?               @map("recipient_email") @db.VarChar(255)
+  recipientPhone    String?               @map("recipient_phone") @db.VarChar(20)
+  templateId        Int?                  @map("template_id")
+  eventType         String                @map("event_type") @db.VarChar(50)
+  channel           String                @db.VarChar(20)
+  title             String?               @db.VarChar(255)
+  body              String
+  orderId           Int?                  @map("order_id")
+  referenceType     String?               @map("reference_type") @db.VarChar(50)
+  referenceId       Int?                  @map("reference_id")
+  status            String                @default("pending") @db.VarChar(20)
+  sentAt            DateTime?             @map("sent_at")
+  deliveredAt       DateTime?             @map("delivered_at")
+  readAt            DateTime?             @map("read_at")
+  errorMessage      String?               @map("error_message")
+  retryCount        Int                   @default(0) @map("retry_count")
+  nextRetryAt       DateTime?             @map("next_retry_at")
+  providerMessageId String?               @map("provider_message_id") @db.VarChar(255)
+  providerResponse  Json?                 @map("provider_response")
+  createdAt         DateTime              @default(now()) @map("created_at")
+  updatedAt         DateTime              @updatedAt @map("updated_at")
+  client            Client?               @relation(fields: [clientId], references: [id])
+  expert            Expert?               @relation(fields: [expertId], references: [id])
+  template          NotificationTemplate? @relation(fields: [templateId], references: [id])
+  order             Order?                @relation(fields: [orderId], references: [id])
+
+  @@index([clientId])
+  @@index([status])
+  @@index([channel])
+  @@index([createdAt(sort: Desc)])
+  @@map("notifications")
+}
+
+model NotificationPreference {
+  id              Int      @id @default(autoincrement())
+  clientId        Int      @map("client_id")
+  eventType       String   @map("event_type") @db.VarChar(50)
+  emailEnabled    Boolean  @default(true) @map("email_enabled")
+  smsEnabled      Boolean  @default(true) @map("sms_enabled")
+  whatsappEnabled Boolean  @default(true) @map("whatsapp_enabled")
+  pushEnabled     Boolean  @default(true) @map("push_enabled")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+  client          Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@unique([clientId, eventType])
+  @@index([clientId])
+  @@map("notification_preferences")
+}
+
+model AnalyticsDailyMetrics {
+  id              Int      @id @default(autoincrement())
+  metricDate      DateTime @unique @map("metric_date") @db.Date
+  leadsTotal      Int      @default(0) @map("leads_total")
+  leadsConverted  Int      @default(0) @map("leads_converted")
+  leadsBySource   Json?    @default("{}") @map("leads_by_source")
+  leadsByService  Json?    @default("{}") @map("leads_by_service")
+  ordersTotal     Int      @default(0) @map("orders_total")
+  ordersCompleted Int      @default(0) @map("orders_completed")
+  ordersCancelled Int      @default(0) @map("orders_cancelled")
+  ordersByService Json?    @default("{}") @map("orders_by_service")
+  revenueTotal    Int      @default(0) @map("revenue_total")
+  revenueByService Json?   @default("{}") @map("revenue_by_service")
+  avgOrderValue   Int      @default(0) @map("avg_order_value")
+  newClients      Int      @default(0) @map("new_clients")
+  activeClients   Int      @default(0) @map("active_clients")
+  expertUtilization Json?  @default("{}") @map("expert_utilization")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  @@index([metricDate(sort: Desc)])
+  @@map("analytics_daily_metrics")
+}

@@ -1,0 +1,17 @@
+http://localhost:4000 : The term 'http://localhost:4000' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:31
++ $env:NEXT_PUBLIC_API_BASE_URL=http://localhost:4000; npm.cmd run dev  ...
++                               ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (http://localhost:4000:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+thread 'tokio-runtime-worker' (4748) panicked at C:\Users\Administrator\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\qfilter-0.3.0-alpha.2\src\lib.rs:709:9:
+CPU doesn't support the bmi2 instructions
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'tokio-runtime-worker' (4672) panicked at C:\Users\Administrator\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\qfilter-0.3.0-alpha.2\src\lib.rs:709:9:
+CPU doesn't support the bmi2 instructions
+^C^C

@@ -1,0 +1,54 @@
+=3000 : The term '=3000' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ ='3000'; ='http://localhost:3000'; ='http://localhost:3000'; ='admin' ...
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (=3000:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+=http://localhost:3000 : The term '=http://localhost:3000' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:10
++ ='3000'; ='http://localhost:3000'; ='http://localhost:3000'; ='admin' ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (=http://localhost:3000:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+=http://localhost:3000 : The term '=http://localhost:3000' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:36
++ ='3000'; ='http://localhost:3000'; ='http://localhost:3000'; ='admin' ...
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (=http://localhost:3000:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+=admin : The term '=admin' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:62
++ ...  ='http://localhost:3000'; ='http://localhost:3000'; ='admin'; ='admi ...
++                                                          ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (=admin:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+=admin123 : The term '=admin123' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:72
++ ... alhost:3000'; ='http://localhost:3000'; ='admin'; ='admin123'; ='your ...
++                                                       ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (=admin123:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+=your-local-secret : The term '=your-local-secret' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:85
++ ... /localhost:3000'; ='admin'; ='admin123'; ='your-local-secret'; Set-Lo ...
++                                              ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (=your-local-secret:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+{"timestamp":"2026-04-07T17:51:15.960Z","level":"error","event":"request_failed","method":"POST","path":"/api/admin/login","statusCode":401,"code":"INVALID_CREDENTIALS","message":"Invalid username or password.","stack":"Error: Invalid username or password.\n    at Object.login (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\backend\\services\\adminService.js:14:9)\n    at C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\backend\\controllers\\adminController.js:5:31\n    at wrapped (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\backend\\utils\\asyncHandler.js:3:21)\n    at Layer.handle [as handle_request] (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:284:15\n    at router.process_params (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:280:10)"}
+{"timestamp":"2026-04-07T17:51:56.046Z","level":"error","event":"request_failed","method":"POST","path":"/api/admin/vault/clients//documents","statusCode":404,"code":"ROUTE_NOT_FOUND","message":"Route not found: /api/admin/vault/clients//documents","stack":"Error: Route not found: /api/admin/vault/clients//documents\n    at C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\backend\\app.js:204:19\n    at Layer.handle [as handle_request] (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:646:15\n    at next (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:265:14)\n    at requireAdmin (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\backend\\middleware\\auth.js:3:12)\n    at Layer.handle [as handle_request] (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\layer.js:95:5)"}
+{"timestamp":"2026-04-07T17:51:56.193Z","level":"error","event":"request_failed","method":"POST","path":"/api/admin/vault/documents//review","statusCode":404,"code":"ROUTE_NOT_FOUND","message":"Route not found: /api/admin/vault/documents//review","stack":"Error: Route not found: /api/admin/vault/documents//review\n    at C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\backend\\app.js:204:19\n    at Layer.handle [as handle_request] (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:646:15\n    at next (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\index.js:265:14)\n    at requireAdmin (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\backend\\middleware\\auth.js:3:12)\n    at Layer.handle [as handle_request] (C:\\Users\\shivansh\\Documents\\GitHub\\bizsamadhan india\\node_modules\\express\\lib\\router\\layer.js:95:5)"}

@@ -1,0 +1,24 @@
+{"timestamp":"2026-04-07T17:50:36.913Z","level":"info","event":"session_store_selected","store":"memory"}
+{"timestamp":"2026-04-07T17:50:36.942Z","level":"warn","event":"redis_disabled","reason":"REDIS_ENABLED or REDIS_URL not configured"}
+{"timestamp":"2026-04-07T17:50:36.944Z","level":"info","event":"background_jobs_initialized","mode":"local_timer","intervalMs":60000}
+{"timestamp":"2026-04-07T17:50:36.949Z","level":"info","event":"server_started","port":"3000","appUrl":"http://localhost:3000","siteUrl":"https://legalaxis.in","dbClient":"sqlite","redisEnabled":false,"queueEnabled":false,"storageDriver":"local","secureCookies":false,"forceHttps":false,"envFile":"backend/.env"}
+{"timestamp":"2026-04-07T17:51:15.968Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/login","statusCode":401,"durationMs":13,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:16.243Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/vault/documents?limit=8&offset=0","statusCode":401,"durationMs":6,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:16.283Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/clients","statusCode":401,"durationMs":2,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:30.734Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/login","statusCode":200,"durationMs":3,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:55.705Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/login","statusCode":200,"durationMs":2,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:55.819Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/vault/documents?limit=8&offset=0","statusCode":200,"durationMs":7,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:55.920Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/clients","statusCode":200,"durationMs":6,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:56.049Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/vault/clients//documents","statusCode":404,"durationMs":4,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:56.197Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/vault/documents//review","statusCode":404,"durationMs":5,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:56.226Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/vault/documents?limit=8&offset=0&search=codex-review-smoke-test.pdf","statusCode":200,"durationMs":9,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:51:56.272Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/vault/documents/","statusCode":200,"durationMs":6,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:52:15.840Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/login","statusCode":200,"durationMs":2,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:52:15.884Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/vault/documents?limit=5&offset=0","statusCode":200,"durationMs":4,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:52:16.099Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/login","statusCode":200,"durationMs":1,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:52:16.889Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/clients","statusCode":200,"durationMs":5,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:53:00.483Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/login","statusCode":200,"durationMs":1,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:53:00.631Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/vault/clients/1/documents","statusCode":201,"durationMs":11,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:53:00.684Z","level":"info","event":"http_request","method":"POST","path":"/api/admin/vault/documents/1/review","statusCode":200,"durationMs":11,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:53:00.710Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/vault/documents/1","statusCode":200,"durationMs":4,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-07T17:53:00.737Z","level":"info","event":"http_request","method":"GET","path":"/api/admin/vault/documents?limit=5&offset=0&search=codex-review-smoke-test.pdf","statusCode":200,"durationMs":7,"ip":"::ffff:127.0.0.1"}

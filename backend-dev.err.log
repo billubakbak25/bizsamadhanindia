@@ -1,0 +1,18 @@
+http://localhost:4000 : The term 'http://localhost:4000' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:30
++ $env:PORT=4000; $env:APP_URL=http://localhost:4000; $env:SITE_URL=htt ...
++                              ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (http://localhost:4000:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+http://localhost:3001 : The term 'http://localhost:3001' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:67
++ ... RL=http://localhost:4000; $env:SITE_URL=http://localhost:3001; node b ...
++                                             ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (http://localhost:3001:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 

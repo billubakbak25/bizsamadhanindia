@@ -1,0 +1,21 @@
+
+> bizsamadhan-india-frontend@2.0.0 dev
+> next dev --port 3001
+
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.1.6:3001
+✓ Ready in 1995ms
+
+○ Compiling / ...
+ GET / 200 in 9.5s (next.js: 8.1s, application-code: 1413ms)
+ GET /favicon.ico 404 in 4.0s (next.js: 3.7s, generate-params: 1880ms, application-code: 343ms)
+ GET / 200 in 1160ms (next.js: 40ms, application-code: 1121ms)
+ GET / 200 in 913ms (next.js: 17ms, application-code: 896ms)
+ GET /consultation?service=LLP%20Registration 200 in 3.1s (next.js: 2.7s, application-code: 412ms)
+ GET / 200 in 528ms (next.js: 11ms, application-code: 518ms)
+ GET /favicon.ico 404 in 3.1s (next.js: 29ms, generate-params: 16ms, application-code: 3.1s)
+ GET / 200 in 2.6s (next.js: 38ms, application-code: 2.6s)
+ GET /favicon.ico 404 in 2.3s (next.js: 63ms, generate-params: 113µs, application-code: 2.2s)
+✓ Compiled in 1097ms
+✓ Compiled in 742ms

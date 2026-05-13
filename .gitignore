@@ -1,0 +1,31 @@
+﻿# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# Backend env
+backend/.env.production
+backend/.env.scaled.local
+
+# Database
+backend/data/*.sqlite
+
+# Logs
+backend/logs/
+storage/logs/
+
+# Process manager
+.pm2/
+
+# Build files
+.next/
+dist/
+build/
+
+# Vercel
+.vercel/

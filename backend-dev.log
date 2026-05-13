@@ -1,0 +1,5 @@
+{"timestamp":"2026-04-06T12:53:46.117Z","level":"info","event":"session_store_selected","store":"memory"}
+{"timestamp":"2026-04-06T12:53:46.189Z","level":"warn","event":"redis_disabled","reason":"REDIS_ENABLED or REDIS_URL not configured"}
+{"timestamp":"2026-04-06T12:53:46.192Z","level":"info","event":"background_jobs_initialized","mode":"local_timer","intervalMs":60000}
+{"timestamp":"2026-04-06T12:53:46.203Z","level":"info","event":"server_started","port":"4000","appUrl":"http://localhost:4000","siteUrl":"https://legalaxis.in","dbClient":"sqlite","redisEnabled":false,"queueEnabled":false,"storageDriver":"local","secureCookies":false,"forceHttps":false,"envFile":"backend/.env"}
+{"timestamp":"2026-04-06T12:53:58.515Z","level":"info","event":"http_request","method":"POST","path":"/api/chatbot/message","statusCode":200,"durationMs":73,"ip":"::1"}
