@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   },
   description: COMPANY.description,
   applicationName: COMPANY.name,
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
   openGraph: {
     title: COMPANY.name,
     description: COMPANY.description,
