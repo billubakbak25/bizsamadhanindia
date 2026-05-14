@@ -1,8 +1,4 @@
-
-> bizsamadhan-india-frontend@2.0.0 start
-> next start -p 3000
-
 ▲ Next.js 16.2.1
 - Local:         http://localhost:3000
-- Network:       http://192.168.1.9:3000
-✓ Ready in 1373ms
+- Network:       http://0.0.0.0:3000
+✓ Ready in 0ms
