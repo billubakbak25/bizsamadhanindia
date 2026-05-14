@@ -28,6 +28,16 @@ export function Footer() {
             <li>{COMPANY.city}</li>
             <li>{COMPANY.email}</li>
             <li>
+              <Link href="/about-us" className="transition hover:text-white">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/service-description" className="transition hover:text-white">
+                Service Description
+              </Link>
+            </li>
+            <li>
               <Link href="/privacy-policy" className="transition hover:text-white">
                 Privacy Policy
               </Link>
@@ -57,6 +67,16 @@ export function Footer() {
                 Service Delivery Policy
               </Link>
             </li>
+            <li>
+              <Link href="/shipping-policy" className="transition hover:text-white">
+                Shipping Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/exchange-return-policy" className="transition hover:text-white">
+                Exchange and Return Policy
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -66,8 +86,16 @@ export function Footer() {
             <p className="font-semibold text-white">{BUSINESS_CONTACT.businessName}</p>
             <p className="mt-2">Official Support: {BUSINESS_CONTACT.supportPerson}</p>
             <p className="mt-1">{BUSINESS_CONTACT.supportEmail}</p>
-            <p className="mt-1">{BUSINESS_CONTACT.primaryPhoneDisplay[0]}</p>
-            <p className="mt-1">{BUSINESS_CONTACT.primaryPhoneDisplay[1]}</p>
+            <p className="mt-1">
+              <a href={`tel:+91${BUSINESS_CONTACT.primaryPhones[0]}`} className="transition hover:text-white">
+                {BUSINESS_CONTACT.primaryPhoneDisplay[0]}
+              </a>
+            </p>
+            <p className="mt-1">
+              <a href={`tel:+91${BUSINESS_CONTACT.primaryPhones[1]}`} className="transition hover:text-white">
+                {BUSINESS_CONTACT.primaryPhoneDisplay[1]}
+              </a>
+            </p>
           </div>
           <div>
             <p className="font-semibold text-white">Office Address:</p>

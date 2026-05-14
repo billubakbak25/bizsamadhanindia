@@ -155,8 +155,10 @@ const schema = {
       telephone: COMPANY.phone,
       address: {
         "@type": "PostalAddress",
+        streetAddress: "LIG 25 SF Colony, Barra 3",
         addressLocality: "Kanpur",
         addressRegion: "Uttar Pradesh",
+        postalCode: "208027",
         addressCountry: "IN",
       },
     },

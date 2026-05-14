@@ -4,15 +4,15 @@ const path = require('path');
 const pages = [
   {
     slug: 'llp-registration',
-    title: 'LLP Registration Service | LegalAxis',
+    title: 'LLP Registration Service | Wadhwani Associates',
     description: 'LLP registration support for founders who want flexible ownership, filing guidance, and compliance clarity.',
-    canonical: 'https://legalaxis.in/services/llp-registration',
+    canonical: 'https://www.bizsamadhanindia.com/llp-registration',
     serviceName: 'LLP Registration Service',
     serviceType: 'LLP Registration',
     offerPrice: '6999',
     priceDisplay: 'Rs. 6,999',
     heroTitle: 'Register your LLP with a cleaner filing flow.',
-    heroText: 'LegalAxis helps founders choose the right structure, review documents, and complete LLP registration with clearer checkpoints.',
+    heroText: 'Wadhwani Associates helps founders choose the right structure, review documents, and complete LLP registration with clearer checkpoints.',
     quickAnswerTitle: 'What is LLP registration?',
     quickAnswerText: 'LLP registration creates a Limited Liability Partnership so partners can operate with a defined ownership structure, limited liability, and a lighter compliance model than a private company.',
     trust: [
@@ -35,7 +35,7 @@ const pages = [
     ],
     documentsTitle: 'Documents usually required for LLP registration.',
     documents: ['PAN and Aadhaar of partners', 'Partner address proof', 'Business address proof', 'Photographs and contact details', 'Proposed partner and capital details'],
-    whyTitle: 'Why LegalAxis for LLP registration.',
+    whyTitle: 'Why Wadhwani Associates for LLP registration.',
     why: [
       { title: 'Clear document review', text: 'We reduce avoidable filing issues by checking the pack before submission.' },
       { title: 'Founder-friendly guidance', text: 'You get practical support on structure and next steps.' },
@@ -59,15 +59,15 @@ const pages = [
   },
   {
     slug: 'opc-registration',
-    title: 'OPC Registration Service | LegalAxis',
+    title: 'OPC Registration Service | Wadhwani Associates',
     description: 'OPC registration support for solo founders who want limited liability, structured incorporation filing, and clear compliance guidance.',
-    canonical: 'https://legalaxis.in/services/opc-registration',
+    canonical: 'https://www.bizsamadhanindia.com/opc-registration',
     serviceName: 'OPC Registration Service',
     serviceType: 'OPC Registration',
     offerPrice: '6999',
     priceDisplay: 'Rs. 6,999',
     heroTitle: 'Set up your One Person Company with a clearer filing path.',
-    heroText: 'LegalAxis helps solo founders register an OPC with nominee details, filing support, and a practical checklist from start to approval.',
+    heroText: 'Wadhwani Associates helps solo founders register an OPC with nominee details, filing support, and a practical checklist from start to approval.',
     quickAnswerTitle: 'What is OPC registration?',
     quickAnswerText: 'OPC registration creates a One Person Company structure for a single founder who wants incorporation, limited liability, and a more formal business identity.',
     trust: [
@@ -90,7 +90,7 @@ const pages = [
     ],
     documentsTitle: 'Documents usually required for OPC registration.',
     documents: ['Founder PAN and Aadhaar', 'Nominee PAN and Aadhaar', 'Address proof for founder and nominee', 'Business address proof', 'Photographs and contact details'],
-    whyTitle: 'Why LegalAxis for OPC registration.',
+    whyTitle: 'Why Wadhwani Associates for OPC registration.',
     why: [
       { title: 'Solo founder guidance', text: 'We keep the process simple for first-time founders.' },
       { title: 'Cleaner filing checkpoints', text: 'Documents and nominee details are reviewed before filing.' },
@@ -114,15 +114,15 @@ const pages = [
   },
   {
     slug: 'sole-proprietorship-registration',
-    title: 'Sole Proprietorship Registration Service | LegalAxis',
+    title: 'Sole Proprietorship Registration Service | Wadhwani Associates',
     description: 'Sole proprietorship registration support for freelancers and small business owners who want a simple setup with practical guidance.',
-    canonical: 'https://legalaxis.in/services/sole-proprietorship-registration',
+    canonical: 'https://www.bizsamadhanindia.com/sole-proprietorship-registration',
     serviceName: 'Sole Proprietorship Registration Service',
     serviceType: 'Sole Proprietorship Registration',
     offerPrice: '2999',
     priceDisplay: 'Rs. 2,999',
     heroTitle: 'Start your business with a simple sole proprietorship setup.',
-    heroText: 'LegalAxis helps freelancers, consultants, and small business owners set up a sole proprietorship with the right registrations and less paperwork friction.',
+    heroText: 'Wadhwani Associates helps freelancers, consultants, and small business owners set up a sole proprietorship with the right registrations and less paperwork friction.',
     quickAnswerTitle: 'What is sole proprietorship registration?',
     quickAnswerText: 'Sole proprietorship registration helps a single owner formalize the business using the registrations and documents needed to operate, bill, and open accounts with more clarity.',
     trust: [
@@ -145,7 +145,7 @@ const pages = [
     ],
     documentsTitle: 'Documents usually required for sole proprietorship registration.',
     documents: ['Owner PAN and Aadhaar', 'Address proof', 'Business proof or trade details', 'Bank account details', 'Contact details and photographs'],
-    whyTitle: 'Why LegalAxis for sole proprietorship setup.',
+    whyTitle: 'Why Wadhwani Associates for sole proprietorship setup.',
     why: [
       { title: 'Fast clarity', text: 'We help founders understand the right path without overcomplicating a simple structure.' },
       { title: 'Client-ready setup', text: 'You get practical support for the documents and registrations that matter in real-world use.' },
@@ -169,15 +169,15 @@ const pages = [
   },
   {
     slug: 'partnership-firm-registration',
-    title: 'Partnership Firm Registration Service | LegalAxis',
+    title: 'Partnership Firm Registration Service | Wadhwani Associates',
     description: 'Partnership firm registration support for businesses that need a clear deed, partner documentation, and practical filing guidance.',
-    canonical: 'https://legalaxis.in/services/partnership-firm-registration',
+    canonical: 'https://www.bizsamadhanindia.com/partnership-firm-registration',
     serviceName: 'Partnership Firm Registration Service',
     serviceType: 'Partnership Firm Registration',
     offerPrice: '3999',
     priceDisplay: 'Rs. 3,999',
     heroTitle: 'Register your partnership firm with clearer ownership and filing support.',
-    heroText: 'LegalAxis helps partners formalize their relationship with better document preparation, deed guidance, and a smoother filing path.',
+    heroText: 'Wadhwani Associates helps partners formalize their relationship with better document preparation, deed guidance, and a smoother filing path.',
     quickAnswerTitle: 'What is partnership firm registration?',
     quickAnswerText: 'Partnership firm registration creates a formal structure for two or more people who want to run a business together with a written agreement and better operational clarity.',
     trust: [
@@ -200,7 +200,7 @@ const pages = [
     ],
     documentsTitle: 'Documents usually required for partnership firm registration.',
     documents: ['PAN and Aadhaar of partners', 'Partnership deed details', 'Business address proof', 'Partner contact details and photographs', 'Firm bank or business details'],
-    whyTitle: 'Why LegalAxis for partnership firm registration.',
+    whyTitle: 'Why Wadhwani Associates for partnership firm registration.',
     why: [
       { title: 'Deed-first support', text: 'We focus on the partnership deed because that is where filing mistakes often start.' },
       { title: 'Business clarity', text: 'You get a structure that is easier to explain to banks, clients, and staff.' },
@@ -224,15 +224,15 @@ const pages = [
   },
   {
     slug: 'gst-return-filing',
-    title: 'GST Return Filing Service | LegalAxis',
+    title: 'GST Return Filing Service | Wadhwani Associates',
     description: 'GST return filing support for businesses that need timely GSTR filing, reconciliation guidance, and expert review before submission.',
-    canonical: 'https://legalaxis.in/services/gst-return-filing',
+    canonical: 'https://www.bizsamadhanindia.com/gst-return-filing',
     serviceName: 'GST Return Filing Service',
     serviceType: 'GST Return Filing',
     offerPrice: '1999',
     priceDisplay: 'Rs. 1,999',
     heroTitle: 'Keep GST returns on track with filing support and reconciliation checks.',
-    heroText: 'LegalAxis helps businesses handle GST return filing with document review, reconciliation support, and a process designed around deadlines and accuracy.',
+    heroText: 'Wadhwani Associates helps businesses handle GST return filing with document review, reconciliation support, and a process designed around deadlines and accuracy.',
     quickAnswerTitle: 'What is GST return filing?',
     quickAnswerText: 'GST return filing reports sales, purchases, tax collected, and input tax credit to the GST system in the required format and timeline.',
     trust: [
@@ -255,7 +255,7 @@ const pages = [
     ],
     documentsTitle: 'Documents usually required for GST return filing.',
     documents: ['Sales invoices and purchase invoices', 'GSTIN and return period details', 'Bank statements or payment records', 'Input tax credit records', 'Reconciliation data and tax summary'],
-    whyTitle: 'Why LegalAxis for GST return filing.',
+    whyTitle: 'Why Wadhwani Associates for GST return filing.',
     why: [
       { title: 'Deadline-driven workflow', text: 'The work is organized around the return cycle so filings stay on track.' },
       { title: 'Clear review steps', text: 'We use a pre-filing review mindset instead of pushing documents straight to submission.' },
@@ -277,3 +277,6 @@ const pages = [
     ctaButton: 'Start GST Return Filing',
     trackPrefix: 'gst_return',
   },
+];
+
+module.exports = { pages };

@@ -1,10 +1,14 @@
 type SchemaBaseBusiness = {
   name: string;
+  alternateName?: string;
   url: string;
+  email?: string;
   telephone?: string;
+  secondaryTelephone?: string;
   priceRange?: string;
   logo?: string;
   image?: string;
+  supportPerson?: string;
   sameAs?: string[];
   address?: {
     streetAddress?: string;
@@ -65,6 +69,8 @@ function buildLocalBusinessSchema(props: SeoSchemaProps): JsonLdNode {
     url: business.url,
   };
 
+  if (business.alternateName) schema.alternateName = business.alternateName;
+  if (business.email) schema.email = business.email;
   if (business.telephone) schema.telephone = business.telephone;
   if (business.priceRange) schema.priceRange = business.priceRange;
   if (business.logo) schema.logo = business.logo;
@@ -77,6 +83,35 @@ function buildLocalBusinessSchema(props: SeoSchemaProps): JsonLdNode {
     };
   }
   if (areaServed?.length) schema.areaServed = toAreaServed(areaServed);
+  if (business.supportPerson || business.email || business.telephone) {
+    const contactPoint: JsonLdNode[] = [];
+
+    if (business.telephone || business.email) {
+      contactPoint.push({
+        "@type": "ContactPoint",
+        name: business.supportPerson,
+        contactType: "customer support",
+        telephone: business.telephone,
+        email: business.email,
+        areaServed: "IN",
+        availableLanguage: ["English", "Hindi"],
+      });
+    }
+
+    if (business.secondaryTelephone) {
+      contactPoint.push({
+        "@type": "ContactPoint",
+        name: business.supportPerson,
+        contactType: "billing and grievance support",
+        telephone: business.secondaryTelephone,
+        email: business.email,
+        areaServed: "IN",
+        availableLanguage: ["English", "Hindi"],
+      });
+    }
+
+    schema.contactPoint = contactPoint;
+  }
 
   return schema;
 }
@@ -143,6 +178,21 @@ export function buildSeoSchemaGraph(props: SeoSchemaProps) {
     buildLocalBusinessSchema(props),
     buildServiceSchema(props),
   ];
+
+  if (props.business.supportPerson) {
+    graph.push({
+      "@type": "Person",
+      name: props.business.supportPerson,
+      jobTitle: "Official Support Representative",
+      email: props.business.email,
+      telephone: props.business.telephone,
+      worksFor: {
+        "@type": "Organization",
+        name: props.business.name,
+        url: props.business.url,
+      },
+    });
+  }
 
   const faq = buildFaqSchema(props.faqItems);
   if (faq) graph.push(faq);

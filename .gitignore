@@ -26,6 +26,7 @@ storage/logs/
 .next/
 dist/
 build/
+*.tsbuildinfo
 
 # Vercel
 .vercel/

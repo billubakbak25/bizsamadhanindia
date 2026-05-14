@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "legalaxis-web",
+      name: "wadhwani-web",
       script: "backend/server.js",
       exec_mode: "cluster",
       instances: "max",
@@ -12,7 +12,7 @@ module.exports = {
       },
     },
     {
-      name: "legalaxis-worker",
+      name: "wadhwani-worker",
       script: "backend/worker.js",
       exec_mode: "fork",
       instances: 1,

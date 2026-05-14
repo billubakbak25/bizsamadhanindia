@@ -1,11 +1,11 @@
 ﻿{
-  "name": "LegalAxis",
-  "short_name": "LegalAxis",
+  "name": "Wadhwani Associates",
+  "short_name": "Wadhwani",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#1163ff",
-  "description": "Premium digital legal services for modern businesses.",
+  "description": "Legal, tax, GST, ITR, ROC, trademark, and compliance services by Wadhwani Associates.",
   "icons": [
     {
       "src": "/favicon.svg",

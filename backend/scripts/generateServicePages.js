@@ -129,7 +129,7 @@ function buildPage(service) {
     <header class="site-header">
       <nav class="navbar container" aria-label="Main navigation">
         <a class="brand" href="/" aria-label="Wadhwani Associates home">
-          <span class="brand-mark">LA</span>
+          <span class="brand-mark">WA</span>
           <span class="brand-text">Wadhwani Associates</span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
@@ -262,7 +262,7 @@ function buildPage(service) {
       <div class="container footer-grid">
         <div>
           <a class="brand footer-brand" href="/">
-            <span class="brand-mark">LA</span>
+            <span class="brand-mark">WA</span>
             <span class="brand-text">Wadhwani Associates</span>
           </a>
           <p>Premium legal and tax compliance support for modern businesses.</p>
@@ -282,7 +282,8 @@ function buildPage(service) {
         </div>
         <div>
           <h3>Contact</h3>
-          <a href="tel:+919999999999">+91 99999 99999</a>
+          <a href="tel:+919696893625">+91 9696893625</a>
+          <a href="tel:+918303340092">+91 8303340092</a>
           <a href="mailto:support@bizsamadhanindia.com">support@bizsamadhanindia.com</a>
           <p>Mon-Sat, 9:00 AM to 7:00 PM</p>
         </div>

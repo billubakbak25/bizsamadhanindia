@@ -75,6 +75,9 @@ const organizationSchema = {
         postalCode: BUSINESS_CONTACT.postalCode,
         addressCountry: "IN",
       },
+      founder: {
+        "@id": `${SITE_URL}#support-person`,
+      },
       contactPoint: [
         {
           "@type": "ContactPoint",

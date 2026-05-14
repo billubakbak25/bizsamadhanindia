@@ -475,44 +475,44 @@ CREATE INDEX IF NOT EXISTS idx_analytics_daily_date ON analytics_daily_metrics(m
 
 INSERT INTO notification_templates (template_code, template_name, event_type, email_subject, email_body, sms_body, whatsapp_body, available_variables) VALUES
 ('ORDER_CREATED', 'Order Created', 'order_created', 
- 'Your Order #{{order_number}} has been placed - BizSamadhan',
- 'Dear {{client_name}},\n\nThank you for choosing BizSamadhan! Your order #{{order_number}} for {{service_name}} has been successfully placed.\n\nOur team will review your requirements and assign an expert shortly.\n\nTrack your order: {{order_tracking_url}}\n\nBest regards,\nTeam BizSamadhan',
- 'BizSamadhan: Order #{{order_number}} placed for {{service_name}}. Track: {{order_tracking_url}}',
+ 'Your Order #{{order_number}} has been placed - Wadhwani Associates',
+ 'Dear {{client_name}},\n\nThank you for choosing Wadhwani Associates. Your order #{{order_number}} for {{service_name}} has been successfully placed.\n\nOur team will review your requirements and assign an expert shortly.\n\nOfficial Support Representative: Vikram Wadhwani\nSupport: support@bizsamadhanindia.com | +91 9696893625 | +91 8303340092\n\nTrack your order: {{order_tracking_url}}\n\nBest regards,\nWadhwani Associates',
+ 'Wadhwani Associates: Order #{{order_number}} placed for {{service_name}}. Track: {{order_tracking_url}}',
  'Hi {{client_name}}! Your order #{{order_number}} for {{service_name}} has been placed successfully. Our expert will contact you soon. Track here: {{order_tracking_url}}',
  '["client_name", "order_number", "service_name", "order_tracking_url"]'::jsonb),
 
 ('EXPERT_ASSIGNED', 'Expert Assigned', 'expert_assigned',
- 'Expert Assigned to Your Order #{{order_number}} - BizSamadhan',
- 'Dear {{client_name}},\n\n{{expert_name}} has been assigned to handle your {{service_name}} request.\n\nExpert Details:\n- Name: {{expert_name}}\n- Designation: {{expert_designation}}\n- Experience: {{expert_experience}} years\n\nThey will reach out to you shortly.\n\nBest regards,\nTeam BizSamadhan',
- 'BizSamadhan: {{expert_name}} assigned to your order #{{order_number}}. They will contact you soon.',
+ 'Expert Assigned to Your Order #{{order_number}} - Wadhwani Associates',
+ 'Dear {{client_name}},\n\n{{expert_name}} has been assigned to handle your {{service_name}} request.\n\nExpert Details:\n- Name: {{expert_name}}\n- Designation: {{expert_designation}}\n- Experience: {{expert_experience}} years\n\nOfficial Support Representative: Vikram Wadhwani\nSupport: support@bizsamadhanindia.com | +91 9696893625 | +91 8303340092\n\nThey will reach out to you shortly.\n\nBest regards,\nWadhwani Associates',
+ 'Wadhwani Associates: {{expert_name}} assigned to your order #{{order_number}}. They will contact you soon.',
  'Great news! {{expert_name}} ({{expert_designation}}) has been assigned to your {{service_name}} request. They will contact you shortly.',
  '["client_name", "order_number", "service_name", "expert_name", "expert_designation", "expert_experience"]'::jsonb),
 
 ('STAGE_COMPLETED', 'Stage Completed', 'stage_completed',
  'Progress Update: {{stage_name}} Completed - Order #{{order_number}}',
- 'Dear {{client_name}},\n\nGreat news! The "{{stage_name}}" stage of your {{service_name}} order has been completed.\n\nCurrent Progress: {{progress_percentage}}%\nNext Stage: {{next_stage_name}}\n\nTrack your order: {{order_tracking_url}}\n\nBest regards,\nTeam BizSamadhan',
- 'BizSamadhan: Stage "{{stage_name}}" completed for order #{{order_number}}. Progress: {{progress_percentage}}%',
+ 'Dear {{client_name}},\n\nGreat news! The "{{stage_name}}" stage of your {{service_name}} order has been completed.\n\nCurrent Progress: {{progress_percentage}}%\nNext Stage: {{next_stage_name}}\n\nTrack your order: {{order_tracking_url}}\n\nOfficial Support Representative: Vikram Wadhwani\nSupport: support@bizsamadhanindia.com | +91 9696893625 | +91 8303340092\n\nBest regards,\nWadhwani Associates',
+ 'Wadhwani Associates: Stage "{{stage_name}}" completed for order #{{order_number}}. Progress: {{progress_percentage}}%',
  'Update on your order #{{order_number}}: Stage "{{stage_name}}" is now complete! Progress: {{progress_percentage}}%. Next: {{next_stage_name}}',
  '["client_name", "order_number", "service_name", "stage_name", "next_stage_name", "progress_percentage", "order_tracking_url"]'::jsonb),
 
 ('ORDER_COMPLETED', 'Order Completed', 'order_completed',
- 'Congratulations! Your {{service_name}} is Complete - BizSamadhan',
- 'Dear {{client_name}},\n\nCongratulations! Your {{service_name}} has been successfully completed.\n\nOrder #: {{order_number}}\nCompleted on: {{completion_date}}\n\nYou can download your documents from your dashboard: {{dashboard_url}}\n\nWe hope you had a great experience. Please consider leaving a review!\n\nBest regards,\nTeam BizSamadhan',
- 'BizSamadhan: Your {{service_name}} (Order #{{order_number}}) is complete! Download documents from your dashboard.',
+ 'Congratulations! Your {{service_name}} is Complete - Wadhwani Associates',
+ 'Dear {{client_name}},\n\nCongratulations! Your {{service_name}} has been successfully completed.\n\nOrder #: {{order_number}}\nCompleted on: {{completion_date}}\n\nYou can download your documents from your dashboard: {{dashboard_url}}\n\nFor support, contact Vikram Wadhwani at support@bizsamadhanindia.com, +91 9696893625, or +91 8303340092.\n\nWe hope you had a great experience. Please consider leaving a review.\n\nBest regards,\nWadhwani Associates',
+ 'Wadhwani Associates: Your {{service_name}} (Order #{{order_number}}) is complete. Download documents from your dashboard.',
  'Congratulations {{client_name}}! Your {{service_name}} is now complete. Download your documents here: {{dashboard_url}}. We would love to hear your feedback!',
  '["client_name", "order_number", "service_name", "completion_date", "dashboard_url"]'::jsonb),
 
 ('DOCUMENT_REQUIRED', 'Document Required', 'document_required',
  'Action Required: Document Needed for Order #{{order_number}}',
- 'Dear {{client_name}},\n\nWe need the following document to proceed with your {{service_name}}:\n\nRequired Document: {{document_name}}\nReason: {{document_reason}}\n\nPlease upload the document from your dashboard: {{upload_url}}\n\nBest regards,\nTeam BizSamadhan',
- 'BizSamadhan: Please upload {{document_name}} for order #{{order_number}}. Upload here: {{upload_url}}',
+ 'Dear {{client_name}},\n\nWe need the following document to proceed with your {{service_name}}:\n\nRequired Document: {{document_name}}\nReason: {{document_reason}}\n\nPlease upload the document from your dashboard: {{upload_url}}\n\nFor help, contact Vikram Wadhwani at support@bizsamadhanindia.com or +91 9696893625.\n\nBest regards,\nWadhwani Associates',
+ 'Wadhwani Associates: Please upload {{document_name}} for order #{{order_number}}. Upload here: {{upload_url}}',
  'Hi {{client_name}}, we need "{{document_name}}" to proceed with your order #{{order_number}}. Please upload here: {{upload_url}}',
  '["client_name", "order_number", "service_name", "document_name", "document_reason", "upload_url"]'::jsonb),
 
 ('PAYMENT_RECEIVED', 'Payment Received', 'payment_received',
  'Payment Received - Order #{{order_number}} Confirmed',
- 'Dear {{client_name}},\n\nWe have received your payment of ₹{{amount}} for {{service_name}}.\n\nTransaction Details:\n- Order #: {{order_number}}\n- Amount: ₹{{amount}}\n- Payment ID: {{payment_id}}\n- Date: {{payment_date}}\n\nYour order is now confirmed and will be processed shortly.\n\nBest regards,\nTeam BizSamadhan',
- 'BizSamadhan: Payment of ₹{{amount}} received for order #{{order_number}}. Your order is confirmed!',
+ 'Dear {{client_name}},\n\nWe have received your payment of ₹{{amount}} for {{service_name}}.\n\nTransaction Details:\n- Order #: {{order_number}}\n- Amount: ₹{{amount}}\n- Payment ID: {{payment_id}}\n- Date: {{payment_date}}\n\nYour order is now confirmed and will be processed shortly.\n\nOfficial Support Representative: Vikram Wadhwani\nSupport: support@bizsamadhanindia.com | +91 9696893625 | +91 8303340092\n\nBest regards,\nWadhwani Associates',
+ 'Wadhwani Associates: Payment of ₹{{amount}} received for order #{{order_number}}. Your order is confirmed.',
  'Thank you {{client_name}}! Payment of ₹{{amount}} received for {{service_name}}. Order #{{order_number}} confirmed. We will begin processing shortly.',
  '["client_name", "order_number", "service_name", "amount", "payment_id", "payment_date"]'::jsonb)
 
@@ -523,11 +523,8 @@ ON CONFLICT (template_code) DO NOTHING;
 -- =====================================================
 
 INSERT INTO experts (expert_code, name, email, phone, designation, expert_type, specializations, experience_years, rating, is_active) VALUES
-('EXP001', 'Rajesh Kumar', 'rajesh.kumar@bizsamadhan.com', '9876543210', 'Senior Chartered Accountant', 'ca', '["gst", "income_tax", "audit", "company_accounts"]'::jsonb, 12, 4.8, true),
-('EXP002', 'Priya Sharma', 'priya.sharma@bizsamadhan.com', '9876543211', 'Company Secretary', 'cs', '["company_registration", "roc_filing", "compliance", "annual_return"]'::jsonb, 8, 4.7, true),
-('EXP003', 'Amit Patel', 'amit.patel@bizsamadhan.com', '9876543212', 'Legal Advisor', 'lawyer', '["trademark", "copyright", "patent", "legal_drafting"]'::jsonb, 15, 4.9, true),
-('EXP004', 'Sneha Gupta', 'sneha.gupta@bizsamadhan.com', '9876543213', 'GST Consultant', 'consultant', '["gst_registration", "gst_return", "gst_audit"]'::jsonb, 6, 4.6, true),
-('EXP005', 'Vikram Singh', 'vikram.singh@bizsamadhan.com', '9876543214', 'Business Consultant', 'consultant', '["startup", "business_plan", "funding", "compliance"]'::jsonb, 10, 4.5, true)
+('EXP001', 'Vikram Wadhwani', 'support@bizsamadhanindia.com', '9696893625', 'Official Support Representative', 'consultant', '["gst", "income_tax", "company_registration", "roc_filing", "trademark", "compliance"]'::jsonb, 10, 4.8, true),
+('EXP002', 'Wadhwani Associates Support Desk', 'support@bizsamadhanindia.com', '8303340092', 'Client Support Desk', 'consultant', '["billing", "documents", "grievance", "follow_up", "service_delivery"]'::jsonb, 5, 4.7, true)
 ON CONFLICT (expert_code) DO NOTHING;
 
 -- =====================================================

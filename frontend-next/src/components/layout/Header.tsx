@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { COMPANY, TRUST_STATS } from "@/lib/constants";
+import { BUSINESS_CONTACT, COMPANY, TRUST_STATS } from "@/lib/constants";
 import { MegaMenu } from "./MegaMenu";
 import { MobileMenu } from "./MobileMenu";
 import { GlobalSearch } from "./GlobalSearch";
@@ -49,16 +49,16 @@ export function Header() {
             <span className="hidden text-slate-600 sm:inline">|</span>
             <span className="hidden items-center gap-1.5 sm:flex">
               <Clock className="h-3.5 w-3.5 text-amber-400" />
-              <span>Mon-Sat 9AM-7PM</span>
+              <span>Mon-Sat 9:30AM-7PM</span>
             </span>
           </div>
           <div className="flex items-center gap-4 text-xs">
             <a 
-              href={`tel:${COMPANY.phone.replace(/\s/g, '')}`} 
+              href={`tel:+91${BUSINESS_CONTACT.primaryPhones[0]}`}
               className="flex items-center gap-1.5 font-medium text-white transition hover:text-emerald-400"
             >
               <Phone className="h-3.5 w-3.5" />
-              {COMPANY.phone}
+              {BUSINESS_CONTACT.primaryPhoneDisplay[0]}
             </a>
             <span className="text-slate-600">|</span>
             <a 
@@ -83,7 +83,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[var(--brand)] to-teal-600 text-sm font-bold text-white shadow-lg shadow-emerald-950/20 lg:h-11 lg:w-11 lg:rounded-2xl">
-              BI
+              WA
             </span>
             <span className="hidden sm:block">
               <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--brand)] lg:text-xs lg:tracking-[0.24em]">

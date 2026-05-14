@@ -4,9 +4,9 @@ export const COMPANY = {
   domainName: "bizsamadhanindia.com",
   description:
     "Wadhwani Associates operates Biz Samadhan India as a modern legal, tax, and compliance growth platform for Indian founders, operators, and finance teams.",
-  phone: "+91 96968 93625",
+  phone: "+91 9696893625",
   email: "support@bizsamadhanindia.com",
-  city: "Kanpur, Uttar Pradesh",
+  city: "Kanpur, Uttar Pradesh - 208027",
 };
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.bizsamadhanindia.com";
@@ -98,10 +98,10 @@ export const BUSINESS_CONTACT: BusinessContactDetails = {
   supportRepresentativeLabel: "Official Support Representative: Vikram Wadhwani",
   supportEmail: "support@bizsamadhanindia.com",
   primaryPhones: ["9696893625", "8303340092"],
-  primaryPhoneDisplay: ["+91 96968 93625", "+91 83033 40092"],
+  primaryPhoneDisplay: ["+91 9696893625", "+91 8303340092"],
   whatsappNumber: "919696893625",
   officeAddressLines: ["LIG 25 SF Colony,", "Barra 3,", "Kanpur,", "Uttar Pradesh - 208027,", "India"],
-  officeAddressOneLine: "LIG 25 SF Colony Barra 3 Kanpur 208027",
+  officeAddressOneLine: "LIG 25 SF Colony, Barra 3, Kanpur, Uttar Pradesh - 208027, India",
   officeCity: "Kanpur",
   officeRegion: "Uttar Pradesh",
   postalCode: "208027",
@@ -128,6 +128,7 @@ export const BUSINESS_CONTACT: BusinessContactDetails = {
 
 export const MARKETING_NAV: NavItem[] = [
   { label: "Services", href: "/services" },
+  { label: "About", href: "/about-us" },
   { label: "Consultation", href: "/consultation" },
   { label: "Partner", href: "/partner" },
   { label: "Tools", href: "/tools" },
@@ -731,12 +732,16 @@ export function getLegalPolicyPage(slug: string) {
 export const ALL_MARKETING_ROUTES = [
   "/",
   "/services",
+  "/about-us",
+  "/service-description",
   "/consultation",
   "/contact",
   "/partner",
   "/tools",
   "/payment-methods",
   "/payment-success",
+  "/shipping-policy",
+  "/exchange-return-policy",
   ...Object.keys(MARKETING_PAGE_CONTENT).map((slug) => `/${slug}`),
   ...LEGAL_POLICY_SLUGS.map((slug) => `/${slug}`),
 ];

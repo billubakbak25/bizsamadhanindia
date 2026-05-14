@@ -18,8 +18,9 @@ import {
   Mail,
   ArrowRight,
   Star,
+  UserRound,
 } from "lucide-react";
-import { MEGA_MENU_CATEGORIES, QUICK_LINKS, TRUST_STATS } from "@/lib/constants";
+import { BUSINESS_CONTACT, COMPANY, MEGA_MENU_CATEGORIES, QUICK_LINKS, TRUST_STATS } from "@/lib/constants";
 
 const ICONS: Record<string, React.ElementType> = {
   Briefcase,
@@ -31,6 +32,7 @@ const ICONS: Record<string, React.ElementType> = {
   Wrench,
   Users,
   Mail,
+  UserRound,
 };
 
 export function MobileMenu() {
@@ -101,6 +103,26 @@ export function MobileMenu() {
                   <span className="text-xs text-slate-500">
                     ({TRUST_STATS.totalReviews.toLocaleString()}+ reviews)
                   </span>
+                </div>
+              </div>
+
+              <div className="border-b border-slate-100 px-4 py-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">
+                  {COMPANY.name}
+                </p>
+                <div className="mt-3 grid gap-2 text-sm text-slate-700">
+                  <span className="flex items-center gap-2">
+                    <UserRound className="h-4 w-4 text-slate-400" />
+                    Official Support: {BUSINESS_CONTACT.supportPerson}
+                  </span>
+                  <a href={`tel:+91${BUSINESS_CONTACT.primaryPhones[0]}`} className="flex items-center gap-2 font-semibold text-slate-900">
+                    <Phone className="h-4 w-4 text-slate-400" />
+                    {BUSINESS_CONTACT.primaryPhoneDisplay[0]}
+                  </a>
+                  <a href={`mailto:${BUSINESS_CONTACT.supportEmail}`} className="flex items-center gap-2 text-slate-600">
+                    <Mail className="h-4 w-4 text-slate-400" />
+                    {BUSINESS_CONTACT.supportEmail}
+                  </a>
                 </div>
               </div>
 

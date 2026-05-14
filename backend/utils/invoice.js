@@ -100,7 +100,7 @@ function buildInvoiceHtml(payment) {
       <p class="footer">
         This invoice was generated automatically after successful payment. For support, contact
         ${escapeHtml(env.supportPerson || "Vikram Wadhwani")} at ${escapeHtml(env.businessEmail || "support@bizsamadhanindia.com")},
-        ${escapeHtml(env.businessPhone || "+91 96968 93625")} or ${escapeHtml(env.supportPhoneSecondary || "+91 83033 40092")}.<br />
+        ${escapeHtml(env.businessPhone || "+91 9696893625")} or ${escapeHtml(env.supportPhoneSecondary || "+91 8303340092")}.<br />
         Office: ${escapeHtml(env.businessStreetAddress || "LIG 25 SF Colony, Barra 3")}, ${escapeHtml(env.businessCity || "Kanpur")},
         ${escapeHtml(env.businessRegion || "Uttar Pradesh")} - ${escapeHtml(env.businessPostalCode || "208027")}.
       </p>

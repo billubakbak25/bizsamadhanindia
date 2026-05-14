@@ -1,17 +1,17 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="LegalAxis social preview">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Wadhwani Associates social preview">
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#1163ff" />
+      <stop offset="100%" stop-color="#0f766e" />
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)" />
   <circle cx="1020" cy="120" r="140" fill="rgba(255,255,255,0.08)" />
   <circle cx="180" cy="520" r="180" fill="rgba(255,255,255,0.06)" />
   <rect x="90" y="84" width="150" height="150" rx="34" fill="#ffffff" />
-  <text x="124" y="182" font-size="78" font-family="Inter, Arial, sans-serif" font-weight="800" fill="#1163ff">LA</text>
-  <text x="90" y="324" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="800" fill="#ffffff">LegalAxis</text>
-  <text x="90" y="404" font-size="34" font-family="Inter, Arial, sans-serif" fill="#dbeafe">Premium online legal services for GST, ITR,</text>
-  <text x="90" y="450" font-size="34" font-family="Inter, Arial, sans-serif" fill="#dbeafe">company registration, and trademark filing.</text>
-  <text x="90" y="540" font-size="28" font-family="Inter, Arial, sans-serif" fill="#bfdbfe">legalaxis.in</text>
+  <text x="116" y="182" font-size="78" font-family="Inter, Arial, sans-serif" font-weight="800" fill="#0f766e">WA</text>
+  <text x="90" y="324" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="800" fill="#ffffff">Wadhwani Associates</text>
+  <text x="90" y="404" font-size="34" font-family="Inter, Arial, sans-serif" fill="#d1fae5">Legal, tax, GST, ITR, ROC, trademark,</text>
+  <text x="90" y="450" font-size="34" font-family="Inter, Arial, sans-serif" fill="#d1fae5">incorporation, and compliance support.</text>
+  <text x="90" y="540" font-size="28" font-family="Inter, Arial, sans-serif" fill="#a7f3d0">bizsamadhanindia.com</text>
 </svg>
