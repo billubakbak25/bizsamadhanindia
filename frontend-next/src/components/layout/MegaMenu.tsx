@@ -24,7 +24,7 @@ import {
   Users,
   BadgeCheck,
 } from "lucide-react";
-import { MEGA_MENU_CATEGORIES, TRUST_STATS, type MegaMenuCategory } from "@/lib/constants";
+import { BUSINESS_CONTACT, MEGA_MENU_CATEGORIES, TRUST_STATS, type MegaMenuCategory } from "@/lib/constants";
 
 const ICONS: Record<string, React.ElementType> = {
   Briefcase,
@@ -477,8 +477,8 @@ export function MegaMenu() {
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <span className="text-slate-500">Need help?</span>
-                  <a href="tel:+919876543210" className="font-semibold text-[var(--brand)]">
-                    +91 98765 43210
+                  <a href={`tel:+91${BUSINESS_CONTACT.primaryPhones[0]}`} className="font-semibold text-[var(--brand)]">
+                    {BUSINESS_CONTACT.primaryPhoneDisplay[0]}
                   </a>
                 </div>
               </div>

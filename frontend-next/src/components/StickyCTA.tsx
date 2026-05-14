@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, MessageCircle, X, ChevronUp, Star, Clock, Shield } from "lucide-react";
 import { formatServicePrice } from "@/lib/pricing";
-import { TRUST_STATS } from "@/lib/constants";
+import { BUSINESS_CONTACT, TRUST_STATS } from "@/lib/constants";
 
 type StickyCTAProps = {
   serviceName: string;
@@ -14,6 +14,10 @@ type StickyCTAProps = {
   price?: number | null;
   targetId?: string;
 };
+
+const whatsappHref = `https://wa.me/${BUSINESS_CONTACT.whatsappNumber}`;
+const whatsappGreetingHref = `${whatsappHref}?text=Hi%2C%20I%20need%20help%20with%20business%20services`;
+const primaryCallHref = `tel:+91${BUSINESS_CONTACT.primaryPhones[0]}`;
 
 function trackStickyClick(action: string, payload: Record<string, unknown>) {
   const eventPayload = { event: "cta_click", placement: "sticky", action, ...payload };
@@ -119,7 +123,7 @@ export function StickyCTA({ serviceName, cityName, serviceCode, price = null, ta
                 </div>
                 <div className="flex gap-2">
                   <a
-                    href="https://wa.me/919876543210"
+                    href={whatsappHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackStickyClick("whatsapp", trackPayload)}
@@ -180,7 +184,7 @@ export function StickyCTA({ serviceName, cityName, serviceCode, price = null, ta
               </div>
               <div className="grid grid-cols-2 gap-2">
                 <a
-                  href="https://wa.me/919876543210"
+                  href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackStickyClick("whatsapp", trackPayload)}
@@ -240,7 +244,7 @@ export function FloatingWhatsApp() {
       </AnimatePresence>
       
       <motion.a
-        href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20help%20with%20business%20services"
+        href={whatsappGreetingHref}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}
@@ -265,7 +269,7 @@ export function FloatingWhatsApp() {
 export function FloatingCallButton() {
   return (
     <motion.a
-      href="tel:+919876543210"
+      href={primaryCallHref}
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ type: "spring", delay: 1.2 }}

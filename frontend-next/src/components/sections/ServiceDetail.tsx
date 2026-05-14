@@ -2,7 +2,7 @@ import Link from "next/link";
 import { LeadCaptureForm } from "@/components/forms/LeadCaptureForm";
 import { buttonClassName } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import { findServiceCard, TRUST_STATS, MEGA_MENU_CATEGORIES, type MarketingPageContent } from "@/lib/constants";
+import { BUSINESS_CONTACT, findServiceCard, TRUST_STATS, MEGA_MENU_CATEGORIES, type MarketingPageContent } from "@/lib/constants";
 import { fetchServicePricing, formatServicePrice } from "@/lib/pricing";
 import { 
   CheckCircle2, 
@@ -268,7 +268,7 @@ function ExpertCTA() {
             Book Free Consultation
           </Link>
           <a
-            href="https://wa.me/919876543210"
+            href={`https://wa.me/${BUSINESS_CONTACT.whatsappNumber}`}
             target="_blank"
             rel="noopener noreferrer"
             className={buttonClassName({ variant: "secondary", size: "lg", className: "w-full justify-center gap-2" })}
@@ -445,7 +445,7 @@ export async function ServiceDetail({ page }: { page: MarketingPageContent }) {
                 <Phone className="h-5 w-5" />
                 Get Free Consultation
               </Link>
-              <span className="text-sm text-emerald-200">or call us at +91 98765 43210</span>
+              <span className="text-sm text-emerald-200">or call us at {BUSINESS_CONTACT.primaryPhoneDisplay[0]}</span>
             </div>
           </div>
         </Card>

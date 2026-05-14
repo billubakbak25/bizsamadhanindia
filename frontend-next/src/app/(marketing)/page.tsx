@@ -10,7 +10,7 @@ import {
   TrustBadgesSection
 } from "@/components/sections/TrustSignals";
 import { Card } from "@/components/ui/Card";
-import { FAQS, PROCESS_STEPS } from "@/lib/constants";
+import { BUSINESS_CONTACT, FAQS, PROCESS_STEPS } from "@/lib/constants";
 import { CheckCircle2, ArrowRight, Phone, Zap } from "lucide-react";
 import { buttonClassName } from "@/components/ui/Button";
 
@@ -208,7 +208,7 @@ function FinalCTA() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-emerald-200">
-              Or call us directly: <a href="tel:+919876543210" className="font-semibold text-white">+91 98765 43210</a>
+              Or call us directly: <a href={`tel:+91${BUSINESS_CONTACT.primaryPhones[0]}`} className="font-semibold text-white">{BUSINESS_CONTACT.primaryPhoneDisplay[0]}</a>
             </p>
           </div>
         </Card>

@@ -2,8 +2,8 @@ export const COMPANY = {
   name: "BizSamadhan India",
   description:
     "A modern legal, tax, and compliance growth platform for Indian founders, operators, and finance teams.",
-  phone: "+91 98765 43210",
-  email: "hello@bizsamadhanindia.com",
+  phone: "+91 96968 93625",
+  email: "support@bizsamadhanindia.com",
   city: "Kanpur, Uttar Pradesh",
 };
 
@@ -53,6 +53,69 @@ export type LegalPolicyContent = {
   lastUpdated: string;
   highlights: string[];
   sections: ContentSection[];
+};
+
+export type BusinessContactDetails = {
+  businessName: string;
+  supportEmail: string;
+  primaryPhones: string[];
+  primaryPhoneDisplay: string[];
+  whatsappNumber: string;
+  officeAddressLines: string[];
+  officeAddressOneLine: string;
+  officeCity: string;
+  officeRegion: string;
+  postalCode: string;
+  country: string;
+  mapQuery: string;
+  mapEmbedUrl: string;
+  directionsUrl: string;
+  geo: {
+    latitude: number;
+    longitude: number;
+  };
+  workingHours: Array<{
+    label: string;
+    value: string;
+  }>;
+  supportTimelines: Array<{
+    label: string;
+    value: string;
+  }>;
+};
+
+const CONTACT_MAP_QUERY = "LIG 25 SF Colony Barra 3 Kanpur 208027";
+
+export const BUSINESS_CONTACT: BusinessContactDetails = {
+  businessName: "Biz Samadhan India",
+  supportEmail: "support@bizsamadhanindia.com",
+  primaryPhones: ["9696893625", "8303340092"],
+  primaryPhoneDisplay: ["+91 96968 93625", "+91 83033 40092"],
+  whatsappNumber: "919696893625",
+  officeAddressLines: ["LIG 25 SF Colony,", "Barra 3,", "Kanpur,", "Uttar Pradesh - 208027,", "India"],
+  officeAddressOneLine: "LIG 25 SF Colony Barra 3 Kanpur 208027",
+  officeCity: "Kanpur",
+  officeRegion: "Uttar Pradesh",
+  postalCode: "208027",
+  country: "India",
+  mapQuery: CONTACT_MAP_QUERY,
+  mapEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(CONTACT_MAP_QUERY)}&z=16&output=embed`,
+  directionsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONTACT_MAP_QUERY)}`,
+  geo: {
+    // Area-level coordinates for Barra 3, Kanpur. Replace with the exact office pin once verified in GBP.
+    latitude: 26.4309,
+    longitude: 80.2895,
+  },
+  workingHours: [
+    { label: "Monday to Saturday", value: "9:30 AM to 7:00 PM" },
+    { label: "Sunday", value: "Email and WhatsApp intake for urgent queries" },
+    { label: "Consultation desk", value: "Priority callbacks during business hours" },
+  ],
+  supportTimelines: [
+    { label: "New enquiries", value: "Within 30 to 60 minutes during working hours" },
+    { label: "Document or billing support", value: "Same business day for active clients" },
+    { label: "Grievance escalation review", value: "Within 1 business day" },
+  ],
 };
 
 export const MARKETING_NAV: NavItem[] = [

@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { buttonClassName } from "@/components/ui/Button";
 import { LeadCaptureForm } from "@/components/forms/LeadCaptureForm";
-import { TRUST_STATS } from "@/lib/constants";
+import { BUSINESS_CONTACT, TRUST_STATS } from "@/lib/constants";
 
 // Animated counter with easing
 function AnimatedCounter({ value, suffix = "", prefix = "" }: { value: number; suffix?: string; prefix?: string }) {
@@ -293,7 +293,7 @@ function HeroForm() {
 function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20help%20with%20business%20registration"
+      href={`https://wa.me/${BUSINESS_CONTACT.whatsappNumber}?text=Hi%2C%20I%20need%20help%20with%20business%20registration`}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0, opacity: 0 }}
