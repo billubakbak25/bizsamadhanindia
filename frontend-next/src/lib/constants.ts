@@ -484,31 +484,40 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
   "terms-and-conditions": {
     slug: "terms-and-conditions",
     title: "Terms and Conditions",
-    description: "Usage terms governing BizSamadhan India's website, consultations, service purchases, and authenticated platform areas.",
-    eyebrow: "Policy",
-    hero: "These terms define the responsibilities, limitations, and operating expectations for using BizSamadhan India services and platform experiences.",
-    lastUpdated: "May 12, 2026",
-    highlights: ["Platform usage rules", "Service execution boundaries", "Customer responsibilities"],
+    description:
+      "Razorpay-ready terms governing BizSamadhan India's GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription, payment, and digital documentation services.",
+    eyebrow: "Terms",
+    hero:
+      "These terms define the responsibilities, payment rules, digital delivery model, service limitations, government dependency, fraud controls, and dispute expectations for using BizSamadhan India services.",
+    lastUpdated: "May 14, 2026",
+    highlights: ["Razorpay-ready payment terms", "Digital service delivery rules", "Government approval dependency"],
     sections: [
       {
-        title: "Use of the platform",
+        title: "Acceptance and service scope",
         body: [
-          "Users must provide accurate information, maintain the confidentiality of their credentials, and use the website, dashboards, and support channels only for lawful purposes.",
-          "BizSamadhan India may update interfaces, workflows, pricing displays, and operational systems as the platform evolves, provided such changes do not override confirmed service obligations already accepted by both parties.",
+          "By using the website, submitting an enquiry, booking a consultation, uploading documents, making a payment, or using a subscription service, users agree to these Terms and Conditions and related policies.",
+          "BizSamadhan India provides professional support for GST, ITR, ROC/MCA compliance, MSME registration, trademark services, company incorporation, recurring compliance subscriptions, and digital legal documentation services.",
         ],
       },
       {
-        title: "Service dependencies",
+        title: "User responsibility and authority dependency",
         body: [
-          "Delivery timelines and outcomes may depend on document completeness, government authority processing, third-party response times, payment status, and user-side approvals.",
-          "The platform helps manage execution, but statutory filings, approvals, registrations, and other outcomes can also be affected by external institutions and applicable law.",
+          "Users must provide accurate, complete, current, and legally valid information and documents. BizSamadhan India relies on user-supplied records for service execution and statutory filing preparation.",
+          "Timelines and outcomes may depend on user approvals, document readiness, government departments, statutory portals, banks, registries, payment partners, and other third-party systems outside BizSamadhan India's direct control.",
         ],
       },
       {
-        title: "Limitation of liability",
+        title: "Payments, subscriptions, and misuse controls",
         body: [
-          "BizSamadhan India is not liable for delays, rejections, penalties, or losses caused by inaccurate client information, delayed approvals, missing documents, or changes in law or authority requirements outside our reasonable control.",
-          "Except where required by law, liability relating to a specific paid engagement is limited to the amount paid for that engagement.",
+          "Payments may be collected through Razorpay and approved digital channels. Recurring compliance plans and subscriptions are billed according to the selected plan, invoice, proposal, or checkout terms.",
+          "BizSamadhan India may pause services for non-payment, incomplete information, unlawful use, suspected fraud, chargeback abuse, document forgery, or activity that creates legal, security, payment, or compliance risk.",
+        ],
+      },
+      {
+        title: "Liability, confidentiality, and jurisdiction",
+        body: [
+          "Except where prohibited by law, liability for a specific paid engagement is limited to the amount paid to BizSamadhan India for that engagement, excluding statutory fees, government charges, third-party costs, taxes, and gateway charges.",
+          "These terms are governed by Indian law. Subject to mandatory consumer protection rights, disputes shall fall under the jurisdiction of competent courts and authorities in Kanpur, Uttar Pradesh, India.",
         ],
       },
     ],
