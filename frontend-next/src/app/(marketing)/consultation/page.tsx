@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
   title: "Consultation",
-  description: "Book a legal, tax, or compliance consultation through BizSamadhan India's live consultation flow.",
+  description: "Book a legal, tax, or compliance consultation through Wadhwani Associates' live consultation flow.",
 };
 
 export default function ConsultationPage() {

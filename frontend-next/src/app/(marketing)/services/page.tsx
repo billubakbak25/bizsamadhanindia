@@ -1,11 +1,11 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Services } from "@/components/sections/Services";
 import { Card } from "@/components/ui/Card";
 import { ApiHealthChip } from "@/components/ui/ApiHealthChip";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Explore BizSamadhan India's legal, tax, compliance, and finance service catalog.",
+  description: "Explore Wadhwani Associates' legal, tax, compliance, and finance service catalog.",
 };
 
 export default function ServicesPage() {

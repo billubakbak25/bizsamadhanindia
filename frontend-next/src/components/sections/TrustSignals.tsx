@@ -214,7 +214,7 @@ export function StatsSection() {
 export function TestimonialsSection() {
   const testimonials = [
     {
-      quote: "BizSamadhan made company registration incredibly simple. The team guided us through every step.",
+      quote: "Wadhwani Associates made company registration incredibly simple. The team guided us through every step.",
       author: "Rahul Sharma",
       role: "Founder, TechStart India",
       rating: 5,

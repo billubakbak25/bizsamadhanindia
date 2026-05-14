@@ -13,7 +13,7 @@ export function StickyMobileContactBar({ callHref, whatsappHref, emailHref }: St
         <a
           href={callHref}
           className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-[var(--brand)] px-3 text-sm font-semibold text-white shadow-lg shadow-emerald-950/15"
-          aria-label="Call Biz Samadhan India"
+          aria-label="Call Wadhwani Associates support"
         >
           <Phone className="h-4 w-4" />
           Call
@@ -23,7 +23,7 @@ export function StickyMobileContactBar({ callHref, whatsappHref, emailHref }: St
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-green-500 px-3 text-sm font-semibold text-white shadow-lg shadow-green-950/15"
-          aria-label="Chat on WhatsApp with Biz Samadhan India"
+          aria-label="Chat on WhatsApp with Wadhwani Associates support"
         >
           <MessageCircle className="h-4 w-4" />
           WhatsApp
@@ -31,7 +31,7 @@ export function StickyMobileContactBar({ callHref, whatsappHref, emailHref }: St
         <a
           href={emailHref}
           className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-900 shadow-sm dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
-          aria-label="Email Biz Samadhan India"
+          aria-label="Email Wadhwani Associates support"
         >
           <Mail className="h-4 w-4" />
           Email

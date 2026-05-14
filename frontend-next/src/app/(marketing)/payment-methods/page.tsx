@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Payment Methods",
-  description: "Supported Razorpay checkout payment methods, banks, UPI, wallets, EMI, Pay Later, and payment apps for BizSamadhan India.",
+  description: "Supported Razorpay checkout payment methods, banks, UPI, wallets, EMI, Pay Later, and payment apps for Wadhwani Associates.",
   alternates: {
     canonical: new URL("/payment-methods", SITE_URL).toString(),
   },
@@ -27,7 +27,7 @@ export default function PaymentMethodsPage() {
           <div className="space-y-3">
             <h1 className="text-4xl font-semibold text-slate-950 sm:text-5xl">Payment Methods</h1>
             <p className="max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-              BizSamadhan India accepts online payments through Razorpay Checkout with cards, UPI, netbanking, wallets, EMI, cardless EMI, Pay Later, and supported payment apps.
+              Wadhwani Associates accepts online payments through Razorpay Checkout with cards, UPI, netbanking, wallets, EMI, cardless EMI, Pay Later, and supported payment apps.
             </p>
           </div>
         </div>

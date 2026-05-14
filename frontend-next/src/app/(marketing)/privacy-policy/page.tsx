@@ -24,7 +24,7 @@ const policySections: PolicySection[] = [
     id: "information-collection",
     title: "1. Information collection",
     body: [
-      "BizSamadhan India collects personal, business, and service-related information that users choose to provide when submitting enquiry forms, booking consultations, creating an account, requesting GST, ITR, ROC or MCA, MSME, trademark, incorporation, accounting, or legal documentation services, uploading files, or communicating with our support and advisory teams.",
+      "Wadhwani Associates collects personal, business, and service-related information that users choose to provide when submitting enquiry forms, booking consultations, creating an account, requesting GST, ITR, ROC or MCA, MSME, trademark, incorporation, accounting, or legal documentation services, uploading files, or communicating with our support and advisory teams.",
       "Collected information may include name, mobile number, email address, city, company or entity details, PAN, GSTIN, CIN, DIN, Aadhaar or other identity references where legally required, billing address, authorised signatory information, service preferences, uploaded compliance records, tax information, communication history, and limited platform usage data needed to operate the website and client workflow.",
     ],
   },
@@ -33,14 +33,14 @@ const policySections: PolicySection[] = [
     title: "2. Personal data usage",
     body: [
       "We use personal data to respond to enquiries, assess service eligibility, create quotations and invoices, onboard clients, coordinate consultations, verify documents, execute purchased services, track filing stages, manage subscriptions, provide customer support, prevent fraud, maintain internal records, and comply with statutory, audit, tax, and legal obligations.",
-      "BizSamadhan India does not treat client data as a resale asset. Data use is limited to legitimate service delivery, operational improvement, security, risk management, payment administration, compliance workflows, and communication related to an active or requested engagement.",
+      "Wadhwani Associates does not treat client data as a resale asset. Data use is limited to legitimate service delivery, operational improvement, security, risk management, payment administration, compliance workflows, and communication related to an active or requested engagement.",
     ],
   },
   {
     id: "document-storage",
     title: "3. Document storage and service records",
     body: [
-      "Because BizSamadhan India provides legal, tax, and compliance support, users may submit sensitive business and financial records, draft agreements, incorporation documents, return data, trademark records, notices, KYC materials, and statutory filings. These records may be stored in controlled digital systems used for document review, workflow execution, versioning, and client support.",
+      "Because Wadhwani Associates provides legal, tax, and compliance support, users may submit sensitive business and financial records, draft agreements, incorporation documents, return data, trademark records, notices, KYC materials, and statutory filings. These records may be stored in controlled digital systems used for document review, workflow execution, versioning, and client support.",
       "Uploaded documents and execution records may be retained in active storage while a service is in progress and in archived operational storage thereafter where required for repeat support, dispute management, regulatory review, internal audit, fraud prevention, or legal record-keeping.",
     ],
   },
@@ -48,8 +48,8 @@ const policySections: PolicySection[] = [
     id: "payment-information",
     title: "4. Financial and payment information handling",
     body: [
-      "BizSamadhan India may collect billing name, invoice details, transaction references, amount paid, subscription status, payment timestamps, settlement status, and related payment metadata needed to reconcile orders, issue invoices, respond to disputes, and support refunds or chargeback evidence.",
-      "BizSamadhan India does not ordinarily store full card numbers, CVV data, or sensitive authentication data. Such payment instrument information is handled by approved payment gateways, banks, card networks, UPI systems, or other regulated payment service providers according to their own compliance frameworks and security controls.",
+      "Wadhwani Associates may collect billing name, invoice details, transaction references, amount paid, subscription status, payment timestamps, settlement status, and related payment metadata needed to reconcile orders, issue invoices, respond to disputes, and support refunds or chargeback evidence.",
+      "Wadhwani Associates does not ordinarily store full card numbers, CVV data, or sensitive authentication data. Such payment instrument information is handled by approved payment gateways, banks, card networks, UPI systems, or other regulated payment service providers according to their own compliance frameworks and security controls.",
     ],
   },
   {
@@ -64,7 +64,7 @@ const policySections: PolicySection[] = [
     id: "third-party-sharing",
     title: "6. Third-party sharing limitations",
     body: [
-      "BizSamadhan India shares personal data only on a need-to-know basis with employees, authorised consultants, compliance professionals, technology providers, hosting vendors, communication platforms, payment partners, and operational service providers involved in delivering the requested service or maintaining platform security and continuity.",
+      "Wadhwani Associates shares personal data only on a need-to-know basis with employees, authorised consultants, compliance professionals, technology providers, hosting vendors, communication platforms, payment partners, and operational service providers involved in delivering the requested service or maintaining platform security and continuity.",
       "We do not sell personal information to data brokers or unrelated advertisers. Any third-party access is limited by commercial necessity, confidentiality expectations, legal obligations, or service functionality, and only to the extent reasonably required for the relevant purpose.",
     ],
   },
@@ -72,15 +72,15 @@ const policySections: PolicySection[] = [
     id: "razorpay-handling",
     title: "7. Razorpay and payment gateway data handling",
     body: [
-      "When users make payments through Razorpay or another approved payment gateway, transaction processing is handled through the gateway interface and its connected banking and payment infrastructure. BizSamadhan India may receive transaction IDs, order references, payment status, payer name, partial masked instrument details where available, and settlement or dispute metadata from the gateway.",
-      "Razorpay or similar partners may independently process payment and device data according to their own privacy notices, anti-fraud systems, and regulatory obligations. Users should review the relevant gateway privacy practices where payment authentication, tokenisation, or device-based risk checks are performed outside BizSamadhan India's direct systems.",
+      "When users make payments through Razorpay or another approved payment gateway, transaction processing is handled through the gateway interface and its connected banking and payment infrastructure. Wadhwani Associates may receive transaction IDs, order references, payment status, payer name, partial masked instrument details where available, and settlement or dispute metadata from the gateway.",
+      "Razorpay or similar partners may independently process payment and device data according to their own privacy notices, anti-fraud systems, and regulatory obligations. Users should review the relevant gateway privacy practices where payment authentication, tokenisation, or device-based risk checks are performed outside Wadhwani Associates' direct systems.",
     ],
   },
   {
     id: "security-practices",
     title: "8. Security practices",
     body: [
-      "BizSamadhan India uses reasonable administrative, contractual, and technical safeguards to protect personal data and service records from unauthorised access, misuse, accidental loss, unlawful disclosure, and avoidable operational exposure. These safeguards may include access controls, environment-based configuration, credential restrictions, monitored systems, limited-role access, secure vendor services, and internal review processes.",
+      "Wadhwani Associates uses reasonable administrative, contractual, and technical safeguards to protect personal data and service records from unauthorised access, misuse, accidental loss, unlawful disclosure, and avoidable operational exposure. These safeguards may include access controls, environment-based configuration, credential restrictions, monitored systems, limited-role access, secure vendor services, and internal review processes.",
       "No internet-based system can guarantee absolute security. Users should protect their devices, email access, OTP channels, and shared credentials, and should avoid sending highly sensitive information through insecure or unapproved communication channels unless specifically requested with appropriate safeguards.",
     ],
   },
@@ -97,14 +97,14 @@ const policySections: PolicySection[] = [
     title: "10. User rights and data requests",
     body: [
       "Users may request access to certain personal data we hold about them, correction of inaccurate information, update of contact details, restriction of specific non-essential processing where feasible, or deletion of data that is no longer required and is not subject to a legal or operational retention obligation.",
-      "Because BizSamadhan India operates in regulated legal, tax, compliance, and payment contexts, some records may need to be retained despite a deletion request. We may ask for identity verification before acting on privacy requests, especially where statutory filings, payment disputes, or sensitive documents are involved.",
+      "Because Wadhwani Associates operates in regulated legal, tax, compliance, and payment contexts, some records may need to be retained despite a deletion request. We may ask for identity verification before acting on privacy requests, especially where statutory filings, payment disputes, or sensitive documents are involved.",
     ],
   },
   {
     id: "communication-consent",
     title: "11. Communication consent",
     body: [
-      "By submitting a form, booking a consultation, making a payment, sharing documents, or engaging our services, users consent to receive transaction, support, service, billing, compliance, delivery, security, and account-related communications through phone, SMS, email, WhatsApp, and other lawful digital channels used by BizSamadhan India.",
+      "By submitting a form, booking a consultation, making a payment, sharing documents, or engaging our services, users consent to receive transaction, support, service, billing, compliance, delivery, security, and account-related communications through phone, SMS, email, WhatsApp, and other lawful digital channels used by Wadhwani Associates.",
       "These communications may include appointment coordination, document requests, status updates, invoice notices, compliance reminders, renewal alerts, payment confirmations, dispute follow-up, and issue-resolution messages necessary to complete or support a service engagement.",
     ],
   },
@@ -113,14 +113,14 @@ const policySections: PolicySection[] = [
     title: "12. Marketing opt-out",
     body: [
       "Users may receive service updates, relevant product announcements, compliance reminders, or promotional information where permitted by law and consistent with the relationship established through the website or a prior enquiry.",
-      "Users may opt out of non-essential marketing communications by following the unsubscribe instructions in email communications or by contacting BizSamadhan India support. Opting out of marketing does not affect essential service, billing, security, legal, or support communications linked to an active account, transaction, or engagement.",
+      "Users may opt out of non-essential marketing communications by following the unsubscribe instructions in email communications or by contacting Wadhwani Associates support. Opting out of marketing does not affect essential service, billing, security, legal, or support communications linked to an active account, transaction, or engagement.",
     ],
   },
   {
     id: "children-privacy",
     title: "13. Children's privacy",
     body: [
-      "BizSamadhan India services are intended for adults, business owners, authorised representatives, and individuals legally capable of entering into service engagements. The website is not designed for children to independently purchase or manage legal, tax, or compliance services.",
+      "Wadhwani Associates services are intended for adults, business owners, authorised representatives, and individuals legally capable of entering into service engagements. The website is not designed for children to independently purchase or manage legal, tax, or compliance services.",
       "We do not knowingly solicit or intentionally collect personal information from children in a manner inconsistent with applicable law. If a parent or guardian believes a child has provided personal information without appropriate authority, they may contact us so that the matter can be reviewed and handled appropriately.",
     ],
   },
@@ -128,15 +128,15 @@ const policySections: PolicySection[] = [
     id: "government-disclosure",
     title: "14. Government, regulatory, and legal disclosure",
     body: [
-      "BizSamadhan India may disclose personal data, documents, transaction records, or service records where required by law, court order, regulatory request, tax authority process, law enforcement inquiry, payment dispute response, anti-fraud review, statutory filing requirement, or lawful government direction.",
-      "We may also disclose information where reasonably necessary to establish, exercise, or defend legal claims, respond to chargebacks, protect clients, investigate fraud or misuse, or safeguard the rights, property, and operational security of BizSamadhan India and its service partners.",
+      "Wadhwani Associates may disclose personal data, documents, transaction records, or service records where required by law, court order, regulatory request, tax authority process, law enforcement inquiry, payment dispute response, anti-fraud review, statutory filing requirement, or lawful government direction.",
+      "We may also disclose information where reasonably necessary to establish, exercise, or defend legal claims, respond to chargebacks, protect clients, investigate fraud or misuse, or safeguard the rights, property, and operational security of Wadhwani Associates and its service partners.",
     ],
   },
   {
     id: "breach-handling",
     title: "15. Data breach handling",
     body: [
-      "If BizSamadhan India becomes aware of a confirmed or reasonably suspected data security incident affecting personal data, we will assess the nature and scope of the incident, secure affected systems where possible, investigate the operational cause, and take reasonable remedial action according to the seriousness of the event.",
+      "If Wadhwani Associates becomes aware of a confirmed or reasonably suspected data security incident affecting personal data, we will assess the nature and scope of the incident, secure affected systems where possible, investigate the operational cause, and take reasonable remedial action according to the seriousness of the event.",
       "Where notification is legally required or operationally appropriate, affected users, payment partners, regulators, or authorities may be informed with available details about the incident, the likely impact, and the steps being taken to manage the situation.",
     ],
   },
@@ -145,7 +145,7 @@ const policySections: PolicySection[] = [
     title: "16. Contact details for privacy concerns",
     body: [
       `Privacy questions, correction requests, retention concerns, marketing opt-out requests, document handling queries, or complaints about data use may be sent to ${COMPANY.email} or raised through the website contact page using the registered contact information associated with the enquiry or service.`,
-      `For faster resolution, users should include their full name, service name, relevant email address or mobile number, and any payment or order reference where applicable. BizSamadhan India may use ${COMPANY.phone} or email follow-up to verify the request and respond appropriately.`,
+      `For faster resolution, users should include their full name, service name, relevant email address or mobile number, and any payment or order reference where applicable. Wadhwani Associates may use ${COMPANY.phone} or email follow-up to verify the request and respond appropriately.`,
     ],
   },
   {
@@ -196,9 +196,9 @@ const schema = {
       "@type": "WebPage",
       "@id": `${pageUrl}#webpage`,
       url: pageUrl,
-      name: "Privacy Policy | BizSamadhan India",
+      name: "Privacy Policy | Wadhwani Associates",
       description:
-        "Enterprise-grade privacy policy for BizSamadhan India legal, tax, GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription, and digital documentation services.",
+        "Enterprise-grade privacy policy for Wadhwani Associates legal, tax, GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription, and digital documentation services.",
       datePublished: "2026-05-14",
       dateModified: "2026-05-14",
       inLanguage: "en-IN",
@@ -260,14 +260,14 @@ const schema = {
 };
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | BizSamadhan India",
+  title: "Privacy Policy | Wadhwani Associates",
   description:
-    "Read BizSamadhan India's privacy policy for document storage, Razorpay payments, cookies, personal data use, legal disclosure, retention, and security across GST, ITR, ROC/MCA, trademark, and incorporation services.",
+    "Read Wadhwani Associates' privacy policy for document storage, Razorpay payments, cookies, personal data use, legal disclosure, retention, and security across GST, ITR, ROC/MCA, trademark, and incorporation services.",
   alternates: {
     canonical: pageUrl,
   },
   openGraph: {
-    title: "Privacy Policy | BizSamadhan India",
+    title: "Privacy Policy | Wadhwani Associates",
     description:
       "Privacy disclosures for Indian legal, tax, compliance, payment, subscription, and digital documentation services.",
     url: pageUrl,
@@ -277,9 +277,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Privacy Policy | BizSamadhan India",
+    title: "Privacy Policy | Wadhwani Associates",
     description:
-      "How BizSamadhan India handles personal data, documents, payments, cookies, gateway metadata, security, retention, and legal disclosures.",
+      "How Wadhwani Associates handles personal data, documents, payments, cookies, gateway metadata, security, retention, and legal disclosures.",
   },
 };
 
@@ -308,7 +308,7 @@ export default function PrivacyPolicyPage() {
                   Privacy Policy
                 </h1>
                 <p className="max-w-4xl text-base leading-8 text-slate-700 dark:text-slate-300 sm:text-lg">
-                  This policy explains how BizSamadhan India collects, uses, stores, secures, shares, and retains personal data and service records across legal, tax, compliance, documentation, consultation, payment, and subscription workflows.
+                  This policy explains how Wadhwani Associates collects, uses, stores, secures, shares, and retains personal data and service records across legal, tax, compliance, documentation, consultation, payment, and subscription workflows.
                 </p>
                 <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Last updated: {lastUpdated}</p>
               </div>
@@ -396,7 +396,7 @@ export default function PrivacyPolicyPage() {
                   <div>
                     <h2 className="text-2xl font-semibold text-slate-950 dark:text-white">Privacy contact and support</h2>
                     <p className="mt-4 text-sm leading-7 text-slate-700 dark:text-slate-300 sm:text-base">
-                      For privacy concerns, correction requests, retention questions, document-handling clarifications, gateway dispute support, or marketing opt-out requests, contact BizSamadhan India using the channels below so the request can be logged and reviewed against the relevant service records.
+                      For privacy concerns, correction requests, retention questions, document-handling clarifications, gateway dispute support, or marketing opt-out requests, contact Wadhwani Associates using the channels below so the request can be logged and reviewed against the relevant service records.
                     </p>
                   </div>
                 </div>
@@ -446,7 +446,7 @@ export default function PrivacyPolicyPage() {
                   <div>
                     <h2 className="text-2xl font-semibold text-slate-950 dark:text-white">Operational privacy posture</h2>
                     <p className="mt-4 text-sm leading-7 text-slate-700 dark:text-slate-300 sm:text-base">
-                      For best merchant-review outcomes, BizSamadhan India should ensure cookie controls, privacy request handling, document-retention practices, and gateway dispute records are operationally consistent with this page. Published policy language works best when it mirrors how the team actually collects documents, stores them, and responds to payment or data requests.
+                      For best merchant-review outcomes, Wadhwani Associates should ensure cookie controls, privacy request handling, document-retention practices, and gateway dispute records are operationally consistent with this page. Published policy language works best when it mirrors how the team actually collects documents, stores them, and responds to payment or data requests.
                     </p>
                     <div className="mt-5 grid gap-3 sm:grid-cols-2">
                       <div className="rounded-2xl border border-slate-200 p-4 dark:border-slate-700">

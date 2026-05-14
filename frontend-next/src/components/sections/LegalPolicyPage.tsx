@@ -57,7 +57,7 @@ export function LegalPolicyPage({ page }: { page: LegalPolicyContent }) {
             <div className="space-y-2">
               <h2 className="text-2xl font-semibold text-slate-950">Need clarification?</h2>
               <p className="max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
-                Reach the BizSamadhan India support team for policy questions, billing clarifications, or service-specific assistance.
+                Reach the Wadhwani Associates support team for policy questions, billing clarifications, or service-specific assistance.
               </p>
               <div className="flex flex-col gap-2 text-sm text-slate-700 sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
                 <span className="inline-flex items-center gap-2">

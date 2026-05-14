@@ -22,15 +22,15 @@ const policySections: PolicySection[] = [
     id: "acceptance",
     title: "1. Acceptance of terms",
     body: [
-      "These Terms and Conditions govern access to and use of the BizSamadhan India website, client portal, consultation flows, payment links, Razorpay Checkout, invoices, communication channels, document workflows, and any legal, tax, business registration, compliance, or digital documentation service offered by BizSamadhan India.",
-      "By visiting the website, submitting an enquiry, booking a consultation, uploading documents, making a payment, approving a filing, using a subscription service, or otherwise engaging with BizSamadhan India, you confirm that you have read, understood, and agreed to these Terms and Conditions, our Refund Policy, Cancellation Policy, Service Delivery Policy, Privacy Policy, and any service-specific scope shared with you.",
+      "These Terms and Conditions govern access to and use of the Wadhwani Associates website, client portal, consultation flows, payment links, Razorpay Checkout, invoices, communication channels, document workflows, and any legal, tax, business registration, compliance, or digital documentation service offered by Wadhwani Associates.",
+      "By visiting the website, submitting an enquiry, booking a consultation, uploading documents, making a payment, approving a filing, using a subscription service, or otherwise engaging with Wadhwani Associates, you confirm that you have read, understood, and agreed to these Terms and Conditions, our Refund Policy, Cancellation Policy, Service Delivery Policy, Privacy Policy, and any service-specific scope shared with you.",
     ],
   },
   {
     id: "nature-of-services",
     title: "2. Nature of services",
     body: [
-      "BizSamadhan India provides professional support, advisory coordination, documentation assistance, filing preparation, workflow execution, and digital service delivery for GST registration and filing, Income Tax Return filing, ROC/MCA compliance, MSME registration, trademark services, company incorporation, subscription-based compliance services, and digital legal documentation services.",
+      "Wadhwani Associates provides professional support, advisory coordination, documentation assistance, filing preparation, workflow execution, and digital service delivery for GST registration and filing, Income Tax Return filing, ROC/MCA compliance, MSME registration, trademark services, company incorporation, subscription-based compliance services, and digital legal documentation services.",
       "Our services are professional and digital in nature. We do not sell physical goods through standard service purchases. Deliverables may include consultation guidance, document checklists, draft documents, application support, filing acknowledgements, payment receipts, compliance status updates, invoices, and completion confirmations shared through digital channels.",
     ],
   },
@@ -38,7 +38,7 @@ const policySections: PolicySection[] = [
     id: "user-responsibilities",
     title: "3. User responsibilities",
     body: [
-      "Users must provide accurate, complete, current, and legally valid information, including identity details, entity records, PAN, GST details, financial records, bank details where required, authorization letters, signatures, OTPs, board or partner approvals, and any service-specific documents requested by BizSamadhan India.",
+      "Users must provide accurate, complete, current, and legally valid information, including identity details, entity records, PAN, GST details, financial records, bank details where required, authorization letters, signatures, OTPs, board or partner approvals, and any service-specific documents requested by Wadhwani Associates.",
       "Users are responsible for maintaining the confidentiality of their login credentials, registered email address, phone number, payment instruments, portal credentials, and any third-party platform access shared for service execution. Users must not misuse the website, submit false information, upload unlawful material, interfere with platform security, or use the service for fraudulent or prohibited activity.",
     ],
   },
@@ -46,8 +46,8 @@ const policySections: PolicySection[] = [
     id: "accuracy-of-documents",
     title: "4. Accuracy of documents and client declarations",
     body: [
-      "BizSamadhan India relies on documents, declarations, data, and approvals supplied by the user. The user confirms that all documents and information submitted are authentic, lawful, complete, and fit for use in the requested service workflow.",
-      "BizSamadhan India may review documents for completeness, consistency, and filing readiness, but the user remains responsible for the truthfulness and legal accuracy of source information. Delays, rejections, penalties, tax demands, notices, compliance defects, or losses caused by incorrect or incomplete user information will be the user's responsibility.",
+      "Wadhwani Associates relies on documents, declarations, data, and approvals supplied by the user. The user confirms that all documents and information submitted are authentic, lawful, complete, and fit for use in the requested service workflow.",
+      "Wadhwani Associates may review documents for completeness, consistency, and filing readiness, but the user remains responsible for the truthfulness and legal accuracy of source information. Delays, rejections, penalties, tax demands, notices, compliance defects, or losses caused by incorrect or incomplete user information will be the user's responsibility.",
     ],
   },
   {
@@ -63,15 +63,15 @@ const policySections: PolicySection[] = [
     title: "6. Government approval and authority dependency",
     body: [
       "GST registration, GST return processing, Income Tax filings, MCA or ROC filings, company incorporation, MSME registration, trademark applications, and other statutory or authority-linked workflows may depend on government departments, statutory portals, registries, banks, certification authorities, and other third-party systems.",
-      "BizSamadhan India can support preparation, submission, follow-up, and workflow management, but does not guarantee approval, registration, certificate issuance, refund from government, statutory acceptance, or the timing of any decision controlled by a government authority, registry, bank, payment partner, or third-party platform.",
+      "Wadhwani Associates can support preparation, submission, follow-up, and workflow management, but does not guarantee approval, registration, certificate issuance, refund from government, statutory acceptance, or the timing of any decision controlled by a government authority, registry, bank, payment partner, or third-party platform.",
     ],
   },
   {
     id: "payments",
     title: "7. Payment terms",
     body: [
-      "Users must pay the applicable service fee, professional fee, subscription fee, government fee, statutory charge, third-party fee, tax, or convenience charge shown on the website, quotation, invoice, payment link, Razorpay Checkout page, or written service proposal before the relevant workflow is initiated, unless BizSamadhan India expressly agrees otherwise in writing.",
-      "Payments may be collected through Razorpay, UPI, cards, net banking, wallets, bank transfer, invoices, or other approved channels. A payment is treated as received only after successful confirmation from the payment partner, bank, or BizSamadhan India's internal payment records. Prices, discounts, and bundled services may change from time to time without affecting already confirmed paid orders.",
+      "Users must pay the applicable service fee, professional fee, subscription fee, government fee, statutory charge, third-party fee, tax, or convenience charge shown on the website, quotation, invoice, payment link, Razorpay Checkout page, or written service proposal before the relevant workflow is initiated, unless Wadhwani Associates expressly agrees otherwise in writing.",
+      "Payments may be collected through Razorpay, UPI, cards, net banking, wallets, bank transfer, invoices, or other approved channels. A payment is treated as received only after successful confirmation from the payment partner, bank, or Wadhwani Associates' internal payment records. Prices, discounts, and bundled services may change from time to time without affecting already confirmed paid orders.",
     ],
   },
   {
@@ -86,7 +86,7 @@ const policySections: PolicySection[] = [
     id: "digital-delivery",
     title: "9. Digital service delivery",
     body: [
-      "BizSamadhan India delivers services digitally through website forms, email, phone calls, WhatsApp, client portal updates, payment confirmations, uploaded document workflows, CRM-assisted operations, and other approved electronic communication channels.",
+      "Wadhwani Associates delivers services digitally through website forms, email, phone calls, WhatsApp, client portal updates, payment confirmations, uploaded document workflows, CRM-assisted operations, and other approved electronic communication channels.",
       "A service may be treated as delivered when the agreed consultation, document review, draft, filing support, application assistance, submission handoff, acknowledgement, completion update, or other digital deliverable has been provided according to the service scope. No physical shipping is applicable to standard service purchases.",
     ],
   },
@@ -94,39 +94,39 @@ const policySections: PolicySection[] = [
     id: "intellectual-property",
     title: "10. Intellectual property",
     body: [
-      "All website content, interface design, workflows, software, source code, service structures, pricing logic, brand assets, trade names, logos, copy, templates, checklists, internal processes, and platform materials are owned by or licensed to BizSamadhan India unless otherwise stated.",
-      "Users may use deliverables provided to them only for their intended lawful business, tax, compliance, filing, or documentation purpose. Users must not copy, resell, scrape, reverse engineer, commercially exploit, or misrepresent BizSamadhan India content, workflows, templates, or platform assets without prior written permission.",
+      "All website content, interface design, workflows, software, source code, service structures, pricing logic, brand assets, trade names, logos, copy, templates, checklists, internal processes, and platform materials are owned by or licensed to Wadhwani Associates unless otherwise stated.",
+      "Users may use deliverables provided to them only for their intended lawful business, tax, compliance, filing, or documentation purpose. Users must not copy, resell, scrape, reverse engineer, commercially exploit, or misrepresent Wadhwani Associates content, workflows, templates, or platform assets without prior written permission.",
     ],
   },
   {
     id: "liability",
     title: "11. Limitation of liability",
     body: [
-      "To the fullest extent permitted by applicable law, BizSamadhan India will not be liable for indirect, incidental, special, consequential, punitive, or remote losses, including loss of profits, business interruption, penalties caused by user-side default, loss of data, loss of opportunity, reputational harm, or losses arising from third-party systems outside our reasonable control.",
-      "Except where prohibited by law, BizSamadhan India's aggregate liability for a specific paid engagement is limited to the amount actually paid by the user to BizSamadhan India for that specific engagement, excluding government fees, statutory charges, third-party costs, taxes, gateway charges, and pass-through expenses.",
+      "To the fullest extent permitted by applicable law, Wadhwani Associates will not be liable for indirect, incidental, special, consequential, punitive, or remote losses, including loss of profits, business interruption, penalties caused by user-side default, loss of data, loss of opportunity, reputational harm, or losses arising from third-party systems outside our reasonable control.",
+      "Except where prohibited by law, Wadhwani Associates' aggregate liability for a specific paid engagement is limited to the amount actually paid by the user to Wadhwani Associates for that specific engagement, excluding government fees, statutory charges, third-party costs, taxes, gateway charges, and pass-through expenses.",
     ],
   },
   {
     id: "suspension",
     title: "12. Service suspension rights",
     body: [
-      "BizSamadhan India may pause, suspend, restrict, or terminate access to services, client portal features, advisor allocation, document processing, filing support, or pending deliverables if payment is overdue, information is incomplete, user cooperation is delayed, documents are deficient, credentials are unsafe, or continuing the service would create legal, compliance, security, fraud, or operational risk.",
-      "Suspension may also apply where a user violates these Terms, misuses support channels, threatens staff, attempts unauthorized access, submits unlawful material, requests illegal activity, or creates risk for BizSamadhan India, its customers, payment partners, statutory portals, or service providers.",
+      "Wadhwani Associates may pause, suspend, restrict, or terminate access to services, client portal features, advisor allocation, document processing, filing support, or pending deliverables if payment is overdue, information is incomplete, user cooperation is delayed, documents are deficient, credentials are unsafe, or continuing the service would create legal, compliance, security, fraud, or operational risk.",
+      "Suspension may also apply where a user violates these Terms, misuses support channels, threatens staff, attempts unauthorized access, submits unlawful material, requests illegal activity, or creates risk for Wadhwani Associates, its customers, payment partners, statutory portals, or service providers.",
     ],
   },
   {
     id: "fraud",
     title: "13. Fraudulent activity clause",
     body: [
-      "BizSamadhan India may reject, hold, pause, report, reverse, or investigate any transaction, account, enquiry, document submission, payment, service request, or subscription suspected to involve fraud, impersonation, stolen payment instruments, forged documents, false identity, unlawful purpose, prohibited goods or services, sanctions risk, money laundering risk, or misuse of statutory systems.",
-      "Where required, BizSamadhan India may share transaction records, service evidence, communication logs, invoice details, account information, and document metadata with Razorpay, banks, payment networks, regulators, law enforcement, government authorities, or professional advisors for fraud prevention, dispute handling, legal compliance, and risk management.",
+      "Wadhwani Associates may reject, hold, pause, report, reverse, or investigate any transaction, account, enquiry, document submission, payment, service request, or subscription suspected to involve fraud, impersonation, stolen payment instruments, forged documents, false identity, unlawful purpose, prohibited goods or services, sanctions risk, money laundering risk, or misuse of statutory systems.",
+      "Where required, Wadhwani Associates may share transaction records, service evidence, communication logs, invoice details, account information, and document metadata with Razorpay, banks, payment networks, regulators, law enforcement, government authorities, or professional advisors for fraud prevention, dispute handling, legal compliance, and risk management.",
     ],
   },
   {
     id: "chargebacks",
     title: "14. Chargeback abuse clause",
     body: [
-      "Users must contact BizSamadhan India support before raising a chargeback, card dispute, UPI dispute, or bank complaint where a service has been initiated, delivered, partially delivered, delayed by external dependency, or disputed due to misunderstanding of service scope.",
+      "Users must contact Wadhwani Associates support before raising a chargeback, card dispute, UPI dispute, or bank complaint where a service has been initiated, delivered, partially delivered, delayed by external dependency, or disputed due to misunderstanding of service scope.",
       "Improper or abusive chargebacks after consultation delivery, document review, advisor allocation, filing preparation, submission support, subscription execution, or digital deliverable handoff may result in service suspension, recovery of costs, withholding of pending deliverables, account restriction, and submission of service evidence to Razorpay, issuing banks, card networks, UPI providers, or appropriate authorities.",
     ],
   },
@@ -134,15 +134,15 @@ const policySections: PolicySection[] = [
     id: "third-party-integrations",
     title: "15. Third-party integrations and service providers",
     body: [
-      "BizSamadhan India may use third-party systems and service providers for payment processing, hosting, analytics, communication, email delivery, WhatsApp messaging, document storage, e-signature, statutory portal access, DSC support, professional review, CRM workflows, background jobs, and operational automation.",
-      "Third-party platforms may have their own terms, availability limits, downtime, security controls, processing rules, and dispute mechanisms. BizSamadhan India is not responsible for service interruption, failed payment, delayed confirmation, statutory portal downtime, payment partner outage, or third-party processing issue outside our reasonable control, but will provide commercially reasonable support where the issue relates to a paid engagement.",
+      "Wadhwani Associates may use third-party systems and service providers for payment processing, hosting, analytics, communication, email delivery, WhatsApp messaging, document storage, e-signature, statutory portal access, DSC support, professional review, CRM workflows, background jobs, and operational automation.",
+      "Third-party platforms may have their own terms, availability limits, downtime, security controls, processing rules, and dispute mechanisms. Wadhwani Associates is not responsible for service interruption, failed payment, delayed confirmation, statutory portal downtime, payment partner outage, or third-party processing issue outside our reasonable control, but will provide commercially reasonable support where the issue relates to a paid engagement.",
     ],
   },
   {
     id: "confidentiality",
     title: "16. Confidentiality",
     body: [
-      "BizSamadhan India treats user documents, financial records, identity information, business details, statutory credentials, and engagement-specific communications as confidential and uses them only for service delivery, platform operations, legal compliance, fraud prevention, billing, support, and record-keeping purposes.",
+      "Wadhwani Associates treats user documents, financial records, identity information, business details, statutory credentials, and engagement-specific communications as confidential and uses them only for service delivery, platform operations, legal compliance, fraud prevention, billing, support, and record-keeping purposes.",
       "Confidential information may be shared with assigned professionals, employees, contractors, technology providers, payment partners, statutory authorities, banks, auditors, legal advisors, or regulators where reasonably required for service execution, compliance, dispute handling, fraud review, or lawful requests.",
     ],
   },
@@ -150,7 +150,7 @@ const policySections: PolicySection[] = [
     id: "communications",
     title: "17. Communication consent",
     body: [
-      "By submitting contact details, booking a consultation, creating an account, uploading documents, making a payment, or purchasing a service, users consent to receive transactional, service, billing, compliance, delivery, document, payment, support, and security communications from BizSamadhan India through phone, SMS, email, WhatsApp, client portal notifications, and other lawful digital channels.",
+      "By submitting contact details, booking a consultation, creating an account, uploading documents, making a payment, or purchasing a service, users consent to receive transactional, service, billing, compliance, delivery, document, payment, support, and security communications from Wadhwani Associates through phone, SMS, email, WhatsApp, client portal notifications, and other lawful digital channels.",
       "Users may also receive service recommendations, compliance reminders, renewal notices, subscription updates, and relevant operational messages. Marketing preferences may be managed where applicable, but transactional and service-critical communications may continue while an engagement, legal obligation, payment record, dispute, or support request remains active.",
     ],
   },
@@ -158,8 +158,8 @@ const policySections: PolicySection[] = [
     id: "force-majeure",
     title: "18. Force majeure",
     body: [
-      "BizSamadhan India will not be responsible for delay, non-performance, interruption, or failure caused by events beyond reasonable control, including natural disasters, war, civil disturbance, strikes, epidemics, pandemics, government restrictions, statutory portal downtime, internet failure, power disruption, cyber incidents, payment network failures, bank outages, regulatory changes, or acts of public authorities.",
-      "Where a force majeure event affects service delivery, BizSamadhan India may revise timelines, pause workflows, reschedule consultations, provide alternate communication routes, or resume execution once commercially and legally practical.",
+      "Wadhwani Associates will not be responsible for delay, non-performance, interruption, or failure caused by events beyond reasonable control, including natural disasters, war, civil disturbance, strikes, epidemics, pandemics, government restrictions, statutory portal downtime, internet failure, power disruption, cyber incidents, payment network failures, bank outages, regulatory changes, or acts of public authorities.",
+      "Where a force majeure event affects service delivery, Wadhwani Associates may revise timelines, pause workflows, reschedule consultations, provide alternate communication routes, or resume execution once commercially and legally practical.",
     ],
   },
   {
@@ -174,7 +174,7 @@ const policySections: PolicySection[] = [
     id: "updates",
     title: "20. Changes to these terms",
     body: [
-      "BizSamadhan India may update these Terms and Conditions from time to time to reflect changes in services, payment flows, technology, legal requirements, Razorpay or banking expectations, business operations, or risk controls.",
+      "Wadhwani Associates may update these Terms and Conditions from time to time to reflect changes in services, payment flows, technology, legal requirements, Razorpay or banking expectations, business operations, or risk controls.",
       "The updated version will be posted on this page with the latest revision date. Continued use of the website, platform, payment channels, subscriptions, or services after an update indicates acceptance of the revised terms.",
     ],
   },
@@ -218,9 +218,9 @@ const schema = {
       "@type": "WebPage",
       "@id": `${pageUrl}#webpage`,
       url: pageUrl,
-      name: "Terms and Conditions | BizSamadhan India",
+      name: "Terms and Conditions | Wadhwani Associates",
       description:
-        "Enterprise-grade terms and conditions for BizSamadhan India legal, tax, GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription, and digital documentation services.",
+        "Enterprise-grade terms and conditions for Wadhwani Associates legal, tax, GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription, and digital documentation services.",
       datePublished: "2026-05-14",
       dateModified: "2026-05-14",
       inLanguage: "en-IN",
@@ -268,14 +268,14 @@ const schema = {
 };
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | BizSamadhan India",
+  title: "Terms and Conditions | Wadhwani Associates",
   description:
-    "Read BizSamadhan India's terms for GST, ITR, ROC/MCA, MSME, trademark, company incorporation, compliance subscriptions, payments, digital delivery, chargebacks, and Razorpay-supported services.",
+    "Read Wadhwani Associates' terms for GST, ITR, ROC/MCA, MSME, trademark, company incorporation, compliance subscriptions, payments, digital delivery, chargebacks, and Razorpay-supported services.",
   alternates: {
     canonical: pageUrl,
   },
   openGraph: {
-    title: "Terms and Conditions | BizSamadhan India",
+    title: "Terms and Conditions | Wadhwani Associates",
     description:
       "Razorpay-ready terms covering Indian legal, tax, compliance, company registration, subscription billing, fraud prevention, chargebacks, and digital service delivery.",
     url: pageUrl,
@@ -285,7 +285,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Terms and Conditions | BizSamadhan India",
+    title: "Terms and Conditions | Wadhwani Associates",
     description:
       "Enterprise service terms for online legal, tax, compliance, subscription, payment, and digital documentation services.",
   },
@@ -316,7 +316,7 @@ export default function TermsAndConditionsPage() {
                   Terms and Conditions
                 </h1>
                 <p className="max-w-4xl text-base leading-8 text-slate-700 dark:text-slate-300 sm:text-lg">
-                  These terms govern BizSamadhan India's online legal, tax, compliance, company registration, trademark, digital documentation, payment, subscription, and client support services delivered through our website and approved digital channels.
+                  These terms govern Wadhwani Associates' online legal, tax, compliance, company registration, trademark, digital documentation, payment, subscription, and client support services delivered through our website and approved digital channels.
                 </p>
                 <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Last updated: {lastUpdated}</p>
               </div>
@@ -404,7 +404,7 @@ export default function TermsAndConditionsPage() {
                   <div>
                     <h2 className="text-2xl font-semibold text-slate-950 dark:text-white">Support and legal contact</h2>
                     <p className="mt-4 text-sm leading-7 text-slate-700 dark:text-slate-300 sm:text-base">
-                      For questions about these terms, payments, subscriptions, service delivery, disputed transactions, invoices, or policy clarifications, contact BizSamadhan India using the details below. Written communication may be required for audit, support, and payment partner records.
+                      For questions about these terms, payments, subscriptions, service delivery, disputed transactions, invoices, or policy clarifications, contact Wadhwani Associates using the details below. Written communication may be required for audit, support, and payment partner records.
                     </p>
                   </div>
                 </div>

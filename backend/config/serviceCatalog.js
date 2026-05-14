@@ -1,4 +1,4 @@
-﻿const serviceCatalog = [
+const serviceCatalog = [
   {
     key: 'llp-registration',
     serviceName: 'LLP Registration',
@@ -9,7 +9,7 @@
     price: 3999,
     metaDescription: 'LLP registration service for partner-led businesses that want liability protection, filing support, and a smoother incorporation process.',
     heroTitle: 'Register your LLP with a clear filing path and partner-ready support.',
-    heroCopy: 'LegalAxis helps partner-led businesses set up an LLP with document review, incorporation filing support, and next-step compliance guidance.',
+    heroCopy: 'Wadhwani Associates helps partner-led businesses set up an LLP with document review, incorporation filing support, and next-step compliance guidance.',
     quickAnswerTitle: 'What is LLP registration?',
     quickAnswerBody: 'LLP registration creates a business structure that combines partnership flexibility with limited liability protection, making it a strong fit for professional firms and growing businesses.',
     problemCards: [
@@ -80,7 +80,7 @@
     price: 4499,
     metaDescription: 'OPC registration service for solo founders who want a proper company structure with limited liability and guided filing support.',
     heroTitle: 'Register an OPC with a single-founder structure that still feels corporate.',
-    heroCopy: 'LegalAxis helps solo founders set up an OPC with document review, incorporation filing support, and next-step compliance direction.',
+    heroCopy: 'Wadhwani Associates helps solo founders set up an OPC with document review, incorporation filing support, and next-step compliance direction.',
     quickAnswerTitle: 'What is OPC registration?',
     quickAnswerBody: 'An OPC lets a single founder register a company with limited liability and a more formal structure than a sole proprietorship.',
     problemCards: [
@@ -127,7 +127,7 @@
         answer: 'The main advantage is that a solo founder can operate with a formal corporate structure without bringing in extra owners.',
       },
       {
-        question: 'Can LegalAxis help with filing?',
+        question: 'Can Wadhwani Associates help with filing?',
         answer: 'Yes. We help review the documents, prepare the filing flow, and guide the next steps after registration.',
       },
     ],
@@ -151,7 +151,7 @@
     price: 1499,
     metaDescription: 'Sole proprietorship registration support for small business owners who want quick setup guidance, basic documentation, and a clean start.',
     heroTitle: 'Set up a sole proprietorship with a simple path and practical support.',
-    heroCopy: 'LegalAxis helps small businesses register and organize a sole proprietorship with document review, local compliance guidance, and a clearer next step plan.',
+    heroCopy: 'Wadhwani Associates helps small businesses register and organize a sole proprietorship with document review, local compliance guidance, and a clearer next step plan.',
     quickAnswerTitle: 'What is sole proprietorship registration?',
     quickAnswerBody: 'A sole proprietorship is a simple business structure owned and controlled by one person, commonly used for small operations and early-stage businesses.',
     problemCards: [
@@ -222,7 +222,7 @@
     price: 2499,
     metaDescription: 'Partnership firm registration support for businesses that want a formal partnership structure, clearer documentation, and filing guidance.',
     heroTitle: 'Register a partnership firm with better structure and filing support.',
-    heroCopy: 'LegalAxis helps partners formalize a partnership firm with deed review, filing support, and practical post-registration direction.',
+    heroCopy: 'Wadhwani Associates helps partners formalize a partnership firm with deed review, filing support, and practical post-registration direction.',
     quickAnswerTitle: 'What is partnership firm registration?',
     quickAnswerBody: 'Partnership firm registration formalizes a business owned by two or more partners, usually supported by a partnership deed and local registration steps.',
     problemCards: [
@@ -269,7 +269,7 @@
         answer: 'The partnership deed is central because it defines the relationship, responsibilities, and terms between partners.',
       },
       {
-        question: 'Can LegalAxis help before filing?',
+        question: 'Can Wadhwani Associates help before filing?',
         answer: 'Yes. We review the deed, check the documents, and guide the filing order so the process is clearer.',
       },
     ],
@@ -293,7 +293,7 @@
     price: 1499,
     metaDescription: 'GST return filing support for businesses that want deadline-focused filing, reconciliation help, and cleaner monthly compliance.',
     heroTitle: 'File GST returns on time with cleaner records and less stress.',
-    heroCopy: 'LegalAxis helps businesses file GST returns with reconciliation support, review checkpoints, and deadline-focused filing help.',
+    heroCopy: 'Wadhwani Associates helps businesses file GST returns with reconciliation support, review checkpoints, and deadline-focused filing help.',
     quickAnswerTitle: 'What is GST return filing?',
     quickAnswerBody: 'GST return filing means reporting sales, purchases, input tax credit, and tax liability to the GST system within the applicable deadline.',
     problemCards: [
@@ -364,7 +364,7 @@
     price: 5999,
     metaDescription: 'Annual compliance filing support for companies and LLPs that want deadline tracking, document preparation, and a cleaner compliance calendar.',
     heroTitle: 'Keep annual compliance filings organized before deadlines become urgent.',
-    heroCopy: 'LegalAxis helps businesses manage annual compliance filings with document review, deadline planning, and filing support.',
+    heroCopy: 'Wadhwani Associates helps businesses manage annual compliance filings with document review, deadline planning, and filing support.',
     quickAnswerTitle: 'What is annual compliance filing?',
     quickAnswerBody: 'Annual compliance filing is the recurring statutory work businesses complete each year to stay compliant with company or LLP obligations.',
     problemCards: [
@@ -411,7 +411,7 @@
         answer: 'Compliance deadlines repeat every year, so planning and filing support are useful on an ongoing basis.',
       },
       {
-        question: 'Can LegalAxis help track deadlines?',
+        question: 'Can Wadhwani Associates help track deadlines?',
         answer: 'Yes. The goal is to keep the filing process organized before deadlines become urgent.',
       },
     ],
@@ -435,7 +435,7 @@
     price: 6999,
     metaDescription: 'ROC filing support for companies that need filing preparation, document review, and smoother statutory compliance execution.',
     heroTitle: 'Handle ROC filings with a cleaner workflow and better document control.',
-    heroCopy: 'LegalAxis helps companies prepare ROC filings with document review, filing support, and compliance-oriented next steps.',
+    heroCopy: 'Wadhwani Associates helps companies prepare ROC filings with document review, filing support, and compliance-oriented next steps.',
     quickAnswerTitle: 'What is ROC filing?',
     quickAnswerBody: 'ROC filing refers to statutory filings made with the Registrar of Companies to keep company records and compliance obligations current.',
     problemCards: [
@@ -506,7 +506,7 @@
     price: 4999,
     metaDescription: 'Accounting and bookkeeping support for businesses that want cleaner records, recurring reporting, and better financial visibility.',
     heroTitle: 'Keep your books cleaner with recurring accounting and bookkeeping support.',
-    heroCopy: 'LegalAxis helps businesses maintain financial records with bookkeeping support, reconciliation assistance, and reporting-ready records.',
+    heroCopy: 'Wadhwani Associates helps businesses maintain financial records with bookkeeping support, reconciliation assistance, and reporting-ready records.',
     quickAnswerTitle: 'What is accounting and bookkeeping support?',
     quickAnswerBody: 'Accounting and bookkeeping support keeps sales, expenses, receipts, and reconciliations organized so the business has clearer records and reporting inputs.',
     problemCards: [
@@ -577,7 +577,7 @@
     price: 3499,
     metaDescription: 'Startup India registration support for founders who want eligibility review, application help, and a stronger startup compliance foundation.',
     heroTitle: 'Get Startup India registration support with eligibility review and filing guidance.',
-    heroCopy: 'LegalAxis helps founders review eligibility, prepare documents, and move through Startup India registration with less confusion.',
+    heroCopy: 'Wadhwani Associates helps founders review eligibility, prepare documents, and move through Startup India registration with less confusion.',
     quickAnswerTitle: 'What is Startup India registration?',
     quickAnswerBody: 'Startup India registration is a recognition process that helps eligible startups access program benefits, support, and a more structured compliance journey.',
     problemCards: [
@@ -624,7 +624,7 @@
         answer: 'Eligibility review helps reduce rejection risk and clarifies what documents and details need to be ready.',
       },
       {
-        question: 'Can LegalAxis help with the application?',
+        question: 'Can Wadhwani Associates help with the application?',
         answer: 'Yes. We help prepare the documents, review the application, and guide the submission flow.',
       },
     ],
@@ -648,7 +648,7 @@
     price: 4999,
     metaDescription: 'Copyright registration support for creators and businesses that want stronger proof of ownership, filing guidance, and protection for original work.',
     heroTitle: 'Protect original work with a clear copyright registration path.',
-    heroCopy: 'LegalAxis helps creators and businesses register copyright with document review, filing support, and ownership clarity.',
+    heroCopy: 'Wadhwani Associates helps creators and businesses register copyright with document review, filing support, and ownership clarity.',
     quickAnswerTitle: 'What is copyright registration?',
     quickAnswerBody: 'Copyright registration helps document ownership of original creative work and provides a stronger basis for protection and enforcement.',
     problemCards: [
@@ -695,7 +695,7 @@
         answer: 'Registration can help create a stronger record of ownership and make protection discussions easier later.',
       },
       {
-        question: 'Does LegalAxis review the application?',
+        question: 'Does Wadhwani Associates review the application?',
         answer: 'Yes. We help review the documents and guide the filing process so it is clearer from start to finish.',
       },
     ],

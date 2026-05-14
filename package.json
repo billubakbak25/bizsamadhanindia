@@ -1,7 +1,7 @@
 {
   "name": "bizsamadhan-platform",
   "version": "1.0.0",
-  "description": "BizSamadhan legal services platform with Express, Prisma, PostgreSQL, and a Next.js frontend.",
+  "description": "Wadhwani Associates legal services platform with Express, Prisma, PostgreSQL, and a Next.js frontend.",
   "main": "backend/server.js",
   "scripts": {
     "start": "npm run start:railway",

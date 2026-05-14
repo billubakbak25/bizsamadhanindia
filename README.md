@@ -1,4 +1,4 @@
-# LegalAxis Lead Management System
+# Wadhwani Associates Lead Management System
 
 This project upgrades the legal services website into a small SaaS-style lead management system.
 

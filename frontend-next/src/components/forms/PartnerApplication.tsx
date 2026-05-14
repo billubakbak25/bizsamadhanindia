@@ -34,7 +34,7 @@ export function PartnerApplication() {
     focusArea: "compliance",
     message: "",
   });
-  const [status, setStatus] = useState("Apply to build a referral-led growth motion with BizSamadhan India.");
+  const [status, setStatus] = useState("Apply to build a referral-led growth motion with Wadhwani Associates.");
   const [isPending, setIsPending] = useState(false);
 
   function updateField<K extends keyof typeof form>(key: K, value: (typeof form)[K]) {

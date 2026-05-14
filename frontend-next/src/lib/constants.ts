@@ -1,7 +1,9 @@
 export const COMPANY = {
-  name: "BizSamadhan India",
+  name: "Wadhwani Associates",
+  brandName: "Biz Samadhan India",
+  domainName: "bizsamadhanindia.com",
   description:
-    "A modern legal, tax, and compliance growth platform for Indian founders, operators, and finance teams.",
+    "Wadhwani Associates operates Biz Samadhan India as a modern legal, tax, and compliance growth platform for Indian founders, operators, and finance teams.",
   phone: "+91 96968 93625",
   email: "support@bizsamadhanindia.com",
   city: "Kanpur, Uttar Pradesh",
@@ -57,6 +59,9 @@ export type LegalPolicyContent = {
 
 export type BusinessContactDetails = {
   businessName: string;
+  brandName: string;
+  supportPerson: string;
+  supportRepresentativeLabel: string;
   supportEmail: string;
   primaryPhones: string[];
   primaryPhoneDisplay: string[];
@@ -87,7 +92,10 @@ export type BusinessContactDetails = {
 const CONTACT_MAP_QUERY = "LIG 25 SF Colony Barra 3 Kanpur 208027";
 
 export const BUSINESS_CONTACT: BusinessContactDetails = {
-  businessName: "Biz Samadhan India",
+  businessName: "Wadhwani Associates",
+  brandName: "Biz Samadhan India",
+  supportPerson: "Vikram Wadhwani",
+  supportRepresentativeLabel: "Official Support Representative: Vikram Wadhwani",
   supportEmail: "support@bizsamadhanindia.com",
   primaryPhones: ["9696893625", "8303340092"],
   primaryPhoneDisplay: ["+91 96968 93625", "+91 83033 40092"],
@@ -516,10 +524,10 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
     slug: "privacy-policy",
     title: "Privacy Policy",
     description:
-      "Enterprise privacy policy for BizSamadhan India covering document storage, Razorpay transactions, cookies, data use, retention, security, and lawful disclosure.",
+      "Enterprise privacy policy for Wadhwani Associates covering document storage, Razorpay transactions, cookies, data use, retention, security, and lawful disclosure.",
     eyebrow: "Privacy",
     hero:
-      "This policy explains how BizSamadhan India handles personal data, business records, payment metadata, document workflows, cookies, communications, and legal disclosures across digital legal, tax, and compliance services.",
+      "This policy explains how Wadhwani Associates handles personal data, business records, payment metadata, document workflows, cookies, communications, and legal disclosures across digital legal, tax, and compliance services.",
     lastUpdated: "May 14, 2026",
     highlights: ["Sensitive document handling", "Razorpay and gateway disclosures", "Retention and security controls"],
     sections: [
@@ -534,13 +542,13 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
         title: "How we use and share information",
         body: [
           "Information is used to respond to enquiries, execute purchased services, manage support, reconcile payments, maintain records, prevent fraud, improve operational reliability, and comply with legal or regulatory duties.",
-          "BizSamadhan India does not sell personal data to unrelated advertisers or brokers. Sharing is limited to service providers, professionals, payment partners, and lawful disclosures reasonably required for service delivery or compliance.",
+          "Wadhwani Associates does not sell personal data to unrelated advertisers or brokers. Sharing is limited to service providers, professionals, payment partners, and lawful disclosures reasonably required for service delivery or compliance.",
         ],
       },
       {
         title: "Storage, gateways, and retention",
         body: [
-          "Sensitive payment instrument data is ordinarily processed by gateways such as Razorpay, while BizSamadhan India may retain transaction references, invoice records, and payment status needed for support and dispute handling.",
+          "Sensitive payment instrument data is ordinarily processed by gateways such as Razorpay, while Wadhwani Associates may retain transaction references, invoice records, and payment status needed for support and dispute handling.",
           "Retention periods depend on service type, legal and tax obligations, audit requirements, dispute management, fraud controls, and the record-keeping standards relevant to the engagement.",
         ],
       },
@@ -550,10 +558,10 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
     slug: "terms-and-conditions",
     title: "Terms and Conditions",
     description:
-      "Razorpay-ready terms governing BizSamadhan India's GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription, payment, and digital documentation services.",
+      "Razorpay-ready terms governing Wadhwani Associates' GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription, payment, and digital documentation services.",
     eyebrow: "Terms",
     hero:
-      "These terms define the responsibilities, payment rules, digital delivery model, service limitations, government dependency, fraud controls, and dispute expectations for using BizSamadhan India services.",
+      "These terms define the responsibilities, payment rules, digital delivery model, service limitations, government dependency, fraud controls, and dispute expectations for using Wadhwani Associates services.",
     lastUpdated: "May 14, 2026",
     highlights: ["Razorpay-ready payment terms", "Digital service delivery rules", "Government approval dependency"],
     sections: [
@@ -561,27 +569,27 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
         title: "Acceptance and service scope",
         body: [
           "By using the website, submitting an enquiry, booking a consultation, uploading documents, making a payment, or using a subscription service, users agree to these Terms and Conditions and related policies.",
-          "BizSamadhan India provides professional support for GST, ITR, ROC/MCA compliance, MSME registration, trademark services, company incorporation, recurring compliance subscriptions, and digital legal documentation services.",
+          "Wadhwani Associates provides professional support for GST, ITR, ROC/MCA compliance, MSME registration, trademark services, company incorporation, recurring compliance subscriptions, and digital legal documentation services.",
         ],
       },
       {
         title: "User responsibility and authority dependency",
         body: [
-          "Users must provide accurate, complete, current, and legally valid information and documents. BizSamadhan India relies on user-supplied records for service execution and statutory filing preparation.",
-          "Timelines and outcomes may depend on user approvals, document readiness, government departments, statutory portals, banks, registries, payment partners, and other third-party systems outside BizSamadhan India's direct control.",
+          "Users must provide accurate, complete, current, and legally valid information and documents. Wadhwani Associates relies on user-supplied records for service execution and statutory filing preparation.",
+          "Timelines and outcomes may depend on user approvals, document readiness, government departments, statutory portals, banks, registries, payment partners, and other third-party systems outside Wadhwani Associates' direct control.",
         ],
       },
       {
         title: "Payments, subscriptions, and misuse controls",
         body: [
           "Payments may be collected through Razorpay and approved digital channels. Recurring compliance plans and subscriptions are billed according to the selected plan, invoice, proposal, or checkout terms.",
-          "BizSamadhan India may pause services for non-payment, incomplete information, unlawful use, suspected fraud, chargeback abuse, document forgery, or activity that creates legal, security, payment, or compliance risk.",
+          "Wadhwani Associates may pause services for non-payment, incomplete information, unlawful use, suspected fraud, chargeback abuse, document forgery, or activity that creates legal, security, payment, or compliance risk.",
         ],
       },
       {
         title: "Liability, confidentiality, and jurisdiction",
         body: [
-          "Except where prohibited by law, liability for a specific paid engagement is limited to the amount paid to BizSamadhan India for that engagement, excluding statutory fees, government charges, third-party costs, taxes, and gateway charges.",
+          "Except where prohibited by law, liability for a specific paid engagement is limited to the amount paid to Wadhwani Associates for that engagement, excluding statutory fees, government charges, third-party costs, taxes, and gateway charges.",
           "These terms are governed by Indian law. Subject to mandatory consumer protection rights, disputes shall fall under the jurisdiction of competent courts and authorities in Kanpur, Uttar Pradesh, India.",
         ],
       },
@@ -590,7 +598,7 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
   "refund-policy": {
     slug: "refund-policy",
     title: "Refund Policy",
-    description: "Refund terms for consultations, legal-tech services, filing workflows, and advance payments made to BizSamadhan India.",
+    description: "Refund terms for consultations, legal-tech services, filing workflows, and advance payments made to Wadhwani Associates.",
     eyebrow: "Refunds",
     hero: "This refund policy explains when payments may be refundable, how refund requests are reviewed, and where charges remain non-refundable because work has already started or third-party costs have been incurred.",
     lastUpdated: "May 12, 2026",
@@ -606,7 +614,7 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
       {
         title: "When refunds may be allowed",
         body: [
-          "A refund may be considered if a duplicate payment was made, the service cannot be initiated for reasons attributable solely to BizSamadhan India, or a written cancellation request is received before substantive work has started.",
+          "A refund may be considered if a duplicate payment was made, the service cannot be initiated for reasons attributable solely to Wadhwani Associates, or a written cancellation request is received before substantive work has started.",
           "Approved partial refunds may be issued after deducting consultation charges, document review effort, administrative handling, and any third-party or compliance costs already incurred.",
         ],
       },
@@ -629,7 +637,7 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
   "cancellation-policy": {
     slug: "cancellation-policy",
     title: "Cancellation Policy",
-    description: "Cancellation rules for consultations, service orders, recurring compliance work, and active execution workflows on BizSamadhan India.",
+    description: "Cancellation rules for consultations, service orders, recurring compliance work, and active execution workflows on Wadhwani Associates.",
     eyebrow: "Cancellations",
     hero: "This cancellation policy sets out how and when a service request, consultation, or execution workflow can be cancelled, and what commercial consequences may follow.",
     lastUpdated: "May 12, 2026",
@@ -638,7 +646,7 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
       {
         title: "Cancellation before work starts",
         body: [
-          "Users may request cancellation before substantive work begins by contacting BizSamadhan India through the registered communication channel and sharing the relevant order or payment reference.",
+          "Users may request cancellation before substantive work begins by contacting Wadhwani Associates through the registered communication channel and sharing the relevant order or payment reference.",
           "If no material work, review, drafting, filing preparation, or third-party booking has occurred, the request may be accepted subject to applicable administrative deductions under the refund policy.",
         ],
       },
@@ -668,7 +676,7 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
   "service-delivery-policy": {
     slug: "service-delivery-policy",
     title: "Service Delivery Policy",
-    description: "How BizSamadhan India delivers paid legal, tax, compliance, and consultation services after successful payment.",
+    description: "How Wadhwani Associates delivers paid legal, tax, compliance, and consultation services after successful payment.",
     eyebrow: "Service Delivery",
     hero: "This policy explains how paid service requests move from payment confirmation to document collection, expert review, execution, and client handoff.",
     lastUpdated: "May 14, 2026",
@@ -677,7 +685,7 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
       {
         title: "Digital delivery model",
         body: [
-          "BizSamadhan India provides legal, tax, compliance, consultation, and workflow execution services digitally through website forms, phone support, email, WhatsApp, client portal updates, and internal CRM-assisted operations.",
+          "Wadhwani Associates provides legal, tax, compliance, consultation, and workflow execution services digitally through website forms, phone support, email, WhatsApp, client portal updates, and internal CRM-assisted operations.",
           "No physical goods are shipped for standard service purchases. Deliverables may include consultation notes, filing acknowledgements, draft documents, invoices, status updates, and completion confirmations shared through digital channels.",
         ],
       },
@@ -685,7 +693,7 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
         title: "Delivery timelines",
         body: [
           "Service timelines depend on the selected service, document readiness, payment confirmation, user response time, statutory portals, government departments, and third-party systems involved in the workflow.",
-          "After payment verification, BizSamadhan India initiates the relevant workflow and may request documents or clarifications before execution can proceed.",
+          "After payment verification, Wadhwani Associates initiates the relevant workflow and may request documents or clarifications before execution can proceed.",
         ],
       },
       {

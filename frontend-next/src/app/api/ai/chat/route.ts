@@ -1,7 +1,7 @@
 import { streamText, convertToModelMessages, stepCountIs, tool } from "ai";
 import { z } from "zod";
 
-const SYSTEM_PROMPT = `You are a helpful legal services assistant for BizSamadhan India, a leading legal and compliance platform. Your role is to:
+const SYSTEM_PROMPT = `You are a helpful legal services assistant for Wadhwani Associates, a leading legal and compliance platform. Your role is to:
 
 1. Help users understand which services they need
 2. Answer questions about company registration, GST, trademark, compliance, etc.

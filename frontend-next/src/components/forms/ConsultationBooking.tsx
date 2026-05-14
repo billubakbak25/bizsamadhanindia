@@ -113,7 +113,7 @@ export function ConsultationBooking() {
           return;
         }
 
-        console.error("[BizSamadhan Consultation] slot load failed", error);
+        console.error("[Wadhwani Associates Consultation] slot load failed", error);
         setSlots(fallbackSlots);
         setForm((current) => ({ ...current, preferredSlot: fallbackSlots[0]?.slot || current.preferredSlot }));
         setStatus("Live slots are unavailable, so a curated fallback schedule is shown.");

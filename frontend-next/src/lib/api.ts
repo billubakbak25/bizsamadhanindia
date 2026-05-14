@@ -73,7 +73,7 @@ function browserLog(method: "log" | "error", message: string, data: Record<strin
   }
 
   const writer = method === "error" ? console.error : console.log;
-  writer(`[BizSamadhan API] ${message}`, data);
+  writer(`[Wadhwani Associates API] ${message}`, data);
 }
 
 export function buildApiUrl(path: string) {

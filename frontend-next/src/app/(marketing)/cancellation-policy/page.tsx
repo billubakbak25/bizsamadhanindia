@@ -17,8 +17,8 @@ const policySections: PolicySection[] = [
     id: "scope",
     title: "1. Scope and service nature",
     body: [
-      "This Cancellation Policy applies to paid service orders, consultation bookings, payment links, invoices, recurring compliance plans, and digital workflow engagements placed with BizSamadhan India for Indian legal, tax, business registration, compliance, documentation, and advisory services. Covered services include GST registration and return filing, Income Tax Return filing, ROC/MCA compliance, company incorporation, MSME registration, trademark services, digital documentation, consultation services, and subscription-based compliance support.",
-      "BizSamadhan India delivers service outcomes through expert review, document collection, statutory portal preparation, compliance workflows, filing assistance, advisory communication, and digital handoff. Because these services involve professional time, authority-facing preparation, and operational allocation, cancellation eligibility depends on when the request is made and what work has already been initiated.",
+      "This Cancellation Policy applies to paid service orders, consultation bookings, payment links, invoices, recurring compliance plans, and digital workflow engagements placed with Wadhwani Associates for Indian legal, tax, business registration, compliance, documentation, and advisory services. Covered services include GST registration and return filing, Income Tax Return filing, ROC/MCA compliance, company incorporation, MSME registration, trademark services, digital documentation, consultation services, and subscription-based compliance support.",
+      "Wadhwani Associates delivers service outcomes through expert review, document collection, statutory portal preparation, compliance workflows, filing assistance, advisory communication, and digital handoff. Because these services involve professional time, authority-facing preparation, and operational allocation, cancellation eligibility depends on when the request is made and what work has already been initiated.",
     ],
   },
   {
@@ -26,7 +26,7 @@ const policySections: PolicySection[] = [
     title: "2. Cancellation request procedure",
     body: [
       `A cancellation request must be submitted in writing from the registered email address, registered mobile number, client portal, or contact form associated with the payment. Customers may write to ${COMPANY.email} and mention the payment reference, Razorpay payment ID or order ID, invoice number if available, selected service, customer name, registered phone number, and reason for cancellation.`,
-      "Phone calls and WhatsApp messages may be used for status assistance, but a written cancellation request is required for audit, payment partner, and internal workflow records. BizSamadhan India may ask for additional verification before accepting a cancellation request, especially where the order value is high, identity details differ, or the request is raised by someone other than the payer or authorised customer representative.",
+      "Phone calls and WhatsApp messages may be used for status assistance, but a written cancellation request is required for audit, payment partner, and internal workflow records. Wadhwani Associates may ask for additional verification before accepting a cancellation request, especially where the order value is high, identity details differ, or the request is raised by someone other than the payer or authorised customer representative.",
     ],
   },
   {
@@ -34,14 +34,14 @@ const policySections: PolicySection[] = [
     title: "3. Service cancellation eligibility",
     body: [
       "Cancellation may be considered when the request is received before work initiation, before advisor allocation, before document review, before statutory form preparation, before portal activity, and before any government, filing, payment gateway, or third-party cost is committed. Eligibility is assessed from the internal CRM workflow, communication logs, uploaded document status, payment status, and service operations record.",
-      "Submitting a cancellation request does not automatically cancel the service. BizSamadhan India must confirm whether the order is cancellable, partially cancellable, or no longer cancellable because service execution has moved beyond the permitted stage.",
+      "Submitting a cancellation request does not automatically cancel the service. Wadhwani Associates must confirm whether the order is cancellable, partially cancellable, or no longer cancellable because service execution has moved beyond the permitted stage.",
     ],
   },
   {
     id: "before-initiation",
     title: "4. Cancellation before work initiation",
     body: [
-      "If a valid cancellation request is received before substantive work starts, BizSamadhan India may cancel the order and close the workflow. Substantive work includes service diagnosis, document review, data validation, advisor assignment, filing preparation, portal login work, trademark or company name search, return computation, drafting, customer-specific checklist preparation, or statutory submission readiness activity.",
+      "If a valid cancellation request is received before substantive work starts, Wadhwani Associates may cancel the order and close the workflow. Substantive work includes service diagnosis, document review, data validation, advisor assignment, filing preparation, portal login work, trademark or company name search, return computation, drafting, customer-specific checklist preparation, or statutory submission readiness activity.",
       "Where cancellation is accepted before work initiation, any eligible refund or payment adjustment will be handled under the Refund Policy. Processing fees, payment gateway charges, bank charges, administrative handling, or other costs already incurred may still be deducted where applicable.",
     ],
   },
@@ -50,7 +50,7 @@ const policySections: PolicySection[] = [
     title: "5. No cancellation after filing, submission, or authority-facing action",
     body: [
       "A service cannot be cancelled after filing, submission, challan generation, form upload, DSC use, authority-facing communication, government fee payment, statutory portal submission, trademark registry activity, MCA name reservation step, GST portal application activity, ITR preparation submission stage, or any comparable irreversible action has been initiated.",
-      "Once such activity begins, BizSamadhan India may continue the service, pause for customer inputs, or close the engagement as per the service record, but cancellation will not undo statutory, filing, or government-facing activity already performed. Any financial consequence will be assessed under the Refund Policy and applicable service terms.",
+      "Once such activity begins, Wadhwani Associates may continue the service, pause for customer inputs, or close the engagement as per the service record, but cancellation will not undo statutory, filing, or government-facing activity already performed. Any financial consequence will be assessed under the Refund Policy and applicable service terms.",
     ],
   },
   {
@@ -73,7 +73,7 @@ const policySections: PolicySection[] = [
     id: "timelines",
     title: "8. Timeline for cancellation review",
     body: [
-      "BizSamadhan India normally reviews cancellation requests within 3 to 5 Business Working Days after receiving complete details. Complex matters involving filing status, government fee verification, third-party vendor confirmation, subscription cycle review, fraud checks, or disputed customer instructions may require additional time.",
+      "Wadhwani Associates normally reviews cancellation requests within 3 to 5 Business Working Days after receiving complete details. Complex matters involving filing status, government fee verification, third-party vendor confirmation, subscription cycle review, fraud checks, or disputed customer instructions may require additional time.",
       "A cancellation decision may result in acceptance, rejection, request for more information, partial cancellation, conversion to service credit, rescheduling, workflow pause, or escalation to operations management. Any refund implication will be communicated separately under the Refund Policy.",
     ],
   },
@@ -82,7 +82,7 @@ const policySections: PolicySection[] = [
     title: "9. Customer responsibility and incomplete documentation",
     body: [
       "Customers are responsible for providing complete and accurate documents, identification details, business information, statutory records, OTP cooperation, signatures, approvals, and portal credentials where required. A customer cannot claim cancellation solely because service execution is delayed by missing, deficient, inconsistent, expired, illegible, or unverifiable documents.",
-      "If documentation remains incomplete after repeated follow-up, BizSamadhan India may pause the workflow, mark the service as awaiting customer input, close the order as dormant, or require reactivation charges depending on the service stage. Such situations do not automatically create cancellation or refund entitlement.",
+      "If documentation remains incomplete after repeated follow-up, Wadhwani Associates may pause the workflow, mark the service as awaiting customer input, close the order as dormant, or require reactivation charges depending on the service stage. Such situations do not automatically create cancellation or refund entitlement.",
     ],
   },
   {
@@ -90,14 +90,14 @@ const policySections: PolicySection[] = [
     title: "10. Operational, third-party, and government authority dependencies",
     body: [
       "Many services depend on MCA, GST, Income Tax, trademark registry, MSME, bank, DSC, payment gateway, or other third-party systems. Portal downtime, authority queues, public holidays, regulatory changes, bank settlement delays, OTP issues, name approval delays, objections, notices, rejections, or additional departmental requirements may affect timelines.",
-      "Delays caused by such dependencies are not treated as automatic cancellation grounds. BizSamadhan India may revise timelines, request additional inputs, recommend alternate filing strategy, escalate internally, or pause the workflow until the relevant authority or third-party dependency becomes workable.",
+      "Delays caused by such dependencies are not treated as automatic cancellation grounds. Wadhwani Associates may revise timelines, request additional inputs, recommend alternate filing strategy, escalate internally, or pause the workflow until the relevant authority or third-party dependency becomes workable.",
     ],
   },
   {
     id: "misuse",
     title: "11. Fraudulent bookings, abuse, and misuse protection",
     body: [
-      "BizSamadhan India may refuse or suspend cancellation requests where the order appears fraudulent, impersonated, made with false documents, made using an unauthorised payment instrument, connected to suspicious payment behaviour, or submitted with inconsistent identity or business details. Additional verification may be required before any cancellation decision is issued.",
+      "Wadhwani Associates may refuse or suspend cancellation requests where the order appears fraudulent, impersonated, made with false documents, made using an unauthorised payment instrument, connected to suspicious payment behaviour, or submitted with inconsistent identity or business details. Additional verification may be required before any cancellation decision is issued.",
       "Abuse of cancellation rights, repeated booking and cancellation, refusal to provide required documents after service allocation, chargeback threats after work initiation, or attempts to obtain unpaid professional work may lead to service suspension, cancellation refusal, recovery of costs, account restrictions, and submission of evidence to Razorpay, banks, or lawful authorities.",
     ],
   },
@@ -105,7 +105,7 @@ const policySections: PolicySection[] = [
     id: "refusal",
     title: "12. Right to refuse cancellation",
     body: [
-      "BizSamadhan India reserves the right to refuse cancellation where work has started, filing or submission has occurred, government or third-party charges are committed, the customer has consumed consultation or advisory time, the request conflicts with applicable law, or cancellation would prejudice statutory compliance already undertaken for the customer.",
+      "Wadhwani Associates reserves the right to refuse cancellation where work has started, filing or submission has occurred, government or third-party charges are committed, the customer has consumed consultation or advisory time, the request conflicts with applicable law, or cancellation would prejudice statutory compliance already undertaken for the customer.",
       "We may also refuse cancellation where the request is vague, unverifiable, made by an unauthorised person, raised after avoidable customer delay, or inconsistent with the service scope accepted at payment. Refusal will be communicated with the available reason and any next steps that remain open to the customer.",
     ],
   },
@@ -113,8 +113,8 @@ const policySections: PolicySection[] = [
     id: "force-majeure",
     title: "13. Force majeure and service disruption",
     body: [
-      "BizSamadhan India is not responsible for cancellation claims arising solely from events beyond reasonable control, including natural events, internet outages, cyber incidents, payment network failures, government portal outages, statutory system downtime, regulatory changes, strikes, public emergencies, court or authority restrictions, or other force majeure events.",
-      "During such disruption, BizSamadhan India may defer execution, reschedule filings, provide revised timelines, maintain the workflow in paused status, or offer a practical alternative. Cancellation and refund treatment will depend on the actual service stage and costs already incurred.",
+      "Wadhwani Associates is not responsible for cancellation claims arising solely from events beyond reasonable control, including natural events, internet outages, cyber incidents, payment network failures, government portal outages, statutory system downtime, regulatory changes, strikes, public emergencies, court or authority restrictions, or other force majeure events.",
+      "During such disruption, Wadhwani Associates may defer execution, reschedule filings, provide revised timelines, maintain the workflow in paused status, or offer a practical alternative. Cancellation and refund treatment will depend on the actual service stage and costs already incurred.",
     ],
   },
   {
@@ -148,9 +148,9 @@ const schema = {
       "@type": "WebPage",
       "@id": `${pageUrl}#webpage`,
       url: pageUrl,
-      name: "Cancellation Policy | BizSamadhan India",
+      name: "Cancellation Policy | Wadhwani Associates",
       description:
-        "Razorpay-compliant cancellation policy for BizSamadhan India legal, tax, compliance, GST, ITR, ROC/MCA, incorporation, trademark, documentation, and subscription services.",
+        "Razorpay-compliant cancellation policy for Wadhwani Associates legal, tax, compliance, GST, ITR, ROC/MCA, incorporation, trademark, documentation, and subscription services.",
       dateModified: "2026-05-14",
       inLanguage: "en-IN",
       isPartOf: {
@@ -197,14 +197,14 @@ const schema = {
 };
 
 export const metadata: Metadata = {
-  title: "Cancellation Policy | BizSamadhan India",
+  title: "Cancellation Policy | Wadhwani Associates",
   description:
-    "Read BizSamadhan India's cancellation policy for GST, ITR, ROC/MCA compliance, company incorporation, MSME, trademark, documentation, and subscription services paid online.",
+    "Read Wadhwani Associates' cancellation policy for GST, ITR, ROC/MCA compliance, company incorporation, MSME, trademark, documentation, and subscription services paid online.",
   alternates: {
     canonical: pageUrl,
   },
   openGraph: {
-    title: "Cancellation Policy | BizSamadhan India",
+    title: "Cancellation Policy | Wadhwani Associates",
     description:
       "Razorpay-compliant cancellation terms for Indian legal, tax, compliance, documentation, filing, and subscription-based services.",
     url: pageUrl,
@@ -214,7 +214,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Cancellation Policy | BizSamadhan India",
+    title: "Cancellation Policy | Wadhwani Associates",
     description: "Cancellation procedure, service-stage rules, subscriptions, authority dependencies, escalation, and governing law.",
   },
 };
@@ -257,7 +257,7 @@ export default function CancellationPolicyPage() {
                   Cancellation Policy
                 </h1>
                 <p className="max-w-4xl text-base leading-8 text-slate-700 dark:text-slate-300 sm:text-lg">
-                  This policy explains how BizSamadhan India receives, verifies, reviews, accepts, refuses, or escalates cancellation requests for Indian legal, tax, compliance, registration, trademark, documentation, consultation, and subscription services.
+                  This policy explains how Wadhwani Associates receives, verifies, reviews, accepts, refuses, or escalates cancellation requests for Indian legal, tax, compliance, registration, trademark, documentation, consultation, and subscription services.
                 </p>
                 <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Last updated: {lastUpdated}</p>
               </div>
@@ -321,7 +321,7 @@ export default function CancellationPolicyPage() {
               <section className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 dark:border-emerald-900/60 dark:bg-emerald-950/30 sm:p-8">
                 <h2 className="text-2xl font-semibold text-slate-950 dark:text-white">Cancellation support contact</h2>
                 <p className="mt-4 text-sm leading-7 text-slate-700 dark:text-slate-300 sm:text-base">
-                  For cancellation requests, subscription cancellation, auto-renewal updates, authority-delay review, or escalation, contact BizSamadhan India through the channels below. Written confirmation is required before an order can be marked cancelled.
+                  For cancellation requests, subscription cancellation, auto-renewal updates, authority-delay review, or escalation, contact Wadhwani Associates through the channels below. Written confirmation is required before an order can be marked cancelled.
                 </p>
                 <div className="mt-5 flex flex-col gap-3 text-sm font-medium text-slate-800 dark:text-slate-200 sm:flex-row sm:flex-wrap">
                   <span className="inline-flex items-center gap-2">

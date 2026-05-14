@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   TimerReset,
   TriangleAlert,
+  UserRound,
 } from "lucide-react";
 import { LeadCaptureForm } from "@/components/forms/LeadCaptureForm";
 import { ContactCard } from "@/components/sections/contact/ContactCard";
@@ -28,7 +29,7 @@ const primaryCallHref = `tel:+91${BUSINESS_CONTACT.primaryPhones[0]}`;
 const secondaryCallHref = `tel:+91${BUSINESS_CONTACT.primaryPhones[1]}`;
 const supportEmailHref = `mailto:${BUSINESS_CONTACT.supportEmail}`;
 const whatsappHref = `https://wa.me/${BUSINESS_CONTACT.whatsappNumber}?text=${encodeURIComponent(
-  "Hello Biz Samadhan India, I need help with GST, ITR, ROC, MSME, trademark, incorporation, or compliance services.",
+  "Hello Wadhwani Associates, I need help with GST, ITR, ROC, MSME, trademark, incorporation, or compliance services.",
 )}`;
 
 const trustIndicators = [
@@ -54,7 +55,7 @@ const responseStandards = [
 
 const faqs = [
   {
-    question: "How quickly does Biz Samadhan India respond to new enquiries?",
+    question: "How quickly does Wadhwani Associates respond to new enquiries?",
     answer:
       "During business hours, most new enquiries are acknowledged within 30 to 60 minutes. More complex service questions may move into a scheduled callback or advisor review depending on the subject matter.",
   },
@@ -113,6 +114,7 @@ const schema = {
       contactPoint: [
         {
           "@type": "ContactPoint",
+          name: BUSINESS_CONTACT.supportPerson,
           contactType: "customer support",
           telephone: `+91${BUSINESS_CONTACT.primaryPhones[0]}`,
           email: BUSINESS_CONTACT.supportEmail,
@@ -121,6 +123,7 @@ const schema = {
         },
         {
           "@type": "ContactPoint",
+          name: BUSINESS_CONTACT.supportPerson,
           contactType: "grievance support",
           telephone: `+91${BUSINESS_CONTACT.primaryPhones[1]}`,
           email: BUSINESS_CONTACT.supportEmail,
@@ -128,6 +131,9 @@ const schema = {
           availableLanguage: ["English", "Hindi"],
         },
       ],
+      employee: {
+        "@id": `${pageUrl}#support-person`,
+      },
       hasMap: BUSINESS_CONTACT.directionsUrl,
       openingHoursSpecification: [
         {
@@ -137,6 +143,17 @@ const schema = {
           closes: "19:00",
         },
       ],
+    },
+    {
+      "@type": "Person",
+      "@id": `${pageUrl}#support-person`,
+      name: BUSINESS_CONTACT.supportPerson,
+      jobTitle: "Official Support Representative",
+      worksFor: {
+        "@id": `${pageUrl}#localbusiness`,
+      },
+      email: BUSINESS_CONTACT.supportEmail,
+      telephone: `+91${BUSINESS_CONTACT.primaryPhones[0]}`,
     },
     {
       "@type": "ProfessionalService",
@@ -165,9 +182,9 @@ const schema = {
       "@type": "WebPage",
       "@id": `${pageUrl}#webpage`,
       url: pageUrl,
-      name: "Contact Us | Biz Samadhan India",
+      name: "Contact Us | Wadhwani Associates",
       description:
-        "Contact Biz Samadhan India for GST, ITR, ROC/MCA, MSME, trademark, incorporation, compliance subscriptions, and digital documentation services.",
+        "Contact Wadhwani Associates for GST, ITR, ROC/MCA, MSME, trademark, incorporation, compliance subscriptions, and digital documentation services.",
       dateModified: "2026-05-14",
       inLanguage: "en-IN",
       mainEntity: {
@@ -199,16 +216,16 @@ const schema = {
 };
 
 export const metadata: Metadata = {
-  title: "Contact Us | Biz Samadhan India",
+  title: "Contact Us | Wadhwani Associates",
   description:
-    "Reach Biz Samadhan India for GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription compliance, billing, grievance, and digital documentation support.",
+    "Reach Wadhwani Associates for GST, ITR, ROC/MCA, MSME, trademark, incorporation, subscription compliance, billing, grievance, and digital documentation support.",
   alternates: {
     canonical: pageUrl,
   },
   openGraph: {
-    title: "Contact Us | Biz Samadhan India",
+    title: "Contact Us | Wadhwani Associates",
     description:
-      "Enterprise contact page for legal, tax, compliance, payment, and grievance support at Biz Samadhan India.",
+      "Enterprise contact page for legal, tax, compliance, payment, and grievance support at Wadhwani Associates.",
     url: pageUrl,
     siteName: BUSINESS_CONTACT.businessName,
     type: "website",
@@ -216,9 +233,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | Biz Samadhan India",
+    title: "Contact Us | Wadhwani Associates",
     description:
-      "Office address, phone support, WhatsApp, email, grievance routing, and trusted business contact details for Biz Samadhan India.",
+      "Office address, phone support, WhatsApp, email, grievance routing, and trusted business contact details for Wadhwani Associates.",
   },
 };
 
@@ -248,7 +265,7 @@ export default function ContactPage() {
                   Reach a real compliance team with visible office details, live support routes, and documented follow-up.
                 </h1>
                 <p className="max-w-3xl text-base leading-8 text-slate-700 dark:text-slate-300 sm:text-lg">
-                  Biz Samadhan India supports GST registration and filing, Income Tax Return filing, ROC and MCA compliance, MSME registration,
+                  Wadhwani Associates supports GST registration and filing, Income Tax Return filing, ROC and MCA compliance, MSME registration,
                   trademark filing, company incorporation, subscription compliance services, and digital documentation services through a
                   professional contact and service workflow built for trust.
                 </p>
@@ -292,6 +309,20 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-[24px] border border-emerald-200 bg-emerald-50 p-4 dark:border-emerald-900/60 dark:bg-emerald-950/30 sm:col-span-2">
+                  <div className="flex items-start gap-3">
+                    <div className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-white text-[var(--brand)] dark:bg-slate-950">
+                      <UserRound className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">Official support representative</p>
+                      <p className="mt-2 text-base font-semibold text-slate-950 dark:text-white">{BUSINESS_CONTACT.supportPerson}</p>
+                      <p className="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                        {BUSINESS_CONTACT.supportRepresentativeLabel}
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <div className="rounded-[24px] border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-950">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">Primary numbers</p>
                   <div className="mt-3 space-y-3 text-sm font-medium text-slate-900 dark:text-slate-100">
@@ -567,7 +598,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-100">Ready to connect</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight">Speak with the Biz Samadhan India team through a verified and visible support channel.</h2>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight">Speak with the Wadhwani Associates team through a verified and visible support channel.</h2>
             </div>
             <div className="flex flex-wrap gap-3">
               <a href={primaryCallHref} className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-[var(--brand)] transition hover:bg-emerald-50">

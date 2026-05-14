@@ -141,7 +141,7 @@ export function AiAssistantWidget() {
                   <Bot className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-white">BizSamadhan Assistant</h3>
+                  <h3 className="font-semibold text-white">Wadhwani Associates Assistant</h3>
                   <p className="text-xs text-teal-100">AI-powered legal help</p>
                 </div>
               </div>

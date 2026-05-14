@@ -4,7 +4,7 @@ import { PaymentStatusCard } from "@/components/forms/PaymentStatusCard";
 
 export const metadata: Metadata = {
   title: "Payment Success",
-  description: "Review payment confirmation details after completing a BizSamadhan India checkout flow.",
+  description: "Review payment confirmation details after completing a Wadhwani Associates checkout flow.",
   robots: {
     index: false,
     follow: false,

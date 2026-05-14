@@ -109,7 +109,7 @@ function buildHumanHandoffReply() {
   const consultationLink = `${env.siteUrl || env.appUrl}/consultation`;
 
   return [
-    "Sure, I can connect you with the BizSamadhan India team.",
+    "Sure, I can connect you with the Wadhwani Associates team.",
     phone ? `Call/WhatsApp: ${phone}` : "",
     `Book a consultation: ${consultationLink}`,
     "Please share your name, city, and the service you need so our team can follow up quickly.",

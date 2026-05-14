@@ -1,11 +1,11 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { PartnerApplication } from "@/components/forms/PartnerApplication";
 import { ApiHealthChip } from "@/components/ui/ApiHealthChip";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
   title: "Partner Program",
-  description: "Apply to the BizSamadhan India partner program and explore bundled packages from the live backend catalog.",
+  description: "Apply to the Wadhwani Associates partner program and explore bundled packages from the live backend catalog.",
 };
 
 export default function PartnerPage() {

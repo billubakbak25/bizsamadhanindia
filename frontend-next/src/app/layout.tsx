@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import { COMPANY, SITE_URL } from "@/lib/constants";
+import { BUSINESS_CONTACT, COMPANY, SITE_URL } from "@/lib/constants";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -49,11 +49,70 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+      "@id": `${SITE_URL}#organization`,
+      name: COMPANY.name,
+      alternateName: COMPANY.brandName,
+      url: SITE_URL,
+      logo: `${SITE_URL}/og-image.svg`,
+      image: `${SITE_URL}/og-image.svg`,
+      email: COMPANY.email,
+      telephone: `+91${BUSINESS_CONTACT.primaryPhones[0]}`,
+      priceRange: "Rs",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "LIG 25 SF Colony, Barra 3",
+        addressLocality: BUSINESS_CONTACT.officeCity,
+        addressRegion: BUSINESS_CONTACT.officeRegion,
+        postalCode: BUSINESS_CONTACT.postalCode,
+        addressCountry: "IN",
+      },
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          name: BUSINESS_CONTACT.supportPerson,
+          contactType: "customer support",
+          telephone: `+91${BUSINESS_CONTACT.primaryPhones[0]}`,
+          email: BUSINESS_CONTACT.supportEmail,
+          areaServed: "IN",
+          availableLanguage: ["English", "Hindi"],
+        },
+        {
+          "@type": "ContactPoint",
+          name: BUSINESS_CONTACT.supportPerson,
+          contactType: "billing and grievance support",
+          telephone: `+91${BUSINESS_CONTACT.primaryPhones[1]}`,
+          email: BUSINESS_CONTACT.supportEmail,
+          areaServed: "IN",
+          availableLanguage: ["English", "Hindi"],
+        },
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}#support-person`,
+      name: BUSINESS_CONTACT.supportPerson,
+      jobTitle: "Official Support Representative",
+      worksFor: {
+        "@id": `${SITE_URL}#organization`,
+      },
+      email: BUSINESS_CONTACT.supportEmail,
+      telephone: `+91${BUSINESS_CONTACT.primaryPhones[0]}`,
+    },
+  ],
+};
+
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
-      <body className="bg-[var(--bg)] text-slate-950 antialiased">{children}</body>
+      <body className="bg-[var(--bg)] text-slate-950 antialiased">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        {children}
+      </body>
     </html>
   );
 }
-

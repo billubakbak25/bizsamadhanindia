@@ -15,11 +15,11 @@ import { CheckCircle2, ArrowRight, Phone, Zap } from "lucide-react";
 import { buttonClassName } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "India's #1 Legal Services Platform | BizSamadhan India",
+  title: "India's #1 Legal Services Platform | Wadhwani Associates",
   description: "Start, protect and grow your business with expert legal support. Company registration, GST, trademark, compliance and more. 50,000+ businesses served. Rated 4.7/5 on Google.",
   keywords: "company registration, gst registration, trademark registration, llp registration, business compliance, legal services india",
   openGraph: {
-    title: "India's #1 Legal Services Platform | BizSamadhan India",
+    title: "India's #1 Legal Services Platform | Wadhwani Associates",
     description: "Start, protect and grow your business with expert legal support. 50,000+ businesses served.",
     type: "website",
   },
@@ -109,7 +109,7 @@ function FAQSection() {
       answer: "You'll need PAN card, Aadhaar card, business address proof, bank statement, and photographs. Our team will provide a detailed checklist based on your business type."
     },
     {
-      question: "Is my data secure with BizSamadhan?",
+      question: "Is my data secure with Wadhwani Associates?",
       answer: "Absolutely. We use bank-grade encryption, are ISO 9001:2015 certified, and follow strict data protection policies. Your documents are handled with complete confidentiality."
     },
     {
@@ -188,7 +188,7 @@ function FinalCTA() {
           <div className="bg-gradient-to-r from-[var(--brand)] to-teal-600 px-8 py-12 text-center text-white lg:py-16">
             <h2 className="text-3xl font-bold sm:text-4xl">Ready to Start Your Business Journey?</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-emerald-100">
-              Join 50,000+ entrepreneurs who trusted BizSamadhan for their business registration 
+              Join 50,000+ entrepreneurs who trusted Wadhwani Associates for their business registration 
               and compliance needs. Get started with a free consultation today.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

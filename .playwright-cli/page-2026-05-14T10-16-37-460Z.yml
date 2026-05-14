@@ -1,0 +1,449 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e7]:
+            - generic [ref=e11]: 50,000+
+            - generic [ref=e12]: businesses served
+          - generic [ref=e13]: "|"
+          - generic [ref=e14]:
+            - img [ref=e15]
+            - generic [ref=e17]: Government Registered
+          - generic [ref=e18]: "|"
+          - generic [ref=e19]:
+            - img [ref=e20]
+            - generic [ref=e23]: Mon-Sat 9AM-7PM
+        - generic [ref=e24]:
+          - link "+91 96968 93625" [ref=e25] [cursor=pointer]:
+            - /url: tel:+919696893625
+            - img [ref=e26]
+            - text: +91 96968 93625
+          - generic [ref=e28]: "|"
+          - link "support@bizsamadhanindia.com" [ref=e29] [cursor=pointer]:
+            - /url: mailto:support@bizsamadhanindia.com
+            - img [ref=e30]
+            - generic [ref=e33]: support@bizsamadhanindia.com
+          - generic [ref=e34]: "|"
+          - generic [ref=e35]:
+            - img [ref=e36]
+            - text: Kanpur, Uttar Pradesh
+      - generic [ref=e40]:
+        - link "BI SaaS Legal Ops Wadhwani Associates" [ref=e41] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e42]: BI
+          - generic [ref=e43]:
+            - generic [ref=e44]: SaaS Legal Ops
+            - generic [ref=e45]: Wadhwani Associates
+        - navigation "Primary navigation" [ref=e46]:
+          - generic [ref=e47]:
+            - button "All Services" [ref=e48]:
+              - img [ref=e49]
+              - generic [ref=e52]: All Services
+              - img [ref=e53]
+            - button "Start a Business" [ref=e55]:
+              - img [ref=e56]
+              - generic [ref=e59]: Start a Business
+              - img [ref=e60]
+            - button "Tax & Compliance" [ref=e62]:
+              - img [ref=e63]
+              - generic [ref=e66]: Tax & Compliance
+              - img [ref=e67]
+            - button "Trademark & IP" [ref=e69]:
+              - img [ref=e70]
+              - generic [ref=e72]: Trademark & IP
+              - img [ref=e73]
+            - button "Accounting & Finance" [ref=e75]:
+              - img [ref=e76]
+              - generic [ref=e78]: Accounting & Finance
+              - img [ref=e79]
+            - button "More" [ref=e81]:
+              - generic [ref=e82]: More
+              - img [ref=e83]
+            - link "Talk to Expert" [ref=e85] [cursor=pointer]:
+              - /url: /consultation
+              - img [ref=e86]
+              - generic [ref=e88]: Talk to Expert
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - img [ref=e94]
+              - img [ref=e96]
+              - img [ref=e98]
+              - img [ref=e100]
+            - generic [ref=e102]: "4.7"
+            - generic [ref=e103]: Google
+          - button "Search services... K" [ref=e104]:
+            - img [ref=e105]
+            - generic [ref=e108]: Search services...
+            - generic [ref=e109]:
+              - img [ref=e110]
+              - text: K
+          - link "Client Portal" [ref=e112] [cursor=pointer]:
+            - /url: /client-portal
+    - main [ref=e113]:
+      - generic [ref=e115]:
+        - navigation "Breadcrumb" [ref=e116]:
+          - link "Home" [ref=e117] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e118]: /
+          - generic [ref=e119]: Contact Us
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]:
+              - img [ref=e123]
+              - text: Merchant-trust contact desk
+            - generic [ref=e126]:
+              - heading "Reach a real compliance team with visible office details, live support routes, and documented follow-up." [level=1] [ref=e127]
+              - paragraph [ref=e128]: Wadhwani Associates supports GST registration and filing, Income Tax Return filing, ROC and MCA compliance, MSME registration, trademark filing, company incorporation, subscription compliance services, and digital documentation services through a professional contact and service workflow built for trust.
+            - generic [ref=e129]:
+              - generic [ref=e130]: Professional legal, tax, and compliance support delivered through documented digital workflows
+              - generic [ref=e131]: Visible office address, dual contact numbers, grievance path, and policy links for merchant verification confidence
+              - generic [ref=e132]: Secure communication guidance for payments, documents, and consultation follow-up
+            - generic [ref=e133]:
+              - link "Call primary desk" [ref=e134] [cursor=pointer]:
+                - /url: tel:+919696893625
+                - img [ref=e135]
+                - text: Call primary desk
+              - link "WhatsApp support" [ref=e137] [cursor=pointer]:
+                - /url: https://wa.me/919696893625?text=Hello%20Wadhwani%20Associates%2C%20I%20need%20help%20with%20GST%2C%20ITR%2C%20ROC%2C%20MSME%2C%20trademark%2C%20incorporation%2C%20or%20compliance%20services.
+                - img [ref=e138]
+                - text: WhatsApp support
+              - link "Share your requirement" [ref=e140] [cursor=pointer]:
+                - /url: "#contact-form"
+                - text: Share your requirement
+                - img [ref=e141]
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: Business identity
+            - generic [ref=e145]:
+              - heading "Wadhwani Associates" [level=2] [ref=e146]
+              - paragraph [ref=e147]: A digital-first legal, tax, and compliance support business with visible contact channels, documented working hours, grievance routing, and policy-backed merchant presentation for payment and trust verification.
+            - generic [ref=e148]:
+              - generic [ref=e150]:
+                - img [ref=e152]
+                - generic [ref=e155]:
+                  - paragraph [ref=e156]: Official support representative
+                  - paragraph [ref=e157]: Vikram Wadhwani
+                  - paragraph [ref=e158]: "Official Support Representative: Vikram Wadhwani"
+              - generic [ref=e159]:
+                - paragraph [ref=e160]: Primary numbers
+                - generic [ref=e161]:
+                  - link "+91 96968 93625" [ref=e162] [cursor=pointer]:
+                    - /url: tel:+919696893625
+                  - link "+91 83033 40092" [ref=e163] [cursor=pointer]:
+                    - /url: tel:+918303340092
+              - generic [ref=e164]:
+                - paragraph [ref=e165]: Support email
+                - link "support@bizsamadhanindia.com" [ref=e166] [cursor=pointer]:
+                  - /url: mailto:support@bizsamadhanindia.com
+            - generic [ref=e167]:
+              - paragraph [ref=e168]: Registered office contact point
+              - generic [ref=e169]:
+                - generic [ref=e170]: LIG 25 SF Colony,
+                - generic [ref=e171]: Barra 3,
+                - generic [ref=e172]: Kanpur,
+                - generic [ref=e173]: Uttar Pradesh - 208027,
+                - generic [ref=e174]: India
+      - generic [ref=e176]:
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - generic [ref=e179]:
+              - paragraph [ref=e180]: Direct support
+              - generic [ref=e181]:
+                - heading "Speak to the service desk" [level=2] [ref=e182]
+                - paragraph [ref=e183]: Use the contact route most suited to your urgency and the nature of your request.
+            - img [ref=e185]
+          - generic [ref=e188]:
+            - paragraph [ref=e189]: Call the primary desk for GST, ITR, ROC, incorporation, and documentation enquiries.
+            - paragraph [ref=e190]: Use the secondary number for follow-up, escalation, and service continuity where the primary line is busy.
+          - generic [ref=e191]:
+            - link "+91 96968 93625" [ref=e192] [cursor=pointer]:
+              - /url: tel:+919696893625
+            - link "+91 83033 40092" [ref=e193] [cursor=pointer]:
+              - /url: tel:+918303340092
+        - generic [ref=e194]:
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - paragraph [ref=e197]: Written communication
+              - generic [ref=e198]:
+                - heading "Use support email or WhatsApp" [level=2] [ref=e199]
+                - paragraph [ref=e200]: Suitable for document checklists, invoice references, call-back requests, and service summaries.
+            - img [ref=e202]
+          - generic [ref=e206]:
+            - paragraph [ref=e207]: Email is preferred for payment references, policy-linked requests, privacy concerns, and grievance documentation.
+            - paragraph [ref=e208]: WhatsApp is useful for fast coordination, but sensitive or billing-critical matters may be moved to email for cleaner records.
+          - generic [ref=e209]:
+            - link "Email support" [ref=e210] [cursor=pointer]:
+              - /url: mailto:support@bizsamadhanindia.com
+            - link "WhatsApp now" [ref=e211] [cursor=pointer]:
+              - /url: https://wa.me/919696893625?text=Hello%20Wadhwani%20Associates%2C%20I%20need%20help%20with%20GST%2C%20ITR%2C%20ROC%2C%20MSME%2C%20trademark%2C%20incorporation%2C%20or%20compliance%20services.
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - paragraph [ref=e215]: Office location
+              - generic [ref=e216]:
+                - heading "Visit or verify the office address" [level=2] [ref=e217]
+                - paragraph [ref=e218]: Visible office details help build legitimacy for clients, payment partners, and grievance handling.
+            - img [ref=e220]
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - generic [ref=e227]: LIG 25 SF Colony,
+              - generic [ref=e228]: Barra 3,
+              - generic [ref=e229]: Kanpur,
+              - generic [ref=e230]: Uttar Pradesh - 208027,
+              - generic [ref=e231]: India
+            - paragraph [ref=e232]: Please call ahead for scheduled meetings or document handoff visits.
+          - generic [ref=e233]:
+            - link "Get directions" [ref=e234] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/?api=1&query=LIG%2025%20SF%20Colony%20Barra%203%20Kanpur%20208027
+            - link "Open map" [ref=e235] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/?api=1&query=LIG%2025%20SF%20Colony%20Barra%203%20Kanpur%20208027
+      - generic [ref=e237]:
+        - generic [ref=e239]:
+          - generic [ref=e240]:
+            - heading "Share your requirement with the right team" [level=2] [ref=e241]
+            - paragraph [ref=e242]: This enquiry form routes directly into the active lead workflow so GST, tax, incorporation, compliance, and documentation requests reach the correct advisory queue.
+          - generic [ref=e243]:
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - text: Name
+                - textbox "Name" [ref=e246]
+              - generic [ref=e247]:
+                - text: Phone
+                - textbox "Phone" [ref=e248]
+            - generic [ref=e249]:
+              - generic [ref=e250]: Email (optional)
+              - textbox "Email (optional)" [ref=e251]
+            - generic [ref=e252]:
+              - generic [ref=e253]:
+                - text: Service
+                - combobox "Service" [ref=e254]:
+                  - option "GST Registration" [selected]
+                  - option "ITR Filing"
+                  - option "Trademark Registration"
+                  - option "Company Registration"
+                  - option "Annual Compliance Filing"
+                  - option "Accounting and Bookkeeping"
+              - generic [ref=e255]:
+                - text: City
+                - textbox "City" [ref=e256]
+            - generic [ref=e257]:
+              - text: Message
+              - textbox "Message" [ref=e258]
+            - generic [ref=e259]:
+              - paragraph [ref=e260]: Share your details and we will call you back.
+              - button "Start Now" [ref=e262]
+        - generic [ref=e263]:
+          - generic [ref=e264]:
+            - generic [ref=e265]:
+              - generic [ref=e266]:
+                - paragraph [ref=e267]: Working hours
+                - heading "Operational availability" [level=2] [ref=e268]
+              - img [ref=e270]
+            - generic [ref=e273]:
+              - generic [ref=e274]:
+                - generic [ref=e275]: Monday to Saturday
+                - generic [ref=e276]: 9:30 AM to 7:00 PM
+              - generic [ref=e277]:
+                - generic [ref=e278]: Sunday
+                - generic [ref=e279]: Email and WhatsApp intake for urgent queries
+              - generic [ref=e280]:
+                - generic [ref=e281]: Consultation desk
+                - generic [ref=e282]: Priority callbacks during business hours
+          - generic [ref=e283]:
+            - generic [ref=e284]:
+              - generic [ref=e285]:
+                - paragraph [ref=e286]: Response timeline
+                - heading "What to expect after you contact us" [level=2] [ref=e287]
+              - img [ref=e289]
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - heading "Consultation enquiries" [level=3] [ref=e294]
+                - paragraph [ref=e295]: Inbound calls, form submissions, and WhatsApp requests are triaged to the relevant advisory queue during working hours.
+              - generic [ref=e296]:
+                - heading "Active client support" [level=3] [ref=e297]
+                - paragraph [ref=e298]: Document, billing, and filing-stage queries for ongoing matters are prioritised against the relevant execution workflow.
+              - generic [ref=e299]:
+                - heading "Grievance handling" [level=3] [ref=e300]
+                - paragraph [ref=e301]: Escalation requests are acknowledged quickly and reviewed with service, billing, and communication records where applicable.
+      - generic [ref=e303]:
+        - generic [ref=e304]:
+          - generic [ref=e306]:
+            - generic [ref=e307]:
+              - paragraph [ref=e308]: Office map
+              - heading "Find the Kanpur office" [level=2] [ref=e309]
+              - paragraph [ref=e310]: Use the embedded map for merchant-verification clarity, office-location confidence, and direct navigation support.
+            - img [ref=e312]
+          - iframe [ref=e318]:
+            - link "Open in Maps (opens in new tab)" [ref=f1e4] [cursor=pointer]:
+              - /url: about:invalid#zClosurez
+              - text: Open in Maps
+              - img [ref=f1e6]
+          - generic [ref=e319]:
+            - paragraph [ref=e320]: LIG 25 SF Colony, Barra 3, Kanpur, Uttar Pradesh - 208027, India
+            - link "Get directions" [ref=e321] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/?api=1&query=LIG%2025%20SF%20Colony%20Barra%203%20Kanpur%20208027
+              - img [ref=e322]
+              - text: Get directions
+        - generic [ref=e324]:
+          - generic [ref=e325]:
+            - generic [ref=e326]:
+              - generic [ref=e327]:
+                - paragraph [ref=e328]: Grievance support
+                - heading "Escalation path for service, billing, and communication issues" [level=2] [ref=e329]
+              - img [ref=e331]
+            - generic [ref=e333]:
+              - paragraph [ref=e334]: For unresolved support issues, payment disputes, response delays, or service-scope clarifications, contact the grievance path through the support email and include your phone number, service name, invoice or payment reference, and issue summary.
+              - paragraph [ref=e335]: Initial grievance acknowledgement is expected within 1 business day, followed by a review of payment records, communication logs, and the active execution stage where relevant.
+              - generic [ref=e336]:
+                - paragraph [ref=e337]: Recommended subject line
+                - paragraph [ref=e338]: Grievance Support - [Your Name] - [Service / Payment Reference]
+              - generic [ref=e339]:
+                - link "Raise a grievance" [ref=e340] [cursor=pointer]:
+                  - /url: mailto:support@bizsamadhanindia.com
+                  - img [ref=e341]
+                  - text: Raise a grievance
+                - link "Escalation line" [ref=e344] [cursor=pointer]:
+                  - /url: tel:+918303340092
+                  - img [ref=e345]
+                  - text: Escalation line
+          - generic [ref=e347]:
+            - paragraph [ref=e348]: Trust and security
+            - heading "Secure communication and business-trust messaging" [level=2] [ref=e349]
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - generic [ref=e352]:
+                  - img [ref=e353]
+                  - paragraph [ref=e356]: Use documented channels for payments and sensitive records
+                - paragraph [ref=e357]: Payment references, invoices, compliance documents, and grievance issues should be routed through visible phone, email, or form channels so the team can track them properly.
+              - generic [ref=e358]:
+                - generic [ref=e359]:
+                  - img [ref=e360]
+                  - paragraph [ref=e364]: GST-compliant, policy-backed service presentation
+                - paragraph [ref=e365]: The contact experience connects to policy pages, visible office information, and service-specific workflows to strengthen legitimacy for clients and payment partners.
+              - generic [ref=e366]:
+                - generic [ref=e367]:
+                  - img [ref=e368]
+                  - paragraph [ref=e372]: Professional identity for legal-tech and compliance work
+                - paragraph [ref=e373]: Clear contact visibility, office location, response standards, and escalation handling reduce merchant-verification friction and build customer confidence.
+      - generic [ref=e375]:
+        - generic [ref=e377]:
+          - paragraph [ref=e378]: Helpful links
+          - heading "Navigate to related services and policies" [level=2] [ref=e379]
+          - paragraph [ref=e380]: These links improve discovery for users, strengthen policy transparency for merchant reviewers, and help search engines connect the contact page with commercial and compliance intent.
+        - generic [ref=e381]:
+          - link "GST Registration" [ref=e382] [cursor=pointer]:
+            - /url: /gst-registration
+          - link "ITR Filing" [ref=e383] [cursor=pointer]:
+            - /url: /itr-filing
+          - link "Company Incorporation" [ref=e384] [cursor=pointer]:
+            - /url: /company-registration
+          - link "Trademark Services" [ref=e385] [cursor=pointer]:
+            - /url: /trademark-registration
+          - link "Refund Policy" [ref=e386] [cursor=pointer]:
+            - /url: /refund-policy
+          - link "Privacy Policy" [ref=e387] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=e388] [cursor=pointer]:
+            - /url: /terms-and-conditions
+          - link "Service Delivery Policy" [ref=e389] [cursor=pointer]:
+            - /url: /service-delivery-policy
+      - generic [ref=e391]:
+        - generic [ref=e392]:
+          - paragraph [ref=e393]: FAQ
+          - heading "Questions customers and payment reviewers usually care about" [level=2] [ref=e394]
+        - generic [ref=e395]:
+          - group [ref=e396]:
+            - generic "How quickly does Wadhwani Associates respond to new enquiries?" [ref=e397] [cursor=pointer]
+          - group [ref=e398]:
+            - generic "Can I use WhatsApp for service queries and document coordination?" [ref=e399] [cursor=pointer]
+          - group [ref=e400]:
+            - generic "Do you support GST, ITR, ROC/MCA, MSME, trademark, and incorporation requests from the same contact desk?" [ref=e401] [cursor=pointer]
+          - group [ref=e402]:
+            - generic "What should I include when raising a billing or grievance issue?" [ref=e403] [cursor=pointer]
+      - generic [ref=e406]:
+        - generic [ref=e407]:
+          - paragraph [ref=e408]: Ready to connect
+          - heading "Speak with the Wadhwani Associates team through a verified and visible support channel." [level=2] [ref=e409]
+        - generic [ref=e410]:
+          - link "Call now" [ref=e411] [cursor=pointer]:
+            - /url: tel:+919696893625
+            - img [ref=e412]
+            - text: Call now
+          - link "Email support" [ref=e414] [cursor=pointer]:
+            - /url: mailto:support@bizsamadhanindia.com
+            - img [ref=e415]
+            - text: Email support
+    - contentinfo [ref=e418]:
+      - generic [ref=e419]:
+        - generic [ref=e420]:
+          - paragraph [ref=e421]: Wadhwani Associates
+          - heading "A future-ready legal and compliance platform for Indian growth teams." [level=2] [ref=e422]
+          - paragraph [ref=e423]: Wadhwani Associates operates Biz Samadhan India as a modern legal, tax, and compliance growth platform for Indian founders, operators, and finance teams.
+        - generic [ref=e424]:
+          - heading "Popular Services" [level=3] [ref=e425]
+          - list [ref=e426]:
+            - listitem [ref=e427]:
+              - link "GST Registration" [ref=e428] [cursor=pointer]:
+                - /url: /gst-registration
+            - listitem [ref=e429]:
+              - link "ITR Filing" [ref=e430] [cursor=pointer]:
+                - /url: /itr-filing
+            - listitem [ref=e431]:
+              - link "Trademark Registration" [ref=e432] [cursor=pointer]:
+                - /url: /trademark-registration
+            - listitem [ref=e433]:
+              - link "Company Registration" [ref=e434] [cursor=pointer]:
+                - /url: /company-registration
+            - listitem [ref=e435]:
+              - link "Annual Compliance Filing" [ref=e436] [cursor=pointer]:
+                - /url: /annual-compliance-filing
+            - listitem [ref=e437]:
+              - link "Accounting and Bookkeeping" [ref=e438] [cursor=pointer]:
+                - /url: /accounting-bookkeeping
+        - generic [ref=e439]:
+          - heading "Company" [level=3] [ref=e440]
+          - list [ref=e441]:
+            - listitem [ref=e442]: Kanpur, Uttar Pradesh
+            - listitem [ref=e443]: support@bizsamadhanindia.com
+            - listitem [ref=e444]:
+              - link "Privacy Policy" [ref=e445] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e446]:
+              - link "Terms and Conditions" [ref=e447] [cursor=pointer]:
+                - /url: /terms-and-conditions
+            - listitem [ref=e448]:
+              - link "Payment Methods" [ref=e449] [cursor=pointer]:
+                - /url: /payment-methods
+            - listitem [ref=e450]:
+              - link "Refund Policy" [ref=e451] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e452]:
+              - link "Cancellation Policy" [ref=e453] [cursor=pointer]:
+                - /url: /cancellation-policy
+            - listitem [ref=e454]:
+              - link "Service Delivery Policy" [ref=e455] [cursor=pointer]:
+                - /url: /service-delivery-policy
+      - generic [ref=e457]:
+        - generic [ref=e458]:
+          - paragraph [ref=e459]: Wadhwani Associates
+          - paragraph [ref=e460]: "Official Support: Vikram Wadhwani"
+          - paragraph [ref=e461]: support@bizsamadhanindia.com
+          - paragraph [ref=e462]: +91 96968 93625
+          - paragraph [ref=e463]: +91 83033 40092
+        - generic [ref=e464]:
+          - paragraph [ref=e465]: "Office Address:"
+          - generic [ref=e466]:
+            - text: LIG 25 SF Colony, Barra 3,
+            - text: Kanpur, Uttar Pradesh - 208027
+          - paragraph [ref=e467]: Biz Samadhan India is the website and marketing identity operated by Wadhwani Associates.
+    - button [ref=e469]:
+      - img [ref=e470]
+      - img [ref=e473]
+    - generic [ref=e476]:
+      - link "Chat on WhatsApp":
+        - /url: https://wa.me/919696893625?text=Hi%2C%20I%20need%20help%20with%20business%20services
+        - generic:
+          - generic: "1"
+  - alert [ref=e477]

@@ -1,11 +1,11 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { ToolDefaultsExplorer } from "@/components/forms/ToolDefaultsExplorer";
 import { ApiHealthChip } from "@/components/ui/ApiHealthChip";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
   title: "Tools",
-  description: "Explore live tool presets for GST and compliance planning from the BizSamadhan India backend.",
+  description: "Explore live tool presets for GST and compliance planning from the Wadhwani Associates backend.",
 };
 
 export default function ToolsPage() {

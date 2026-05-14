@@ -271,7 +271,7 @@ export function LeadCaptureForm({
         key: order.key_id,
         amount: order.amount,
         currency: order.currency,
-        name: order.checkout?.name || "BizSamadhan India",
+        name: order.checkout?.name || "Wadhwani Associates",
         description: order.checkout?.description || `${selectedService.title} service package`,
         order_id: order.order_id,
         prefill: {

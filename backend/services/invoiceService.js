@@ -1,6 +1,7 @@
-﻿const fs = require("fs");
+const fs = require("fs");
 const path = require("path");
 const PDFDocument = require("pdfkit");
+const env = require("../config/env");
 
 const invoiceDirectory = path.join(process.cwd(), "storage", "invoices");
 
@@ -47,7 +48,7 @@ async function generateInvoicePdf({ payment, appUrl }) {
     doc.pipe(stream);
 
     doc.font("Helvetica-Bold").fontSize(24).fillColor("#0f172a").text("Invoice", 50, 50);
-    doc.font("Helvetica").fontSize(11).fillColor("#64748b").text("LegalAxis Legal Services", 50, 82);
+    doc.font("Helvetica").fontSize(11).fillColor("#64748b").text(`${env.businessName} Legal, Tax, and Compliance Services`, 50, 82);
 
     doc.moveTo(50, 115).lineTo(545, 115).lineWidth(1).strokeColor("#cbd5e1").stroke();
 
@@ -68,6 +69,8 @@ async function generateInvoicePdf({ payment, appUrl }) {
 
     doc.moveTo(50, 290).lineTo(545, 290).lineWidth(1).strokeColor("#e2e8f0").stroke();
     doc.font("Helvetica").fontSize(10).fillColor("#64748b").text("This invoice was generated automatically after successful payment.", 50, 315);
+    doc.text(`Support: ${env.supportPerson} | ${env.businessEmail} | ${env.businessPhone} | ${env.supportPhoneSecondary}`, 50, 332);
+    doc.text(`Office: ${env.businessStreetAddress}, ${env.businessCity}, ${env.businessRegion} - ${env.businessPostalCode}`, 50, 349);
 
     doc.end();
   });

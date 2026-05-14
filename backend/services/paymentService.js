@@ -10,6 +10,7 @@ const { ensureInvoiceDirectory, buildInvoiceNumber, formatAmount } = require("./
 const { upsertClientIdentity } = require("./clientIdentityService");
 const postPaymentService = require("./postPaymentService");
 const pricingService = require("./pricingService");
+const env = require("../config/env");
 
 ensureInvoiceDirectory();
 
@@ -183,7 +184,7 @@ async function createOrderForPayment(payload) {
       key: razorpayKeyId,
       amount: order.amount,
       currency: order.currency,
-      name: "BizSamadhan India",
+      name: env.businessName,
       description: buildCheckoutDescription(serviceConfig),
       prefill: {
         name: normalizeText(payload.name),

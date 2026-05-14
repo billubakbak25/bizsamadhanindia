@@ -1,4 +1,6 @@
-﻿function escapeHtml(value) {
+const env = require("../config/env");
+
+function escapeHtml(value) {
   return String(value || "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
@@ -50,8 +52,8 @@ function buildInvoiceHtml(payment) {
     <main class="invoice">
       <section class="header">
         <div>
-          <div class="brand">LegalAxis</div>
-          <div class="label">Professional Legal Services Invoice</div>
+          <div class="brand">${escapeHtml(env.businessName || "Wadhwani Associates")}</div>
+          <div class="label">Professional Legal, Tax, and Compliance Services Invoice</div>
           <h1>Payment Receipt</h1>
         </div>
         <div>
@@ -95,7 +97,13 @@ function buildInvoiceHtml(payment) {
         </table>
       </section>
 
-      <p class="footer">This invoice was generated automatically after successful payment. For support, contact hello@legalaxis.in.</p>
+      <p class="footer">
+        This invoice was generated automatically after successful payment. For support, contact
+        ${escapeHtml(env.supportPerson || "Vikram Wadhwani")} at ${escapeHtml(env.businessEmail || "support@bizsamadhanindia.com")},
+        ${escapeHtml(env.businessPhone || "+91 96968 93625")} or ${escapeHtml(env.supportPhoneSecondary || "+91 83033 40092")}.<br />
+        Office: ${escapeHtml(env.businessStreetAddress || "LIG 25 SF Colony, Barra 3")}, ${escapeHtml(env.businessCity || "Kanpur")},
+        ${escapeHtml(env.businessRegion || "Uttar Pradesh")} - ${escapeHtml(env.businessPostalCode || "208027")}.
+      </p>
     </main>
   </body>
 </html>`;

@@ -19,7 +19,7 @@ function getOtpExpiryMinutes() {
 }
 
 function buildOtpEmailTemplate(otp) {
-  const businessName = env.businessName || "BizSamadhan India";
+  const businessName = env.businessName || "Wadhwani Associates";
   const expiryMinutes = getOtpExpiryMinutes();
   const safeOtp = escapeHtml(otp);
 
