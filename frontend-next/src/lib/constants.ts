@@ -452,31 +452,33 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
   "privacy-policy": {
     slug: "privacy-policy",
     title: "Privacy Policy",
-    description: "How BizSamadhan India collects, uses, stores, and protects customer, lead, and platform usage data.",
-    eyebrow: "Policy",
-    hero: "This policy explains how BizSamadhan India handles personal information across lead capture, consultations, payments, document workflows, and client access.",
-    lastUpdated: "May 12, 2026",
-    highlights: ["Data collection scope", "Operational data usage", "Security and retention controls"],
+    description:
+      "Enterprise privacy policy for BizSamadhan India covering document storage, Razorpay transactions, cookies, data use, retention, security, and lawful disclosure.",
+    eyebrow: "Privacy",
+    hero:
+      "This policy explains how BizSamadhan India handles personal data, business records, payment metadata, document workflows, cookies, communications, and legal disclosures across digital legal, tax, and compliance services.",
+    lastUpdated: "May 14, 2026",
+    highlights: ["Sensitive document handling", "Razorpay and gateway disclosures", "Retention and security controls"],
     sections: [
       {
         title: "Information we collect",
         body: [
-          "We may collect names, phone numbers, email addresses, billing details, service preferences, uploaded documents, consultation records, and limited platform activity needed to deliver legal, tax, and compliance services.",
-          "We collect only the information reasonably required to onboard users, process service requests, maintain authenticated access, and fulfil operational or statutory obligations.",
+          "We may collect names, phone numbers, email addresses, entity details, billing information, uploaded documents, compliance records, payment references, consultation history, and limited technical usage data needed to deliver services.",
+          "Collection is limited to information reasonably required for onboarding, support, service execution, platform operations, fraud prevention, payment administration, and statutory or legal obligations.",
         ],
       },
       {
-        title: "How we use information",
+        title: "How we use and share information",
         body: [
-          "Information is used to respond to enquiries, execute purchased services, manage client communication, process payments, maintain records, improve platform reliability, and support customer service.",
-          "BizSamadhan India does not treat customer data as a resale asset. Use is limited to legitimate service delivery, platform operations, compliance obligations, and security controls.",
+          "Information is used to respond to enquiries, execute purchased services, manage support, reconcile payments, maintain records, prevent fraud, improve operational reliability, and comply with legal or regulatory duties.",
+          "BizSamadhan India does not sell personal data to unrelated advertisers or brokers. Sharing is limited to service providers, professionals, payment partners, and lawful disclosures reasonably required for service delivery or compliance.",
         ],
       },
       {
-        title: "Storage and protection",
+        title: "Storage, gateways, and retention",
         body: [
-          "We apply reasonable technical and operational safeguards to protect account data, documents, and transaction records against unauthorised access, misuse, or disclosure.",
-          "Retention periods depend on service delivery needs, legal requirements, audit obligations, and record-keeping standards relevant to the engagement.",
+          "Sensitive payment instrument data is ordinarily processed by gateways such as Razorpay, while BizSamadhan India may retain transaction references, invoice records, and payment status needed for support and dispute handling.",
+          "Retention periods depend on service type, legal and tax obligations, audit requirements, dispute management, fraud controls, and the record-keeping standards relevant to the engagement.",
         ],
       },
     ],
