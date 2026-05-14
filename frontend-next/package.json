@@ -17,7 +17,8 @@
     "next": "^16.2.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.15"
+    "tailwindcss": "^4.1.15",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/node": "25.5.0",
