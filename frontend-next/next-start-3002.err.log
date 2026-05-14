@@ -1,0 +1,9 @@
+⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+Error: You cannot use different slug names for the same dynamic path ('service' !== 'slug').
+    at ignore-listed frames
+⨯ unhandledRejection:  Error: You cannot use different slug names for the same dynamic path ('service' !== 'slug').
+    at ignore-listed frames
+⨯ Error: You cannot use different slug names for the same dynamic path ('service' !== 'slug').
+    at ignore-listed frames
+⨯ Error: You cannot use different slug names for the same dynamic path ('service' !== 'slug').
+    at ignore-listed frames

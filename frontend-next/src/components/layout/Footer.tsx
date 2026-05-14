@@ -38,6 +38,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/payment-methods" className="transition hover:text-white">
+                Payment Methods
+              </Link>
+            </li>
+            <li>
               <Link href="/refund-policy" className="transition hover:text-white">
                 Refund Policy
               </Link>
@@ -45,6 +50,11 @@ export function Footer() {
             <li>
               <Link href="/cancellation-policy" className="transition hover:text-white">
                 Cancellation Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/service-delivery-policy" className="transition hover:text-white">
+                Service Delivery Policy
               </Link>
             </li>
           </ul>

@@ -22,6 +22,14 @@ export type RazorpayCheckoutOptions = {
     contact?: string;
   };
   notes?: Record<string, string>;
+  config?: {
+    display?: {
+      sequence?: string[];
+      preferences?: {
+        show_default_blocks?: boolean;
+      };
+    };
+  };
   theme?: {
     color?: string;
   };

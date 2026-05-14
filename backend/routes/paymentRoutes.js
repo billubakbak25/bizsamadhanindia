@@ -7,5 +7,6 @@ const router = express.Router();
 router.post("/create-order", leadRateLimiter, paymentController.createOrder);
 router.post("/verify-payment", paymentController.verifyPayment);
 router.get("/payment-details/:orderId", paymentController.getPaymentDetails);
+router.get("/payment-methods", paymentController.getSupportedPaymentMethods);
 
 module.exports = router;

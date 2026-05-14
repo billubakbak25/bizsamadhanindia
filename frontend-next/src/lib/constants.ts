@@ -591,6 +591,45 @@ export const LEGAL_POLICY_PAGES: Record<string, LegalPolicyContent> = {
       },
     ],
   },
+  "service-delivery-policy": {
+    slug: "service-delivery-policy",
+    title: "Service Delivery Policy",
+    description: "How BizSamadhan India delivers paid legal, tax, compliance, and consultation services after successful payment.",
+    eyebrow: "Service Delivery",
+    hero: "This policy explains how paid service requests move from payment confirmation to document collection, expert review, execution, and client handoff.",
+    lastUpdated: "May 14, 2026",
+    highlights: ["Digital service delivery", "Workflow-based execution", "No physical shipping"],
+    sections: [
+      {
+        title: "Digital delivery model",
+        body: [
+          "BizSamadhan India provides legal, tax, compliance, consultation, and workflow execution services digitally through website forms, phone support, email, WhatsApp, client portal updates, and internal CRM-assisted operations.",
+          "No physical goods are shipped for standard service purchases. Deliverables may include consultation notes, filing acknowledgements, draft documents, invoices, status updates, and completion confirmations shared through digital channels.",
+        ],
+      },
+      {
+        title: "Delivery timelines",
+        body: [
+          "Service timelines depend on the selected service, document readiness, payment confirmation, user response time, statutory portals, government departments, and third-party systems involved in the workflow.",
+          "After payment verification, BizSamadhan India initiates the relevant workflow and may request documents or clarifications before execution can proceed.",
+        ],
+      },
+      {
+        title: "Customer responsibilities",
+        body: [
+          "Customers must provide accurate information, complete documents, correct contact details, and timely approvals so the assigned service workflow can move forward without unnecessary delay.",
+          "Delays caused by incomplete information, incorrect details, missed calls, delayed approvals, statutory portal downtime, or third-party processing are handled according to the stage of the service and applicable policies.",
+        ],
+      },
+      {
+        title: "Completion and support",
+        body: [
+          "A service is treated as delivered when the agreed consultation, document preparation, filing support, submission assistance, or completion handoff has been provided according to the scope of the purchased service.",
+          "Customers can contact support for delivery status, document access, payment confirmation, invoices, or clarification on next steps using the contact details listed on the website.",
+        ],
+      },
+    ],
+  },
 };
 
 export const LEGAL_POLICY_SLUGS = Object.keys(LEGAL_POLICY_PAGES);
@@ -614,6 +653,7 @@ export const ALL_MARKETING_ROUTES = [
   "/contact",
   "/partner",
   "/tools",
+  "/payment-methods",
   "/payment-success",
   ...Object.keys(MARKETING_PAGE_CONTENT).map((slug) => `/${slug}`),
   ...LEGAL_POLICY_SLUGS.map((slug) => `/${slug}`),

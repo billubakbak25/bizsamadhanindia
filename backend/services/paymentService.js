@@ -5,7 +5,7 @@ const paymentRepository = require("../repositories/paymentRepository");
 const serviceRepository = require("../repositories/serviceRepository");
 const serviceExecutionService = require("./serviceService");
 const crmService = require("./crmService");
-const { createOrder, verifyPaymentSignature, razorpayKeyId } = require("./razorpayService");
+const { createOrder, fetchSupportedMethods, verifyPaymentSignature, razorpayKeyId } = require("./razorpayService");
 const { ensureInvoiceDirectory, buildInvoiceNumber, formatAmount } = require("./invoiceService");
 const { upsertClientIdentity } = require("./clientIdentityService");
 const postPaymentService = require("./postPaymentService");
@@ -77,6 +77,17 @@ function ensurePayableServiceConfig(serviceConfig, receivedService) {
 
 function buildCheckoutDescription(serviceConfig) {
   return serviceConfig.paymentDescription || `${serviceConfig.serviceName} service package`;
+}
+
+function buildCheckoutDisplayConfig() {
+  return {
+    display: {
+      sequence: ["upi", "card", "netbanking", "wallet", "emi", "cardless_emi", "paylater", "app"],
+      preferences: {
+        show_default_blocks: true,
+      },
+    },
+  };
 }
 
 async function createPaymentRecord({ order, payload, serviceConfig, amount }) {
@@ -184,6 +195,7 @@ async function createOrderForPayment(payload) {
         serviceName: serviceConfig.serviceName,
         category: serviceConfig.categoryKey,
       },
+      config: buildCheckoutDisplayConfig(),
     },
   };
 }
@@ -357,8 +369,13 @@ async function getPaymentDetails(orderId) {
   };
 }
 
+async function getSupportedPaymentMethods() {
+  return fetchSupportedMethods();
+}
+
 module.exports = {
   createOrderForPayment,
+  getSupportedPaymentMethods,
   verifyPayment,
   getPaymentDetails,
 };

@@ -41,6 +41,7 @@ type PaymentOrderResponse = {
       contact?: string;
     };
     notes?: Record<string, string>;
+    config?: RazorpayCheckoutOptions["config"];
   };
 };
 
@@ -283,6 +284,14 @@ export function LeadCaptureForm({
           serviceName: selectedService.title,
           city: form.city,
           ...(order.checkout?.notes || {}),
+        },
+        config: order.checkout?.config || {
+          display: {
+            sequence: ["upi", "card", "netbanking", "wallet", "emi", "cardless_emi", "paylater", "app"],
+            preferences: {
+              show_default_blocks: true,
+            },
+          },
         },
         theme: { color: "#0f766e" },
         modal: {

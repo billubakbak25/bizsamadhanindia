@@ -29,3 +29,8 @@ exports.getPaymentDetails = asyncHandler(async (req, res) => {
   const result = await paymentService.getPaymentDetails(req.params.orderId);
   res.json(result);
 });
+
+exports.getSupportedPaymentMethods = asyncHandler(async (req, res) => {
+  const result = await paymentService.getSupportedPaymentMethods();
+  res.json({ success: true, data: result });
+});
